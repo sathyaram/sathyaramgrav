@@ -161,9 +161,7 @@
 
   // Position them all absolutely at full height/width
   .space,
-  .stars,
-  .planets,
-  .shooting-star {
+  .stars {
     display: block;
     position: absolute;
     top: 0;
@@ -193,47 +191,6 @@
       animation-fill-mode: both;
       box-shadow: $header-star-shadow;
       opacity: $header-star-opacity;
-    }
-  }
-  // The planets moving from bottom to top
-  .planets {
-    z-index: 12;
-    div {
-      position: absolute;
-      border-radius: 50%;
-      animation-name: planet-travel;
-      animation-timing-function: $header-planets-easing;
-      animation-iteration-count: infinite;
-      animation-play-state: paused;
-      animation-fill-mode: both;
-      background: #fff;
-    }
-  }
-  // The wrapper containing the shooting star
-  .shooting-star {
-    z-index: 13;
-    // Any circle that makes up the shooting star
-    > div {
-      position: absolute;
-      border-radius: 50%;
-      z-index: 13;
-      // This translate() is required. As the circles are different sizes,
-      // positioning them using left/top/right/bottom rules will give them
-      // slightly different positions. Counteract this by making the position
-      // relative to the center of the element.
-      transform: scale(1) translate(-50%, 50%);
-      transform-origin: bottom left;
-      filter: blur(0px);
-      transition:
-        filter $header-shooting-star-explode-dur ease,
-        opacity $header-shooting-star-explode-dur ease,
-        transform $header-shooting-star-explode-dur ease;
-
-      &.explode {
-        transform: scale($header-shooting-star-explode-scale) translate(-50%, 50%) !important;
-        opacity: 0 !important;
-        filter: blur($header-shooting-star-explode-blur) !important;
-      }
     }
   }
 }
