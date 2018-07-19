@@ -155,7 +155,7 @@ $(document).ready(function() {
     // Generate a random delay for the star given the speed
     var starDelay = getRandomDelay(starSpeed);
     // Generate a random CSS 'left' value to spread the stars out
-    var starLeft = SR.util.randomInt(0, SR.util.viewport().w);
+    var starLeft = SR.util.randomInt(0, 10000);
     // Create the star element, give it the randomized values and start the
     // animation. If we just set a random bottom value to stagger the stars,
     // then when the animation starts it simply jumps to the start of the
@@ -171,7 +171,7 @@ $(document).ready(function() {
       // Animation begins off the bottom of the screen
       bottom: '-10px',
       // Give the star a random horizontal position
-      left: starLeft + 'px',
+      left: (starLeft / 100) + '%',
       // Give the star a random width/height
       height: starWidth + 'px',
       width: starWidth + 'px',
