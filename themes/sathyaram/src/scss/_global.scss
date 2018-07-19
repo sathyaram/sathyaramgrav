@@ -1,0 +1,164 @@
+/**
+ * Global Styles
+ * Copyright 2018 Sathya Ram
+ */
+
+* {
+  // Set the box model to border-box
+  // > (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+  // > border-box tells the browser to account for any border and padding in
+  // > the values you specify for an element's width and height. If you set an
+  // > element's width to 100 pixels, that 100 pixels will include any border
+  // > or padding you added, and the content box will shrink to absorb that
+  // > extra width. This typically makes it much easier to size elements.
+  box-sizing: border-box;
+  // Improve font rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  // Set a font-size on the html element so we can take advantage of rem sizing
+  // and ensure it is consistent across different browsers.
+  font-size: 16px;
+}
+
+body {
+  // Set the default font family to our custom font
+  font-family: $font-body;
+}
+
+// Set the default font for titles
+h1, h2, h3, h4, h5 {
+  font-family: $font-title;
+}
+
+// Remove text decoration from links
+a {
+  text-decoration: none;
+}
+
+// Add default styles to images
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// fullPage.js next/prev buttons
+
+// Custom styling for fullPage arrows
+.fp-controlArrow {
+  top: 50%;
+  width: 48px !important;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition:
+    opacity $section-button-fade-dur ease,
+    transform $section-button-rotate-dur ease;
+
+  // Hide the icon
+  &::before {
+    display: none;
+  }
+  div {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+  }
+
+  // When its been shown by the JavaScript, after image has been swapped/loaded
+  &.show {
+    opacity: 0.85;
+  }
+
+  // sm breakpoint
+  @media (max-width: $breakpoint-sm-max) {
+    width: 34px !important;
+  }
+  // xs breakpoint
+  @media (max-width: $breakpoint-xs-max) {
+    width: 28px !important;
+  }
+}
+
+// Mobile positioning for the various devices
+#_web .fp-controlArrow,
+#_graphic .fp-controlArrow {
+  // xs breakpoint
+  @media (max-width: $breakpoint-xs-max) {
+    top: 150px; // Reposition next to device
+  }
+}
+#_photography .fp-controlArrow {
+  // xs breakpoint
+  @media (max-width: $breakpoint-xs-max) {
+    top: 200px; // Reposition next to device
+  }
+}
+
+// Previous button
+.fp-controlArrow.fp-prev {
+  left: 0;
+  background-position: right center;
+  box-shadow: $section-button-shadow-left;
+  transform-origin: 0 0;
+  transform:
+    perspective($section-button-perspective)
+    translate3d(0, -50%, 0)
+    rotateY($section-button-rotate);
+
+  &:hover {
+    transform:
+      perspective($section-button-perspective)
+      translate3d(0, -50%, 0)
+      rotateY($section-button-rotate-hover);
+  }
+
+  &:active {
+    transform:
+      perspective($section-button-perspective)
+      translate3d(0, -50%, 0)
+      rotateY($section-button-rotate-active);
+  }
+}
+
+// Next button
+.fp-controlArrow.fp-next {
+  right: 0;
+  background-position: left center;
+  box-shadow: $section-button-shadow-right;
+  transform-origin: 100% 0;
+  transform:
+    perspective($section-button-perspective)
+    translate3d(0, -50%, 0)
+    rotateY(-($section-button-rotate));
+
+  &:hover {
+    transform:
+      perspective($section-button-perspective)
+      translate3d(0, -50%, 0)
+      rotateY(-($section-button-rotate-hover));
+  }
+
+  &:active {
+    transform:
+      perspective($section-button-perspective)
+      translate3d(0, -50%, 0)
+      rotateY(-($section-button-rotate-active));
+  }
+}

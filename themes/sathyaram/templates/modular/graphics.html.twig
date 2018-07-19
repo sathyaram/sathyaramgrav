@@ -1,0 +1,87 @@
+<section
+  id="_{{ page.header.section_slug }}"
+  data-anchor="{{ page.header.section_slug }}"
+  data-tooltip="{{ page.header.title }}"
+  class="section">
+
+    {# The elements that sit behind the main slides #}
+    <div class="background">
+        <h1>{{ page.header.title }}</h1>
+        <div class="laptop"></div>
+    </div>
+
+    {# Access the children once here and reuse it below #}
+    {% set collection = page.collection.order('default') %}
+
+    {##
+     # Loop the slides first to generate the menu at the bottom of the page.
+     # - The html comments are to remove whitespace between the links, as they
+     #   are inline-block and the whitespace products unintended gaps.
+     # - The first horizontal slide doesn't need a bit after the / in the URL
+     # - Make the first slide have a class of 'active'
+     # - Set the text color or gradient based on the page preference
+    ##}
+    <div class="menu"><!--
+        {% for project in collection %}
+            --><a
+              href="#{{ page.header.section_slug }}{% if loop.index != 1 %}/{{ project.header.section_slug }}{% endif %}"
+              class="{% if loop.index == 1 %}active{% endif %}"
+              style="{% if project.header.color_type == 'solid' %}background-color: {{ project.header.color_val }};{% elseif project.header.color_type == 'gradient' %}background-image: {{ project.header.color_val }};{% endif %}"
+            ></a><!--
+        {% endfor %}
+ --></div>
+
+    {# Loop the slides again to generate the actual slides and content #}
+    {% for project in collection %}
+        <article
+          data-anchor="{{ project.header.section_slug }}"
+          data-tooltip="{{ project.header.title }}"
+          class="slide">
+            <div class="wrapper">
+                {# The content of the slide that is meant to align with the laptop screen #}
+                <div class="screen">
+                    {# Only render an internal slider if there is more than one image #}
+                    {% if count(project.media.images) == 1 %}
+                        {% for image in project.media.images %}
+                            <img data-src="{{ image.url() }}">
+                        {% endfor %}
+                    {% elseif count(project.media.images) > 1 %}
+                        <ul class="light-slider">
+                            {% for image in project.media.images %}
+                                <li><img data-src="{{ image.url() }}"></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+
+                {# The text content of the slide that aligns above/beside the laptop #}
+                <div class="text">
+                    {# Determine whether to show a solid color or gradient title #}
+                    {% if project.header.color_type == 'gradient' %}
+                        <h1 style="color:transparent; -webkit-background-clip:text; background-clip:text; background-image:{{ project.header.color_val }};">
+                    {% else %}
+                        <h1 style="color: {{ project.header.color_val }};">
+                    {% endif %}
+                        {{ project.title }}
+                    </h1>
+                    <h2>{{ project.header.tagline }}</h2>
+                    <h3>{% for tag in project.taxonomy.tag %}{{ tag }}{% if not loop.last %} / {% endif %}{% endfor %}</h3>
+                    <p>{{ project.content }}</p>
+                    {% if count(project.header.links) %}
+                        <div class="links">
+                            {% for link in project.header.links %}
+                                <a
+                                  class="{{ link.type }} {{ link.color }}"
+                                  target="_blank"
+                                  href="{{ link.href }}"
+                                >{{ link.text }}</a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </article>
+    {% endfor %}
+
+</section>
+

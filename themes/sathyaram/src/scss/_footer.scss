@@ -1,0 +1,46 @@
+/**
+ * Footer Styles
+ * Copyright 2018 Sathya Ram
+ */
+
+#_contact-me {
+  position: relative;
+  background: radial-gradient(ellipse at bottom, #1f3b60 0%, #090a0f 100%);
+  color: $color-white;
+  text-align: center;
+  x-index: 9;
+
+  .wrapper {
+    font-size: 2em;
+  }
+
+  h2 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: $font-title;
+  }
+
+  .form-wrapper {
+    max-width: 640px;
+    margin: 32px auto;
+    padding: 36px;
+    border: 1px solid #ddd;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 2px;
+  }
+
+  .copyright {
+    position: absolute;
+    margin: 0;
+    padding: 20px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    font-family: $font-title;
+  }
+}

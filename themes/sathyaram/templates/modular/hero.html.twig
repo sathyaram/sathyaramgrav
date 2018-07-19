@@ -1,0 +1,33 @@
+<header id="_{{ page.header.section_slug }}" class="section fp-noscroll">
+
+    {# Wrapper element for the stars and space in the background #}
+    <div class="space">
+        {# The planets moving from bottom to top #}
+        <div class="planets"></div>
+        {# The stars moving from bottom to top #}
+        <div class="stars"></div>
+        {# The shooting star that appears randomly #}
+        <div class="shooting-star"></div>
+    </div>
+
+    {# The logo at the top of the section #}
+    <div class="logo" role="logo">
+        <img data-src="{{ url('theme://images/ram-logo-white.svg') }}" alt="Sathya Ram Logo">
+    </div>
+
+    {# The content floating in the center #}
+    <div class="content">
+        <nav>
+            {% for icon in page.header.icons %}
+                <a target="_blank" href="{{ icon.link }}">
+                    <i class="fa {{ icon.icon }}" aria-hidden="true"></i>
+                </a>
+            {% endfor %}
+        </nav>
+        <div>
+            <h1>{{ page.header.title }}</h1>
+            <h2>{{ page.header.subtitle }}</h2>
+        </div>
+    </div>
+
+</header>

@@ -1,0 +1,57 @@
+/**
+ * Font Styles
+ * Copyright 2018 Sathya Ram
+ */
+
+// Aquatico
+@font-face {
+  font-family: 'aquatico';
+  src: url('../fonts/aquatico/aquatico-light-webfont.eot');
+  src: url('../fonts/aquatico/aquatico-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/aquatico/aquatico-light-webfont.woff2') format('woff2'),
+       url('../fonts/aquatico/aquatico-light-webfont.woff') format('woff'),
+       url('../fonts/aquatico/aquatico-light-webfont.ttf') format('truetype'),
+       url('../fonts/aquatico/aquatico-light-webfont.svg#aquatico') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'aquatico';
+  src: url('../fonts/aquatico/aquatico-lightoblique-webfont.eot');
+  src: url('../fonts/aquatico/aquatico-lightoblique-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/aquatico/aquatico-lightoblique-webfont.woff2') format('woff2'),
+       url('../fonts/aquatico/aquatico-lightoblique-webfont.woff') format('woff'),
+       url('../fonts/aquatico/aquatico-lightoblique-webfont.ttf') format('truetype'),
+       url('../fonts/aquatico/aquatico-lightoblique-webfont.svg#aquatico') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'aquatico';
+  src: url('../fonts/aquatico/aquatico-oblique-webfont.eot');
+  src: url('../fonts/aquatico/aquatico-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/aquatico/aquatico-oblique-webfont.woff2') format('woff2'),
+       url('../fonts/aquatico/aquatico-oblique-webfont.woff') format('woff'),
+       url('../fonts/aquatico/aquatico-oblique-webfont.ttf') format('truetype'),
+       url('../fonts/aquatico/aquatico-oblique-webfont.svg#aquatico') format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'aquatico';
+  src: url('../fonts/aquatico/aquatico-regular-webfont.eot');
+  src: url('../fonts/aquatico/aquatico-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/aquatico/aquatico-regular-webfont.woff2') format('woff2'),
+       url('../fonts/aquatico/aquatico-regular-webfont.woff') format('woff'),
+       url('../fonts/aquatico/aquatico-regular-webfont.ttf') format('truetype'),
+       url('../fonts/aquatico/aquatico-regular-webfont.svg#aquatico') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+// Tahu
+@font-face {
+  font-family: 'Tahu';
+  src: url('../fonts/tahu/tahu.ttf');
+  font-style: normal;
+}

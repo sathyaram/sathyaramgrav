@@ -1,0 +1,52 @@
+<section id="_{{ page.header.section_slug }}" class="section">
+
+    {# Wrap the links in a nav #}
+    <nav>
+
+        {# Loop the services #}
+        {% for service in page.header.services %}
+            <a href="{{ service.href }}" class="{{ service.class }}">
+                <div class="card-wrapper">
+                    <div class="front side">
+                        <div class="vector">
+                            <div>{{ service.letter }}</div>
+                            {% if service.class == 'web' %}
+                                <div class="monitor shape">
+                                    <div class="screen"></div>
+                                    <div class="base">
+                                        <div class="foot bottom"></div>
+                                    </div>
+                                </div>
+                            {% elseif service.class == 'graphic' %}
+                                <div class="box shape">
+                                    <div class="anchor"></div>
+                                    <div class="anchor"></div>
+                                    <div class="anchor"></div>
+                                    <div class="anchor"></div>
+                                    <div class="anchor"></div>
+                                    <div class="anchor"></div>
+                                    <div class="anchor"></div>
+                                    <div class="anchor"></div>
+                                    <div class="anchor"></div>
+                                </div>
+                            {% elseif service.class == 'photography' %}
+                                <div class="photo shape">
+                                    <div class="image">
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="description">
+                            <h3>{{ service.title }}</h3>
+                        </div>
+                    </div>
+                    <div class="back side">
+                        {{ service.back }}
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+
+    </nav>
+
+</section>

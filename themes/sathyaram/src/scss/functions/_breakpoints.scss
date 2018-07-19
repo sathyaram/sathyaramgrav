@@ -1,0 +1,26 @@
+/**
+ * Utilities for working with the breakpoints
+ * Sass Functions/Mixins
+ * Copyright 2018 Sathya Ram
+ */
+
+@mixin position-container {
+  // Smallest breakpoint, full-width
+  width: 100%;
+  left: 0;
+  // 'sm' breakpoint
+  @media (min-width: $breakpoint-sm-min) {
+    width: $container-sm;
+    left: calc(50% - #{($container-sm / 2)});
+  }
+  // 'md' breakpoint
+  @media (min-width: $breakpoint-md-min) {
+    width: $container-md;
+    left: calc(50% - #{($container-md / 2)});
+  }
+  // 'lg' breakpoint
+  @media (min-width: $breakpoint-lg-min) {
+    width: $container-lg;
+    left: calc(50% - #{($container-lg / 2)});
+  }
+}

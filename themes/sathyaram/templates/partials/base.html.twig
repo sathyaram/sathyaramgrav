@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="{{ config.site.author.name }}">
+    {% include 'partials/metadata.html.twig' %}
+    {% include 'partials/favicon.html.twig' %}
+    <title>{{ config.site.title }}</title>
+    {# Create a block for stylesheets so it can be overriden in children #}
+    {% block stylesheets %}
+        {# Register stylesheets with the Asset Manager #}
+        {% do assets.addCss('https://fonts.googleapis.com/css?family=Exo+2:300,500,600', 102) %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 101) %}
+        {% do assets.addCss('theme://css/sathyaram.min.css', 100) %}
+    {% endblock %}
+    {# Render the HTML for the stylesheets #}
+    {{ assets.css() }}
+    {# Output the critical-path CSS #}
+    <style type="text/css">{% include 'critical/critical.min.html.twig' %}</style>
+</head>
+<body>
+    {# The overlay and loading spinner #}
+    {% include 'partials/overlay.html.twig' %}
+    {# Content wrapper #}
+    <main>
+        {# The content defined by the page #}
+        {% block content %}{% endblock %}
+        {# The footer/form #}
+        {% include 'forms/form.html.twig' %}
+    </main>
+    {##
+     # - Use this section to pass information from PHP/Grav to the JS/frontend.
+     # - Create a JavaScript object to hold our configuration/data. Save
+     #   everything on this object so we don't pollute the global namespace.
+     #   - https://stackoverflow.com/q/8862665/3389737
+     #}
+    <script type="text/javascript">
+        window.SR = {
+          breakpoints: {
+            xs: 0, sm: 768, md: 992, lg: 1280,
+            xl: 1400, x2: 1600, x3: 1900, x4: 2300
+          },
+          overlay: { wait: 1200, dur: 400 }
+        };
+    </script>
+    {# Create a block for scripts so it can be overriden in children #}
+    {% block scripts %}
+        {# Register scripts with the Asset Manager #}
+        {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {
+            'priority': 102,
+        }) %}
+        {% do assets.addJs('theme://js/vendor.min.js', {
+            'priority': 101,
+        }) %}
+        {% do assets.addJs('theme://js/sathyaram.min.js', {
+            'priority': 100,
+            'loading': 'async',
+        }) %}
+    {% endblock %}
+    {# Render the HTML for the scripts #}
+    {{ assets.js() }}
+</body>
+</html>

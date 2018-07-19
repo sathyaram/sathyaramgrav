@@ -1,0 +1,190 @@
+/**
+ * Sass Variables
+ * Copyright 2018 Sathya Ram
+ */
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Colors
+
+// General
+$color-black:    #000;
+$color-white:    #fff;
+$color-midnight: #222639;
+$color-slate:    #303030;
+$color-gray:     #f2f2f2;
+$color-drupal:   #0678be;
+$color-red:      #f3443f;
+$color-purple:   #6122ff;
+$color-pink:     #f06292;
+$color-teal:     #26a69a;
+$color-blue:     #29b6f6;
+
+// Social
+$color-twitter:   #4f95fd;
+$color-instagram: #45719a;
+$color-linkedin:  #2079b5;
+$color-facebook:  #405797;
+$color-youtube:   #c12e2f;
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Typography
+
+// Fonts
+$font-title:  'aquatico', sans-serif;
+$font-body:   'Exo 2', sans-serif;
+$font-script: 'Tahu', cursive;
+$font-icon:   FontAwesome;
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Breakpoints & Containers
+
+// Minimum widths for each breakpoint
+$breakpoint-xs-min:    0px;
+$breakpoint-sm-min:  768px;
+$breakpoint-md-min:  992px;
+$breakpoint-lg-min: 1280px;
+
+// Maximum widths for each breakpoint
+$breakpoint-xs-max: ($breakpoint-sm-min - 1);
+$breakpoint-sm-max: ($breakpoint-md-min - 1);
+$breakpoint-md-max: ($breakpoint-lg-min - 1);
+
+// Container widths
+$container-sm:  688px;
+$container-md:  890px;
+$container-lg: 1160px;
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Miscellaneous
+
+// Common transition settings
+$trans:    .3s ease;
+$transalt: .3s ease-in-out;
+
+// When transitioning the transform property of an element, it can cause
+// unintended blurring/movement. Setting this at the same time eliminates it.
+// - https://stackoverflow.com/q/15464055/3389737
+// - Usage:
+//     element {
+//       transform: someOtherTransform(50%) $transfix;
+//     }
+$transfix: translateZ(0);
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Header Section
+
+// The background image and gradient overlay
+//
+//  BOTTOM - bg-color
+//  MIDDLE - image
+//     TOP - gradient
+$header-bg-color:      #000;
+$header-image:         none;
+$header-image-opacity: 0;
+$header-grad:          radial-gradient(ellipse at bottom, #0c1d3a 0%, black 100%);
+$header-grad-opacity:  1;
+// - REMOVED (Ref)
+// $header-image:         url('../images/header.jpg');
+// $header-grad:          radial-gradient(ellipse at bottom, #0c1d3a 0%, #360b3a 100%);
+
+// The social icons
+$header-icon-color:       #fff;
+$header-icon-color-hover: $color-blue;
+$header-icon-size:        24px;
+
+// The skew style applied to the header's title
+$header-skew: skewY(-5deg);
+
+// The main title (SATHYA RAM)
+$header-h1-font:   $font-title;
+$header-h1-color:  #fff;
+$header-h1-size:   100px;
+$header-h1-shadow: 0 0 5px #fff, 0 0 20px #60c0f0;
+
+// The subtitle (Designer, Developer, Photographer)
+$header-h2-font:   $font-title;
+$header-h2-color:  #fff;
+$header-h2-size:   18px;
+$header-h2-shadow: 0px 0px 28px #fff;
+
+// Normal stars (travelling bottom to top)
+$header-star-background: #fff;
+$header-star-opacity:    0.85;
+$header-star-easing:     linear;
+// You can use em units for this as font-size is set to the width/height
+$header-star-shadow:
+  0 0 10em .5em rgba(#fff, .3),
+  0 0 2em 1px rgba(#60c0f0, .3);
+
+// Planets (travelling bottom to top)
+$header-planets-easing: linear;
+
+// Shooting stars
+$header-shooting-star-explode-dur:   0.25s;
+$header-shooting-star-explode-scale: 3;
+$header-shooting-star-explode-blur:  50px;
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Slider sections (Website, Graphics, Photography)
+
+// The background of the entire section
+$section-bg: #fff;
+
+// The title of the section
+$section-title-color: $color-purple;
+$section-title-size:  20px;
+
+// The fullPage control buttons (next/prev) for the section
+$section-button-perspective:   200px;
+$section-button-rotate:        15deg;
+$section-button-rotate-hover:  20deg;
+$section-button-rotate-active: 25deg;
+$section-button-fade-dur:      .3s;
+$section-button-rotate-dur:    .15s;
+$section-button-shadow-left:   10px 10px 60px 0px rgba(0, 0, 0, 0.15);
+$section-button-shadow-right:  -10px 10px 60px 0px rgba(0, 0, 0, 0.15);
+
+// The styles for horizontal slides that are not active
+// The active slide will have these styled as default so it displays normally
+$section-slide-scale:         0.25;
+$section-slide-opacity:       0.25;
+$section-slide-rotate-left:   45deg;
+$section-slide-rotate-right: -45deg;
+
+// The <h1> for the slide
+$section-h1-color: #000;
+// The <h2> for the slide
+$section-h2-color: #222;
+// The <h3> for the slide
+$section-h3-color: #333;
+// The <p> for the slide
+$section-p-color:  #333;
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Website Section
+
+// Laptop screen
+$website-laptop-screen-bg: #fff;
+
+// Laptop base
+$website-laptop-base-bg:     #f6f6f6;
+$website-laptop-base-border: 1px solid rgba(0, 0, 0, 0.05);
+
+// Laptop frame
+$website-laptop-frame-bg:     #eee;
+$website-laptop-frame-border: 1px solid rgba(0, 0, 0, 0.05);
+
+$website-laptop-frame-shadow:
+  rgba(0, 0, 0, 0.05) 0px 1.3px 2.6px 0px,
+  rgba(0, 0, 0, 0.2) 0px 39px 65px 0px,
+  rgba(0, 0, 0, 0.1) 0px 39px 90px 0px;
+
+$website-laptop-frame-shadow-sm:
+  rgba(0, 0, 0, 0.05) 0px 1px 2px 0px,
+  rgba(0, 0, 0, 0.2) 0px 20px 32px 0px,
+  rgba(0, 0, 0, 0.1) 0px 20px 45px 0px;
+
+$website-laptop-frame-shadow-xs:
+  rgba(0, 0, 0, 0.05) 0px 1px 2px 0px,
+  rgba(0, 0, 0, 0.1) 0px 10px 16px 0px,
+  rgba(0, 0, 0, 0.05) 0px 10px 20px 0px;

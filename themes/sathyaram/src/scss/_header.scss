@@ -1,0 +1,239 @@
+/**
+ * Header Styles
+ * (Relevant JavaScript: "/user/themes/sathyaram/src/js/custom/header.js")
+ * Copyright 2018 Sathya Ram
+ */
+
+// First slide
+#_home {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  background: $header-bg-color;
+
+  // The background image and gradient underlays
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &::before {
+    opacity: $header-image-opacity;
+    background-image: $header-image;
+    background-position: center center;
+  }
+  &::after {
+    opacity: $header-grad-opacity;
+    background: $header-grad;
+    background-position: top center;
+  }
+
+  // Logo at the top
+  .logo {
+    position: absolute;
+    width: 100px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 12;
+
+    img {
+      width: 100%;
+    }
+
+    // sm breakpoint
+    @media (max-width: $breakpoint-sm-max) {
+      width: 80px;
+      top: 20px;
+    }
+    // xs breakpoint
+    @media (max-width: $breakpoint-xs-max) {
+      width: 60px;
+    }
+  }
+
+  // Wrapper for the social icons, title and subtitle
+  .content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 10;
+  }
+
+  // The social icons
+  nav {
+    padding-bottom: 45px;
+
+    // sm breakpoint
+    @media (max-width: $breakpoint-sm-max) {
+      padding-bottom: 35px;
+    }
+    // xs breakpoint
+    @media (max-width: $breakpoint-xs-max) {
+      padding-bottom: 25px;
+    }
+
+    a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 5px;
+      border-radius: 50%;
+      transform: scale(1) $transfix;
+      transition: color $trans, transform $trans;
+      color: $header-icon-color;
+
+      i {
+        font-size: $header-icon-size;
+      }
+
+      &:hover {
+        color: $header-icon-color-hover;
+        transform: scale(1.5) $transfix;
+      }
+    }
+  }
+
+  // Main title
+  h1 {
+    width: 100%;
+    color: $header-h1-color;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $header-h1-font;
+    font-size: $header-h1-size;
+    line-height: 1.2;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-shadow: $header-h1-shadow;
+    transform: $header-skew translateY(0px);
+    animation-name: title-hover;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    // sm breakpoint
+    @media (max-width: $breakpoint-sm-max) {
+      font-size: ($header-h1-size * 0.8);
+    }
+    // xs breakpoint
+    @media (max-width: $breakpoint-xs-max) {
+      font-size: ($header-h1-size * 0.4);
+    }
+  }
+
+  // Subtitle
+  h2 {
+    width: 100%;
+    color: $header-h2-color;
+    font-family: $header-h2-font;
+    font-size: $header-h2-size;
+    line-height: 1.32;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: $header-h2-shadow;
+    letter-spacing: 2px;
+    transform: $header-skew;
+
+    // sm breakpoint
+    @media (max-width: $breakpoint-sm-max) {
+      font-size: ($header-h2-size * 0.888888);
+    }
+    // xs breakpoint
+    @media (max-width: $breakpoint-xs-max) {
+      font-size: ($header-h2-size * 0.777777);
+    }
+  }
+
+  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // Space/Stars/Galaxy
+
+  // Position them all absolutely at full height/width
+  .space,
+  .stars,
+  .planets,
+  .shooting-star {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  // The .space wrapper, containing all space elements in the header
+  .space {
+    z-index: 10;
+  }
+  // The normal stars moving from bottom to top
+  .stars {
+    z-index: 11;
+    // The stars themselves - some properties are deliberately
+    // omitted because they are set randomly in the JavaScript:
+    //   drawStars()@/user/themes/sathyaram/src/js/custom/header.js
+    div {
+      position: absolute;
+      border-radius: 50%;
+      background: $header-star-background;
+      animation-name: star-travel;
+      animation-timing-function: $header-star-easing;
+      animation-iteration-count: infinite;
+      animation-play-state: paused;
+      animation-fill-mode: both;
+      box-shadow: $header-star-shadow;
+      opacity: $header-star-opacity;
+    }
+  }
+  // The planets moving from bottom to top
+  .planets {
+    z-index: 12;
+    div {
+      position: absolute;
+      border-radius: 50%;
+      animation-name: planet-travel;
+      animation-timing-function: $header-planets-easing;
+      animation-iteration-count: infinite;
+      animation-play-state: paused;
+      animation-fill-mode: both;
+      background: #fff;
+    }
+  }
+  // The wrapper containing the shooting star
+  .shooting-star {
+    z-index: 13;
+    // Any circle that makes up the shooting star
+    > div {
+      position: absolute;
+      border-radius: 50%;
+      z-index: 13;
+      // This translate() is required. As the circles are different sizes,
+      // positioning them using left/top/right/bottom rules will give them
+      // slightly different positions. Counteract this by making the position
+      // relative to the center of the element.
+      transform: scale(1) translate(-50%, 50%);
+      transform-origin: bottom left;
+      filter: blur(0px);
+      transition:
+        filter $header-shooting-star-explode-dur ease,
+        opacity $header-shooting-star-explode-dur ease,
+        transform $header-shooting-star-explode-dur ease;
+
+      &.explode {
+        transform: scale($header-shooting-star-explode-scale) translate(-50%, 50%) !important;
+        opacity: 0 !important;
+        filter: blur($header-shooting-star-explode-blur) !important;
+      }
+    }
+  }
+}

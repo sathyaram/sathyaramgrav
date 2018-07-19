@@ -1,0 +1,44 @@
+title: Album
+'@extends':
+  type: default
+  context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+
+            header.tagline:
+              type: text
+              label: Project Tagline
+              validate:
+                required: false
+                type: text
+
+            header.color_type:
+              type: select
+              size: long
+              label: Project Color Type
+              help: 'The color type specifies how the title and navigation element for this project are styled in the frontend - with a solid color or a gradient.'
+              options:
+                solid: 'Solid Color'
+                gradient: 'Gradient'
+              validate:
+                required: true
+
+            header.color_val:
+              type: text
+              label: Project Color Value
+              help: 'The color value specifies the CSS value that should be used for the styling. For solid colors, any valid CSS color string e.g. "#000" or "rgb(0,0,0)". For gradients, write the full gradient directive e.g. "linear-gradient(to right, #000, #fff)"'
+              validate:
+                required: true
+                type: text
+
+
+
+

@@ -1,0 +1,33 @@
+@extends:
+    '@parent'
+
+form:
+    fields:
+        anothersection:
+            type: section
+            title: Site Navigation
+            underline: true
+
+            fields:
+                websites:
+                    type: text
+                    label: Website description
+                    size: large
+                graphics:
+                    type: text
+                    label: Graphics description
+                    size: large
+                photography:
+                    type: text
+                    label: Photography description
+                    size: large
+        anothersection2:
+            type: section
+            title: Headers
+            underline: true
+
+            fields:
+                subtitle:
+                    type: text
+                    label: Subtitle on hero
+                    size: large

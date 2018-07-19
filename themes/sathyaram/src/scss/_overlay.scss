@@ -1,0 +1,49 @@
+/**
+ * Overlay Styles
+ * Copyright 2018 Sathya Ram
+ */
+
+// An overlay wrapper
+// Only houses the loader at the moment, but if more overlays are required
+// above the fullPage content, this can server as a wrapper for those too.
+#overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 1);
+  transition: background .4s ease;
+
+  &.transparent {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
+// The actual loading element, wrapping the image and text
+#loader {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  // The logo inside the loader
+  img {
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: calc(50% - 35px);
+    left: 50%;
+    transform-origin: 50%;
+    transform: translateX(-50%);
+    animation-name: logo-rotate;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+  }
+}

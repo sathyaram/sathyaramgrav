@@ -1,0 +1,395 @@
+/**
+ * Common styles for the Website, Graphics and Photography sections
+ * Copyright 2018 Sathya Ram
+ */
+
+#_web,
+#_graphic,
+#_photography {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: $section-bg;
+
+  // The menu of rectangles at the bottom
+  .menu {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 4;
+
+    // sm breakpoint
+    @media (max-width: $breakpoint-sm-max) {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      width: 30px;
+      height: 10px;
+      margin: 4px 2px 0 2px;
+      overflow: hidden;
+      opacity: 0.6;
+      border-radius: 2px;
+      transition:
+        opacity $trans,
+        margin $trans,
+        height $trans;
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      &.active {
+        height: 14px;
+        margin: 0 2px;
+        opacity: 1;
+      }
+    }
+  }
+
+  // Since we want to position both the title and the device outside of the
+  // flow of the horizontal slider, wrap them in a container-sized element
+  // so we can position them both relative to the container, which the main
+  // content is also contained in.
+  .background {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    // Size and position this element as a container
+    @include position-container;
+
+    // The rotated title to the left of the page
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      letter-spacing: 2px;
+      font-family: $font-title;
+      font-size: $section-title-size;
+      color: $section-title-color;
+
+      // xs breakpoint
+      // On mobile, position the title above the laptop
+      @media (max-width: $breakpoint-xs-max) {
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+        text-align: center;
+        font-size: 12px;
+        line-height: 50px;
+        top: 0;
+        left: 50%;
+        margin: 0;
+        padding: 5px 0;
+        transform: translate(-50%, 0) rotate(0deg);
+      }
+    }
+  }
+
+  // Make sure the slides show above the .background
+  .fp-slides {
+    position: relative;
+    z-index: 3;
+  }
+
+  // Each slide in the horizontal slider (<article>)
+  .slide {
+    position: relative;
+    perspective: 1000px;
+
+    // Wrap the content of each slide in a responsive container
+    .wrapper {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      bottom: 0;
+      backface-visibility: visible;
+      perspective-origin: 0% 50%;
+      transform-style: preserve-3d;
+      // Rotate and scale all slides (overriden for active slide below)
+      transform: scale(#{$section-slide-scale}) rotateY(#{$section-slide-rotate-left});
+      opacity: $section-slide-opacity;
+      transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+      // Size and position this element as a container
+      @include position-container;
+    }
+
+    // The slide that is currently active
+    &.active {
+      // Make sure the slide is displayed normally without rotation or scaling
+      .wrapper {
+        transform: scale(1) rotateY(0deg);
+        opacity: 1;
+      }
+      // Changes the direction of rotation for slides *after* the active one
+      & ~ .slide .wrapper {
+        transform: scale(#{$section-slide-scale}) rotateY(#{$section-slide-rotate-right});
+      }
+    }
+
+    // The content for the slide, that is meant to align
+    // exactly with the device's screen
+    // (Sizing is performed in section's own scss file)
+    .screen {
+      display: block;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      // lightSlider uses lists
+      ul, li {
+        position: relative;
+        overflow: hidden;
+      }
+      img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+    }
+
+    // The content that shows to the left/below the device
+    // (Sizing is performed in section's own scss file)
+    .text {
+      display: block;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+
+      // Style the titles
+      h1, h2, h3 {
+        display: block;
+        margin: 0 0 15px 0;
+        padding: 0;
+      }
+      h1 {
+        padding: 8px 0;
+        font-family: $font-script;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 5px;
+        color: $section-h1-color;
+        // md breakpoint
+        @media (max-width: $breakpoint-md-max) {
+          font-size: 40px;
+          line-height: 48px;
+          letter-spacing: 4px;
+        }
+        // xs breakpoint
+        @media (max-width: $breakpoint-xs-max) {
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 3px;
+          margin: 0 0 5px 0;
+          padding: 0 0 4px 0;
+        }
+      }
+      h2 {
+        font-family: $font-title;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 24px;
+        letter-spacing: 4px;
+        color: $section-h2-color;
+        // md breakpoint
+        @media (max-width: $breakpoint-md-max) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        // xs breakpoint
+        @media (max-width: $breakpoint-xs-max) {
+          font-size: 12px;
+          line-height: 18px;
+          margin: 0 0 5px 0;
+        }
+      }
+      h3 {
+        padding: 8px 0;
+        font-family: $font-body;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: $section-h3-color;
+        &.custom {
+          padding: 8px 12px;
+        }
+        // xs breakpoint
+        @media (max-width: $breakpoint-xs-max) {
+          font-size: 12px;
+          margin: 0 0 10px 0;
+          padding: 0 20px;
+        }
+      }
+
+      // Style the text
+      p {
+        display: block;
+        margin: 0;
+        padding: 0;
+        color: $section-p-color;
+        font-family: $font-body;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        // md breakpoint
+        @media (max-width: $breakpoint-md-max) {
+          font-size: 14px;
+        }
+        // xs breakpoint
+        @media (max-width: $breakpoint-xs-max) {
+          font-size: 13px;
+          line-height: 17px;
+        }
+      }
+
+      // The circular links below the main content
+      .links {
+        display: block;
+        margin: 15px 0 0 0;
+        padding: 0;
+        background: white;
+
+        // sm breakpoint
+        @media (max-width: $breakpoint-sm-max) {
+          margin: 10px 0 0 0;
+        }
+
+        // Add base styling for the links and give them a neutral grey theme
+        a {
+          display: inline-block;
+          position: relative;
+          max-width: 64px;
+          height: 64px;
+          margin: 0;
+          padding: 6px 0 0 64px;
+          color: #333;
+          font-family: $font-title;
+          font-size: 16px;
+          line-height: 56px;
+          border: 1px solid #666;
+          border-radius: 32px;
+          text-decoration: none;
+          overflow: hidden;
+          transition:
+           color $trans,
+           background $trans,
+           max-width $trans,
+           padding $trans;
+
+          // sm breakpoint
+          @media (max-width: $breakpoint-sm-max) {
+            max-width: 48px;
+            height: 48px;
+            padding: 6px 0 0 48px;
+            font-size: 12px;
+            line-height: 40px;
+            border-radius: 24px;
+          }
+
+          // Use a generic fa-link icon by default
+          &::before {
+            position: absolute;
+            content: '\f0c1';
+            font-family: $font-icon;
+            color: #333;
+            font-size: 30px;
+            top: 32px;
+            left: 32px;
+            transform: translate(-50%, -50%);
+            transition: color $trans;
+
+            // sm breakpoint
+            @media (max-width: $breakpoint-sm-max) {
+              top: 24px;
+              left: 24px;
+            }
+          }
+
+          &:hover {
+            max-width: 420px;
+            padding-right: 20px;
+            background: #666;
+            color: $color-white;
+          }
+
+          //-- Create icon variants
+
+          // Dribbble
+          &.dribbble {
+            &::before {
+              content: '\f17d';
+            }
+          }
+
+          // Medium
+          &.medium {
+            &::before {
+              content: '\f23a';
+            }
+          }
+
+          //-- Create color variants
+
+          // Pink
+          &.pink {
+            border-color: darken($color-pink, 15%);
+            color: $color-pink;
+            &::before {
+              color: $color-pink
+            }
+            &:hover {
+              background: darken($color-pink, 18%);
+              border-color: darken($color-pink, 18%);
+              color: lighten($color-pink, 6%);
+            }
+          }
+
+          // Teal
+          &.teal {
+            border-color: darken($color-teal, 15%);
+            color: $color-teal;
+            &::before {
+              color: $color-teal
+            }
+            &:hover {
+              background: darken($color-teal, 8%);
+              border-color: darken($color-teal, 8%);
+              color: $color-white;
+              &::before {
+                color: $color-white;
+              }
+            }
+          }
+
+        } // a
+
+      } // .links
+    } // .text
+
+  }
+
+}

@@ -1,0 +1,212 @@
+/**
+ * Photography Section's Styles
+ * Copyright 2018 Sathya Ram
+ */
+
+#_photography {
+
+  .background {
+
+    // The .camera element is the screen itself. We build the frame & viewfinder
+    // using pseudo elements. This makes positioning easier because we know the
+    // image must align with the .camera element, so we don't have to deal
+    // with margin, padding, children etc, we can simply use the same dimensions
+    // as this element has.
+    .camera {
+      display: block;
+      position: absolute;
+      width: calc(50% - 200px); // lg breakpoint value
+      height: 280px; // lg breakpoint value
+      margin: 0;
+      padding: 0;
+      top: calc(50% - 140px); // lg breakpoint value
+      right: 160px; // lg breakpoint value
+      background: $website-laptop-screen-bg;
+
+      // md breakpoint
+      @media (max-width: $breakpoint-md-max) {
+        width: calc(45% - 150px);
+        height: 200px;
+        top: calc(50% - 100px);
+        right: 120px;
+      }
+      // sm breakpoint
+      @media (max-width: $breakpoint-sm-max) {
+        width: calc(45% - 100px);
+        height: 180px;
+        top: calc(50% - 90px);
+        right: 80px;
+      }
+      // xs breakpoint
+      // On mobile, remove absolute position and put the laptop above the text
+      @media (max-width: $breakpoint-xs-max) {
+        position: relative;
+        // 180px = 40px margin each side + 100px for camera frame
+        width: calc(100% - 180px);
+        height: 160px;
+        margin: 120px 120px 0 60px;
+        padding: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+
+      // Camera frame & viewfinder
+      &::before,
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+      }
+
+      // Camera frame
+      &::before {
+        top: -40px;
+        right: -160px;
+        bottom: -40px;
+        left: -40px;
+        z-index: -1;
+        border-radius: 6%;
+        background: $website-laptop-frame-bg;
+        box-shadow: $website-laptop-frame-shadow;
+
+        // md breakpoint
+        @media (max-width: $breakpoint-md-max) {
+          top: -30px;
+          right: -120px;
+          bottom: -30px;
+          left: -30px;
+        }
+        // sm breakpoint
+        @media (max-width: $breakpoint-sm-max) {
+          top: -20px;
+          right: -80px;
+          bottom: -20px;
+          left: -20px;
+        }
+      }
+
+      // Camera viewfinder
+      &::after {
+        width: 80px;
+        height: 0;
+        border-bottom: 40px solid $website-laptop-frame-bg;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        top: -80px;
+        left: 40px;
+
+        // md breakpoint
+        @media (max-width: $breakpoint-md-max) {
+          width: 60px;
+          border-bottom-width: 30px;
+          border-left-width: 15px;
+          border-right-width: 15px;
+          top: -60px;
+          left: 30px;
+        }
+        // sm breakpoint
+        @media (max-width: $breakpoint-sm-max) {
+          width: 40px;
+          border-bottom-width: 20px;
+          border-left-width: 10px;
+          border-right-width: 10px;
+          top: -40px;
+          left: 20px;
+        }
+      }
+
+    } // .camera
+
+  } // .background
+
+  // Each slide in the horizontal slider (<article>)
+  .slide {
+
+    // The content for the slide, that is meant to align
+    // exactly with the camera's screen
+    // (General styling are in the _sliders.scss file)
+    .screen {
+      width: calc(50% - 200px);
+      height: 280px;
+      top: calc(50% - 140px);
+      right: 160px;
+      // lightSlider uses lists, make sure they conform to the screen size
+      ul, li {
+        height: 280px;
+      }
+
+      // md breakpoint
+      @media (max-width: $breakpoint-md-max) {
+        width: calc(45% - 150px);
+        height: 200px;
+        top: calc(50% - 100px);
+        right: 120px;
+        ul, li {
+          height: 200px;
+        }
+      }
+      // sm breakpoint
+      @media (max-width: $breakpoint-sm-max) {
+        width: calc(45% - 100px);
+        height: 180px;
+        top: calc(50% - 90px);
+        right: 80px;
+        ul, li {
+          height: 180px;
+        }
+      }
+      // xs breakpoint
+      // On mobile, remove absolute position and put the laptop above the text
+      @media (max-width: $breakpoint-xs-max) {
+        position: relative;
+        // 180px = 40px margin each side + 100px for camera frame
+        width: calc(100% - 180px);
+        height: 160px;
+        margin: 120px 120px 0 60px;
+        padding: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        ul, li {
+          height: 160px;
+        }
+      }
+
+    } // .screen
+
+    // The content that shows to the left/above the screen
+    // (General styling are in the _sliders.scss file)
+    .text {
+      width: calc(50% - 80px);
+      left: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      // md breakpoint
+      @media (max-width: $breakpoint-md-max) {
+        width: calc(55% - 80px);
+      }
+      // xs breakpoint
+      // On mobile, remove absolute position and put the laptop above the text
+      @media (max-width: $breakpoint-xs-max) {
+        position: relative;
+        // 100px = 50px margin each side
+        width: calc(100% - 100px);
+        margin: 60px 50px 0 50px;
+        padding: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        transform: none;
+        text-align: center;
+      }
+
+    } // .text
+
+  }
+
+}

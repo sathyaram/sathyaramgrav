@@ -1,0 +1,38 @@
+/**
+ * Keyframe Animations
+ * Copyright 2018 Sathya Ram
+ */
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Overlay
+
+// Rotate full 360 (Logo)
+@keyframes logo-rotate {
+  0%   { transform: translateX(-50%) rotate(0deg) $transfix; }
+  100% { transform: translateX(-50%) rotate(360deg) $transfix; }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Header
+
+// Title hovering effect
+@keyframes title-hover {
+  0%   { transform: $header-skew translateY(0px); }
+  100% { transform: $header-skew translateY(-12px); }
+}
+
+// The stars travelling from bottom to top
+//  Make them travel an extra 10px each side so they are out of view
+//  If stars are ever set to be bigger than 10px then we'll need to change this
+@keyframes star-travel {
+  0%   { bottom: -10px; }
+  100% { bottom: calc(100% + 10px); }
+}
+
+// The planets travelling from bottom to top
+//  Make them travel an extra 40px each side so they are out of view
+//  If planets are ever set to be bigger than 40px then we'll need to change this
+@keyframes planet-travel {
+  0%   { bottom: -40px; }
+  100% { bottom: calc(100% + 40px); }
+}

@@ -1,0 +1,13 @@
+name: Sathyaram
+version: 0.1.0
+description: This is the theme for Sathya Ram's website.
+icon: rebel
+author:
+  name: Sathya Ram
+  email: sathyatheram@gmail.com
+homepage: https://github.com/sathya-ram/grav-theme-sathyaram
+demo: http://sathyaram.com
+keywords: sathyaram, sathya, ram, web, website, development, design, photography
+bugs: https://github.com/sathya-ram/grav-theme-sathyaram/issues
+readme: https://github.com/sathya-ram/grav-theme-sathyaram/blob/develop/README.md
+license: MIT

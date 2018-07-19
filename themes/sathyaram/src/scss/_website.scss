@@ -1,0 +1,194 @@
+/**
+ * Website & Graphic Design Section's Styles
+ * Copyright 2018 Sathya Ram
+ */
+
+#_web,
+#_graphic {
+
+  .background {
+
+    // The .laptop element is the screen itself. We build the frame and base
+    // using pseudo elements. This makes positioning easier because we know the
+    // image must align with the .laptop element, so we don't have to deal
+    // with margin, padding, children etc, we can simply use the same dimensions
+    // as this element has.
+    .laptop {
+      display: block;
+      position: absolute;
+      width: 50%; // lg breakpoint value
+      height: 320px; // lg breakpoint value
+      margin: 0;
+      padding: 0;
+      top: calc(50% - 160px); // lg breakpoint value
+      right: 10px;
+      background: $website-laptop-screen-bg;
+
+      // md breakpoint
+      @media (max-width: $breakpoint-md-max) {
+        width: 45%;
+        height: 246px;
+        top: calc(50% - 123px);
+      }
+      // sm breakpoint
+      @media (max-width: $breakpoint-sm-max) {
+        width: 40%;
+        height: 152px;
+        top: calc(50% - 76px);
+      }
+      // xs breakpoint
+      // On mobile, remove absolute position and put the laptop above the text
+      @media (max-width: $breakpoint-xs-max) {
+        position: relative;
+        width: calc(100% - 100px);
+        height: 152px;
+        margin: 80px 50px 0 50px;
+        padding: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+
+      // Laptop frame & base
+      &::before,
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: -50px;
+        // md breakpoint
+        @media (max-width: $breakpoint-md-max) {
+          bottom: -30px;
+        }
+      }
+
+      // Laptop frame
+      &::before {
+        top: -50px;
+        left: -10px;
+        right: -10px;
+        z-index: -1;
+        border-radius: 10px;
+        border: $website-laptop-frame-border;
+        background: $website-laptop-frame-bg;
+        box-shadow: $website-laptop-frame-shadow;
+        // md breakpoint
+        @media (max-width: $breakpoint-md-max) {
+          top: -30px;
+        }
+        // sm breakpoint
+        @media (max-width: $breakpoint-xs-max) {
+          box-shadow: $website-laptop-frame-shadow-sm;
+        }
+        // xs breakpoint
+        @media (max-width: $breakpoint-xs-max) {
+          box-shadow: $website-laptop-frame-shadow-xs;
+        }
+      }
+
+      // Laptop base
+      &::after {
+        top: auto;
+        left: -5%;
+        right: -5%;
+        height: 24px;
+        border: $website-laptop-base-border;
+        background: $website-laptop-base-bg;
+        border-radius: 0 0 24px 24px;
+        // md breakpoint
+        @media (max-width: $breakpoint-md-max) {
+          height: 16px;
+          border-radius: 0 0 16px 16px;
+        }
+      }
+
+    } // .laptop
+
+  } // .background
+
+  // Each slide in the horizontal slider (<article>)
+  .slide {
+
+    // The content for the slide, that is meant to align
+    // exactly with the laptops's screen
+    // (General styling are in the _sliders.scss file)
+    .screen {
+      width: 50%;
+      height: 320px; // lg value
+      top: calc(50% - 160px);
+      right: 10px;
+      // lightSlider uses lists, make sure they conform to the screen size
+      ul, li {
+        height: 320px;
+      }
+
+      // md breakpoint
+      @media (max-width: $breakpoint-md-max) {
+        width: 45%;
+        height: 246px;
+        top: calc(50% - 123px);
+        ul, li {
+          height: 246px;
+        }
+      }
+      // sm breakpoint
+      @media (max-width: $breakpoint-sm-max) {
+        width: 40%;
+        height: 152px;
+        top: calc(50% - 76px);
+        ul, li {
+          height: 152px;
+        }
+      }
+      // xs breakpoint
+      // On mobile, remove absolute position and put the laptop above the text
+      @media (max-width: $breakpoint-xs-max) {
+        position: relative;
+        width: calc(100% - 100px);
+        height: 152px;
+        margin: 80px 50px 0 50px;
+        padding: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        ul, li {
+          height: 152px;
+        }
+      }
+    }
+
+    // The content that shows to the left/above the screen
+    // (General styling are in the _sliders.scss file)
+    .text {
+      width: calc(50% - 120px);
+      left: 70px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      // md breakpoint
+      @media (max-width: $breakpoint-md-max) {
+        width: calc(55% - 120px);
+      }
+      // sm breakpoint
+      @media (max-width: $breakpoint-sm-max) {
+        width: calc(60% - 120px);
+      }
+      // xs breakpoint
+      // On mobile, remove absolute position and put the laptop above the text
+      @media (max-width: $breakpoint-xs-max) {
+        position: relative;
+        width: calc(100% - 100px);
+        margin: 60px 50px 0 50px;
+        padding: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        transform: none;
+        text-align: center;
+      }
+    }
+  }
+}

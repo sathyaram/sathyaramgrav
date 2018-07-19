@@ -1,0 +1,17 @@
+/**
+ * Critical-path styles
+ *
+ * These styles are inserted directly into the <head> using a <style> tag. This
+ * means the portion of the page that is visible on pageload can be rendered
+ * before the browser has received the stylesheet in a subsequent request.
+ *
+ * Since the loading overlay shows on pageload, we can simply just use the
+ * overlay styles for the critical-path.
+ */
+
+// Import SathyaRam.com Styles
+@import 'reset';
+@import 'functions';
+@import 'variables';
+@import 'animations';
+@import 'overlay';

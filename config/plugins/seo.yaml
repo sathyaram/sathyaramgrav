@@ -1,0 +1,7 @@
+enabled: false
+article: true
+restaurant: true
+event: true
+organization: true
+musicevent: true
+person: true
