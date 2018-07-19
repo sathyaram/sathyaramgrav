@@ -8,7 +8,8 @@
   background: radial-gradient(ellipse at bottom, #1f3b60 0%, #090a0f 100%);
   color: $color-white;
   text-align: center;
-  x-index: 9;
+  z-index: 9;
+  padding: 150px 0;
 
   .wrapper {
     font-size: 2em;

@@ -15,7 +15,7 @@ $(document).ready(function() {
   // Relevant Elements
 
   // The slide itself
-  var $header = $('#_home');
+  var $header = $('header');
   // The wrapper for all space elements
   var $space = $header.find('.space');
   // The wrapper for all regular stars

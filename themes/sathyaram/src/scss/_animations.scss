@@ -28,11 +28,3 @@
   0%   { bottom: -10px; }
   100% { bottom: calc(100% + 10px); }
 }
-
-// The planets travelling from bottom to top
-//  Make them travel an extra 40px each side so they are out of view
-//  If planets are ever set to be bigger than 40px then we'll need to change this
-@keyframes planet-travel {
-  0%   { bottom: -40px; }
-  100% { bottom: calc(100% + 40px); }
-}
