@@ -2,25 +2,117 @@
   display: block;
   width: 100%;
   margin: 0;
-  padding: 50px 0;
+  padding: 50px ($photo-grid-gutter-xs / 2) 0 ($photo-grid-gutter-xs / 2);
+
+  @media (min-width: $breakpoint-sm-min) {
+    padding-left: ($photo-grid-gutter-sm / 2);
+    padding-right: ($photo-grid-gutter-sm / 2);
+  }
+  @media (min-width: $breakpoint-md-min) {
+    padding-left: ($photo-grid-gutter-md / 2);
+    padding-right: ($photo-grid-gutter-md / 2);
+  }
+  @media (min-width: $breakpoint-lg-min) {
+    padding-left: ($photo-grid-gutter-lg / 2);
+    padding-right: ($photo-grid-gutter-lg / 2);
+  }
 
   > h1 {
     font-family: $section-title-font;
-    font-size: 84px;
+    font-size: 56px;
     margin: 0 0 50px 0;
-    padding: 0;
+    padding: 0 10px;
     color: #947e92;
     @include size-container;
+
+    @media (min-width: $breakpoint-sm-min) {
+      font-size: 64px;
+      padding: 0;
+    }
+    @media (min-width: $breakpoint-md-min) {
+      font-size: 72px;
+    }
+    @media (min-width: $breakpoint-lg-min) {
+      font-size: 84px;
+    }
   }
 
   > ul {
     @include size-container;
+
     li {
       display: inline-block;
       font-family: $font-title;
+      font-weight: 400;
       margin: 0 10px;
       letter-spacing: 1px;
       text-transform: uppercase;
+      font-size: 16px;
+      line-height: 32px;
+      cursor: pointer;
+      color: $photo-filter-color;
+      transition: color .125s ease;
+      &:hover {
+        color: $photo-filter-color-hover;
+      }
+      &:active,
+      &.active {
+        color: $photo-filter-color-active;
+      }
+    }
+  }
+
+  .grid {
+    display: block;
+    width: 100%;
+    margin: 40px 0;
+    padding: 0;
+  }
+
+  .sizer,
+  .item {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: #{$photo-grid-width-xs};
+
+    @media (min-width: $breakpoint-sm-min) {
+      width: #{$photo-grid-width-sm};
+    }
+    @media (min-width: $breakpoint-md-min) {
+      width: #{$photo-grid-width-md};
+    }
+    @media (min-width: $breakpoint-lg-min) {
+      width: #{$photo-grid-width-lg};
+    }
+  }
+
+  .item {
+    padding: ($photo-grid-gutter-xs / 2);
+    cursor: pointer;
+
+    @media (min-width: $breakpoint-sm-min) {
+      padding: ($photo-grid-gutter-sm / 2);
+    }
+    @media (min-width: $breakpoint-md-min) {
+      padding: ($photo-grid-gutter-md / 2);
+    }
+    @media (min-width: $breakpoint-lg-min) {
+      padding: ($photo-grid-gutter-lg / 2);
+    }
+
+    img {
+      width: 100%;
+      opacity: 1;
+      transform: scale(1) translateZ(0);
+      transition: opacity .2s ease;
+    }
+
+    &:hover {
+      img {
+        opacity: .85;
+      }
     }
   }
 
