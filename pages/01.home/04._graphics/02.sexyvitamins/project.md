@@ -1,13 +1,4 @@
 ---
-title: 'SexyVitamins'
-tagline: 'Graphic Branding Project'
-section_slug: 'sexy-vitamins'
-color_type: 'gradient'
-color_val: 'linear-gradient(to right, #00dbde, #fc00ff)'
-taxonomy:
-  tag:
-    - Design
-    - Branding
-    - 'Product Design'
+title: 'GERTRUDE HAWK GOODIES'
+bg_style: 'linear-gradient(rgba(27, 117, 186, 0.45), rgba(19, 188, 255, 0.45)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/14859975272_47b06f17a3_o-compressor.jpg)'
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus augue at tortor vulputate suscipit. Fusce vestibulum fermentum orci, quis tincidunt justo luctus nec. Vivamus ut lacus dui. Quisque pellentesque lacus ac condimentum suscipit. Cras eget maximus purus. In scelerisque ipsum et tellus porttitor, non mollis neque egestas.

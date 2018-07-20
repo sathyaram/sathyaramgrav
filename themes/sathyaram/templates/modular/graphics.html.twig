@@ -1,2 +1,32 @@
-<section id="{{ page.header.section_slug }}"></section>
+<section id="{{ page.header.section_slug }}">
 
+    <h1>Graphic</h1>
+
+    <div class="wrapper">
+        {% for project in page.collection.order('default') %}
+            <article
+              class="graphic {{ project.header.section_classes }}"
+              style="background-image: {{ project.header.bg_style }};">
+                {{ project.header.pre_html }}
+                <h1>{{ project.title }}</h1>
+                {% if project.header.tagline %}
+                    <h2>{{ project.header.tagline }}</h2>
+                {% endif %}
+                {% if (project.content or project.taxonomy.tag) %}
+                    <hr>
+                {% endif %}
+                {% if project.taxonomy.tag %}
+                    <ul>
+                        {% for tag in project.taxonomy.tag %}
+                            <li>{{ tag }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                {% if project.content %}
+                    <p>{{ project.content }}</p>
+                {% endif %}
+            </article>
+        {% endfor %}
+    </div>
+
+</section>

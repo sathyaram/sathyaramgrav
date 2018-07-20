@@ -3,35 +3,17 @@
  * Copyright 2018 Sathya Ram
  */
 
-// Import fullPage 2.9.7
-// https://github.com/alvarotrigo/fullpage.js
-@import 'vendor/jquery.fullpage';
-
-// Import lightSlider 1.1.6
-// https://github.com/sachinchoolur/lightslider
-@import 'vendor/lightslider';
-
-// Import lightgallery 1.6.11
-// https://github.com/sachinchoolur/lightGallery
-@import 'vendor/lightgallery';
-
-/*!
- * Styles for sathyaram.com
- * Copyright 2018 Sathya Ram
- */
-
 // Import SathyaRam.com Styles
-// @import 'reset';
+// @import 'reset';       // <-- In critical styles
 @import 'fonts';
 @import 'functions';
 @import 'variables';
-// @import 'animations';
+// @import 'animations';  // <-- In critical styles
 @import 'global';
-// @import 'overlay';
+// @import 'overlay';     // <-- In critical styles
 @import 'forms';
-@import 'header';         // Slide 1
-@import 'services';       // Slide 2
-@import 'sliders';        // Slide 3, 4 and 5
-@import 'website';        // Slide 3 and 4
-@import 'photography';    // Slide 5
-@import 'footer';         // Slide 6
+@import 'header';         // Section 1
+@import 'services';       // Section 2
+@import 'website';        // Section 3 & 4
+@import 'photography';    // Section 5
+@import 'footer';         // Section 6

@@ -1,9 +1,9 @@
 ---
-title: 'Fudtruk'
-tagline: 'Local Food Truck'
+title: 'Lehigh Portal'
+tagline: "Lehigh's Luminis Portal Redesign"
 section_classes: 'full-width'
-bg_style: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/fudtruk-uc3-compressor.png)'
-pre_html: '<div id="fud"><span></span><span></span><span></span></div>'
+bg_style: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/portal3-compressor.png)'
+pre_html: ''
 taxonomy:
   tag:
     - Graphic

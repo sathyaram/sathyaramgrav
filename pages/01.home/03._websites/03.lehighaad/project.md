@@ -1,9 +1,9 @@
 ---
-title: 'Fudtruk'
-tagline: 'Local Food Truck'
-section_classes: 'full-width'
-bg_style: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/fudtruk-uc3-compressor.png)'
-pre_html: '<div id="fud"><span></span><span></span><span></span></div>'
+title: 'Arts, Architecture & Design'
+tagline: "Lehigh University's AAD Department"
+section_classes: ''
+bg_style: 'linear-gradient(to right, rgba(239, 164, 55, 0.45), #efa437), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/teacher_student-compressor.jpg)'
+pre_html: ''
 taxonomy:
   tag:
     - Graphic

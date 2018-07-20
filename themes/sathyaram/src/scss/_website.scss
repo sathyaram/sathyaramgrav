@@ -1,0 +1,167 @@
+#web,
+#graphic {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+
+  > h1 {
+    font-family: $section-title-font;
+    font-size: 84px;
+    margin: 0 0 50px 0;
+    padding: 0;
+    color: #947e92;
+    @include size-container;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @include size-container;
+  }
+
+  article {
+    transition: all 300ms ease;
+    flex: 1 50%;
+    text-align: left;
+    padding: 50px;
+    border: 10px solid white;
+    box-sizing: border-box;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.35);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    // Full-width for all <sm
+    @media (max-width: $breakpoint-sm-max) {
+      flex: 1 100%;
+      min-height: initial;
+    }
+
+    // The Fudtruk burger
+    > div {
+      width: 36px;
+      height: 50px;
+      span {
+        display: block;
+        background: #fff;
+        width: 100%;
+        height: 4px;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 5px 0;
+        transition: all 300ms ease;
+        border-radius: 50px;
+        &:first-child {
+          animation: topbun 6s infinite ease-in-out;
+        }
+        &:nth-child(2) {
+          animation: meat 6s infinite ease-in-out;
+        }
+        &:last-child {
+          animation: bottombun 6s infinite ease-in-out;
+        }
+      }
+    }
+
+    // Hover effects
+    &:hover {
+      border: 5px solid rgba(255, 255, 255, 0.8);
+      &:nth-child(1) {
+        h1 {
+          text-shadow:
+            0 0 20px #fefcc9,
+            10px -10px 30px #feec85,
+            -20px -20px 40px #ffae34,
+            20px -40px 50px #ec760c,
+            -20px -60px 60px #cd4606,
+            0 -80px 70px #973716,
+            10px -90px 80px #451b0e;
+        }
+      }
+      hr {
+        width: 15%;
+        box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    // Full-width variant
+    &.full-width {
+      text-align: center;
+      min-height: 640px;
+      flex: 1 100%;
+      align-items: center;
+    }
+
+    // Graphic variant
+    &.graphic {
+      justify-content: flex-end;
+    }
+
+    hr {
+      width: 5%;
+      transition: all 300ms ease;
+      border: 1px solid white;
+      background: white;
+      margin: 20px 0;
+    }
+
+    h1 {
+      color: white;
+      font-family: $font-title;
+      letter-spacing: 5px;
+      transition: all 300ms ease;
+      font-size: 40px;
+      word-wrap: break-word;
+      line-height: 120%;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      font-family: $font-title;
+      color: white;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+
+    ul {
+      display: inline-block;
+      font-family: $font-title;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      text-shadow: none;
+
+      li {
+        display: inline-block;
+        border-radius: 2px;
+        padding: 7px;
+        text-shadow: none;
+        margin: 0 2px;
+        background: white;
+        color: black;
+        letter-spacing: 1px;
+      }
+    }
+
+    p {
+      padding-top: 20px;
+      color: white;
+      display: block;
+      max-width: 500px;
+      line-height: 130%;
+      font-family: $font-body;
+    }
+
+  } //article
+
+} //#web

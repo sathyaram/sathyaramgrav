@@ -1,0 +1,27 @@
+#photography {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+
+  > h1 {
+    font-family: $section-title-font;
+    font-size: 84px;
+    margin: 0 0 50px 0;
+    padding: 0;
+    color: #947e92;
+    @include size-container;
+  }
+
+  > ul {
+    @include size-container;
+    li {
+      display: inline-block;
+      font-family: $font-title;
+      margin: 0 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+}

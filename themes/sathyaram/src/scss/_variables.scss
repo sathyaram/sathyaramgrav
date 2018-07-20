@@ -30,9 +30,9 @@ $color-youtube:   #c12e2f;
 // Typography
 
 // Fonts
-$font-title:  'aquatico', sans-serif;
-$font-body:   'Exo 2', sans-serif;
-$font-script: 'Tahu', cursive;
+$font-title:  'Fredoka One', sans-serif;
+$font-body:   'Jura', sans-serif;
+$font-script: 'Jura', cursive;
 $font-icon:   FontAwesome;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,9 +50,9 @@ $breakpoint-sm-max: ($breakpoint-md-min - 1);
 $breakpoint-md-max: ($breakpoint-lg-min - 1);
 
 // Container widths
-$container-sm:  688px;
-$container-md:  890px;
-$container-lg: 1160px;
+$container-sm:  700px;
+$container-md:  910px;
+$container-lg: 1200px;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Miscellaneous
@@ -81,7 +81,7 @@ $transfix: translateZ(0);
 $header-bg-color:      #000;
 $header-image:         none;
 $header-image-opacity: 0;
-$header-grad:          radial-gradient(ellipse at bottom, #0c1d3a 0%, black 100%);
+$header-grad:          radial-gradient(ellipse at bottom, #051c56 0%, black 100%);
 $header-grad-opacity:  1;
 // - REMOVED (Ref)
 // $header-image:         url('../images/header.jpg');
@@ -96,13 +96,13 @@ $header-icon-size:        24px;
 $header-skew: skewY(-5deg);
 
 // The main title (SATHYA RAM)
-$header-h1-font:   $font-title;
+$header-h1-font:   'aquatico', sans-serif;
 $header-h1-color:  #fff;
 $header-h1-size:   100px;
 $header-h1-shadow: 0 0 5px #fff, 0 0 20px #60c0f0;
 
 // The subtitle (Designer, Developer, Photographer)
-$header-h2-font:   $font-title;
+$header-h2-font:   'aquatico', sans-serif;
 $header-h2-color:  #fff;
 $header-h2-size:   18px;
 $header-h2-shadow: 0px 0px 28px #fff;
@@ -117,66 +117,6 @@ $header-star-shadow:
   0 0 2em 1px rgba(#60c0f0, .3);
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Slider sections (Website, Graphics, Photography)
+// Website/Graphic/Photography Sections
 
-// The background of the entire section
-$section-bg: #fff;
-
-// The title of the section
-$section-title-color: $color-purple;
-$section-title-size:  20px;
-
-// The fullPage control buttons (next/prev) for the section
-$section-button-perspective:   200px;
-$section-button-rotate:        15deg;
-$section-button-rotate-hover:  20deg;
-$section-button-rotate-active: 25deg;
-$section-button-fade-dur:      .3s;
-$section-button-rotate-dur:    .15s;
-$section-button-shadow-left:   10px 10px 60px 0px rgba(0, 0, 0, 0.15);
-$section-button-shadow-right:  -10px 10px 60px 0px rgba(0, 0, 0, 0.15);
-
-// The styles for horizontal slides that are not active
-// The active slide will have these styled as default so it displays normally
-$section-slide-scale:         0.25;
-$section-slide-opacity:       0.25;
-$section-slide-rotate-left:   45deg;
-$section-slide-rotate-right: -45deg;
-
-// The <h1> for the slide
-$section-h1-color: #000;
-// The <h2> for the slide
-$section-h2-color: #222;
-// The <h3> for the slide
-$section-h3-color: #333;
-// The <p> for the slide
-$section-p-color:  #333;
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Website Section
-
-// Laptop screen
-$website-laptop-screen-bg: #fff;
-
-// Laptop base
-$website-laptop-base-bg:     #f6f6f6;
-$website-laptop-base-border: 1px solid rgba(0, 0, 0, 0.05);
-
-// Laptop frame
-$website-laptop-frame-bg:     #eee;
-$website-laptop-frame-border: 1px solid rgba(0, 0, 0, 0.05);
-
-$website-laptop-frame-shadow:
-  rgba(0, 0, 0, 0.05) 0px 1.3px 2.6px 0px,
-  rgba(0, 0, 0, 0.2) 0px 39px 65px 0px,
-  rgba(0, 0, 0, 0.1) 0px 39px 90px 0px;
-
-$website-laptop-frame-shadow-sm:
-  rgba(0, 0, 0, 0.05) 0px 1px 2px 0px,
-  rgba(0, 0, 0, 0.2) 0px 20px 32px 0px,
-  rgba(0, 0, 0, 0.1) 0px 20px 45px 0px;
-
-$website-laptop-frame-shadow-xs:
-  rgba(0, 0, 0, 0.05) 0px 1px 2px 0px,
-  rgba(0, 0, 0, 0.1) 0px 10px 16px 0px,
-  rgba(0, 0, 0, 0.05) 0px 10px 20px 0px;
+$section-title-font: $font-title;
