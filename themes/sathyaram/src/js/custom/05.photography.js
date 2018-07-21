@@ -31,4 +31,7 @@ $(document).ready(function() {
     $filter.addClass('active');
   });
 
+  // Initialize LightGallery on the photo grid
+  $grid.lightGallery();
+
 });
