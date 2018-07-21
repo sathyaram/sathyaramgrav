@@ -166,7 +166,7 @@
   background-color: rgba(0, 0, 0, 0.45);
 }
 .lg-toolbar .lg-icon {
-  color: #999;
+  color: lighten($color-purple, 10%);
   cursor: pointer;
   float: right;
   font-size: 24px;
@@ -182,7 +182,7 @@
   transition: color 0.2s linear;
 }
 .lg-toolbar .lg-icon:hover {
-  color: #FFF;
+  color: lighten($color-purple, 30%);
 }
 .lg-toolbar .lg-close:after {
   content: "\e070";
@@ -214,9 +214,11 @@
 }
 
 #lg-counter {
-  color: #999;
+  color: $color-purple;
   display: inline-block;
-  font-size: 16px;
+  font-family: $font-body;
+  font-weight: bold;
+  font-size: 18px;
   padding-left: 20px;
   padding-top: 12px;
   vertical-align: middle;
@@ -266,7 +268,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-  background-color: #0D0A0A;
+  background-color: #000;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -308,13 +310,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: -5px;
 }
 .lg-outer .lg-thumb-item {
-  border-radius: 5px;
+  // border-radius: 5px;
   cursor: pointer;
   float: left;
   overflow: hidden;
   height: 100%;
-  border: 2px solid #FFF;
-  border-radius: 4px;
+  // border: 2px solid #FFF;
+  // border-radius: 4px;
   margin-bottom: 5px;
 }
 @media (min-width: 1025px) {
@@ -461,7 +463,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transition: opacity 0.08s ease 0s;
 }
 .lg-progress-bar .lg-progress {
-  background-color: #a90707;
+  background-color: $color-purple;
   height: 5px;
   width: 0;
 }

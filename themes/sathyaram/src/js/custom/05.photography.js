@@ -32,6 +32,28 @@ $(document).ready(function() {
   });
 
   // Initialize LightGallery on the photo grid
-  $grid.lightGallery();
+  $grid.lightGallery({
+    animateThumb: true,
+    autoplay: false,
+    cssEasing: 'ease',
+    currentPagerPosition: 'middle',
+    download: false,
+    easing: 'swing',
+    fullscreen: true,
+    hash: false,
+    mode: 'lg-zoom-in-out', // http://sachinchoolur.github.io/lightGallery/demos/transitions.html
+    pullCaptionUp: true,
+    selector: 'a',
+    share: false,
+    speed: 600,
+    showThumbByDefault: true,
+    thumbnail: true,
+    thumbContHeight: 100,
+    thumbWidth: 100,
+    thumbHeight: '80px',
+    thumbMargin: 5,
+    toogleThumb: false,
+    zoom: true
+  });
 
 });

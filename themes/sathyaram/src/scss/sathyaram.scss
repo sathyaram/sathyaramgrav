@@ -1,20 +1,19 @@
-// lightgallery - v1.6.11
-@import 'vendor/lightgallery';
-@import 'vendor/lightgallery-transitions';
-
 /*!
  * Styles for sathyaram.com
  * Copyright 2018 Sathya Ram
  */
 
 // Import SathyaRam.com Styles
-// @import 'reset';       // <-- In critical styles
 @import 'fonts';
 @import 'functions';
 @import 'variables';
-// @import 'animations';  // <-- In critical styles
+
+// lightgallery - v1.6.11
+@import 'vendor/lightgallery';
+@import 'vendor/lightgallery-transitions';
+
+// Import SathyaRam.com Styles
 @import 'global';
-// @import 'overlay';     // <-- In critical styles
 @import 'forms';
 @import 'header';         // Section 1
 @import 'services';       // Section 2
