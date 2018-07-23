@@ -1,12 +1,2 @@
 # Ignore node modules
 /node_modules
-
-# Ignore compiled assets
-/css/sathyaram.css
-/css/sathyaram.min.css
-/templates/critical/critical.html.twig
-/templates/critical/critical.min.html.twig
-/js/sathyaram.js
-/js/sathyaram.min.js
-/js/vendor.js
-/js/vendor.min.js
