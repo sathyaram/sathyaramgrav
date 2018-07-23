@@ -52,7 +52,7 @@ $(document).ready(function() {
     thumbWidth: 100,
     thumbHeight: '80px',
     thumbMargin: 5,
-    toogleThumb: false,
+    toogleThumb: true,
     zoom: true
   });
 
