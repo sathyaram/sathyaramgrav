@@ -2231,14 +2231,6 @@ header {
     #graphic article:hover hr {
       width: 15%;
       box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); }
-    #web article.full-width,
-    #graphic article.full-width {
-      text-align: center;
-      min-height: 640px;
-      -ms-flex: 1 100%;
-      flex: 1 100%;
-      -ms-flex-align: center;
-      align-items: center; }
     #web article.graphic,
     #graphic article.graphic {
       -ms-flex-pack: end;
@@ -2253,6 +2245,28 @@ header {
       #graphic article.graphic:hover > :first-child {
         -webkit-transform: translateZ(0) scale(1.15);
         transform: translateZ(0) scale(1.15); }
+    #web article.full-width,
+    #graphic article.full-width {
+      text-align: center;
+      min-height: 640px;
+      -ms-flex: 1 100%;
+      flex: 1 100%;
+      -ms-flex-align: center;
+      align-items: center; }
+      #web article.full-width > :last-child,
+      #graphic article.full-width > :last-child {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 640px;
+        -ms-flex: 1 100%;
+        flex: 1 100%;
+        -ms-flex-align: center;
+        align-items: center; }
     #web article hr,
     #graphic article hr {
       width: 5%;

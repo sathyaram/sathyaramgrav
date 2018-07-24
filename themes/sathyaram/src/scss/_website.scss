@@ -92,14 +92,6 @@
       }
     }
 
-    // Full-width variant
-    &.full-width {
-      text-align: center;
-      min-height: 640px;
-      flex: 1 100%;
-      align-items: center;
-    }
-
     // Graphic variant
     &.graphic {
       justify-content: flex-end;
@@ -113,6 +105,23 @@
         > :first-child {
           transform: translateZ(0) scale(1.15);
         }
+      }
+    }
+
+    // Full-width variant
+    &.full-width {
+      text-align: center;
+      min-height: 640px;
+      flex: 1 100%;
+      align-items: center;
+      > :last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        min-height: 640px;
+        flex: 1 100%;
+        align-items: center;
       }
     }
 
