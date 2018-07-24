@@ -2243,6 +2243,16 @@ header {
     #graphic article.graphic {
       -ms-flex-pack: end;
       justify-content: flex-end; }
+      #web article.graphic > :first-child,
+      #graphic article.graphic > :first-child {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; }
+      #web article.graphic:hover > :first-child,
+      #graphic article.graphic:hover > :first-child {
+        -webkit-transform: translateZ(0) scale(1.15);
+        transform: translateZ(0) scale(1.15); }
     #web article hr,
     #graphic article hr {
       width: 5%;

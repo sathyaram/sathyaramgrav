@@ -103,6 +103,17 @@
     // Graphic variant
     &.graphic {
       justify-content: flex-end;
+      > :first-child {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      &:hover {
+        > :first-child {
+          transform: translateZ(0) scale(1.15);
+        }
+      }
     }
 
     hr {
