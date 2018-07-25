@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "gulpfile.js",
-  "scripts": {},
+  "scripts": {
+    "build": "gulp build"
+  },
   "keywords": [],
   "author": "Luke Sims",
   "license": "Proprietary",

@@ -92,7 +92,7 @@ header {
       transition: color $trans, transform $trans;
       color: $header-icon-color;
 
-      i {
+      .fa {
         font-size: $header-icon-size;
       }
 
