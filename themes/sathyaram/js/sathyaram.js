@@ -139,7 +139,7 @@ $(document).ready(function() {
   // Relevant elements
   var $overlay  = $('#overlay');
   var $logoOver = $('#loader img');
-  var $logoHead = $('#_home .logo');
+  var $logoHead = $('main > header .logo');
 
   // Get the location of the header's logo
   var newTop = $logoHead.css('top');
@@ -149,12 +149,20 @@ $(document).ready(function() {
   $logoOver.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
     // Fade out the rest of the overlay
     $overlay.addClass('transparent');
-    // Move the logo to the same position as the header's logo
-    $logoOver.animate({ top: newTop }, SR.overlay.dur, 'swing', function() {
+    // If we're at the very top of the page, animate the logo to the same
+    // position as the header's logo
+    if ($(window).scrollTop() === 0) {
+      // Move the logo to the same position as the header's logo
+      $logoOver.animate({ top: newTop }, SR.overlay.dur, 'swing', function() {
+        // Switch the logos
+        $logoHead.css('opacity', '1');
+        $overlay.fadeOut();
+      });
+    } else {
       // Switch the logos
       $logoHead.css('opacity', '1');
-      $overlay.hide();
-    });
+      $overlay.fadeOut();
+    }
   });
 
 });
@@ -458,16 +466,16 @@ $(document).ready(function() {
   SR.reveal('section > h1', {
     distance: '25%',
     origin: 'left',
-    viewFactor: 1
+    viewFactor: 0.25
   });
 
   // Animate the full-width section articles
   SR.reveal('section > .wrapper > article.full-width', {
-    viewFactor: 0.5
+    viewFactor: 0.25
   });
   // Animate the regular section articles
   SR.reveal('section > .wrapper > article:not(.full-width)', {
-    viewFactor: 0.5
+    viewFactor: 0.25
   });
 
   // Animate the filter list in the photography section
@@ -478,3 +486,54 @@ $(document).ready(function() {
 
 });
 
+
+$(document).ready(function() {
+
+  // All of the page's sections
+  var $sections = $('header').add($('section[id]')).add($('footer'));
+
+  // Detect which section we have scrolled to
+  function detectSection() {
+    // Get the current offset of all sections
+    var sections = getSections();
+    // Determine the current scroll distance of the window
+    var scroll = $(window).scrollTop();
+    // The selected offset object
+    var selected = null;
+    // Loop the sections
+    for (var offset in sections) {
+      if (offset <= scroll) {
+        selected = sections[offset];
+      }
+    }
+    // Return the section we selected
+    return selected;
+  }
+
+  // Returns an array containing objects describing each section and its scroll offset
+  function getSections() {
+    var sections = {};
+    $sections.each(function(index) {
+      sections[$(this).offset().top] = $(this).attr('id');
+    });
+    return sections;
+  }
+
+  // Sets the page's URL using the history API
+  function setURL(newpath) {
+    history.pushState('', document.title, '/' + newpath);
+  }
+
+  // Updates the page's URL based on the current section
+  function updateURL() {
+    var section = detectSection();
+    if (section === undefined) section = '';
+    setURL(section);
+  }
+
+  // When scrolling, update the URL
+  $(window).scroll(updateURL);
+  // Run the above functionality on pageload
+  updateURL();
+
+});

@@ -135,10 +135,10 @@ $photo-grid-gutter-md: 14px;
 $photo-grid-gutter-lg: 18px;
 
 // Number of columns at each breakpoint
-$photo-grid-cols-xs: 3;
-$photo-grid-cols-sm: 4;
-$photo-grid-cols-md: 5;
-$photo-grid-cols-lg: 6;
+$photo-grid-cols-xs: 2;
+$photo-grid-cols-sm: 3;
+$photo-grid-cols-md: 3;
+$photo-grid-cols-lg: 4;
 
 // Actual column width at each breakpoint
 // (shouldn't need to change - just use `photo-grid-cols-*` above)

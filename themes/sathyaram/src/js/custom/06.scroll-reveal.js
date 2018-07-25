@@ -33,16 +33,16 @@ $(document).ready(function() {
   SR.reveal('section > h1', {
     distance: '25%',
     origin: 'left',
-    viewFactor: 1
+    viewFactor: 0.25
   });
 
   // Animate the full-width section articles
   SR.reveal('section > .wrapper > article.full-width', {
-    viewFactor: 0.5
+    viewFactor: 0.25
   });
   // Animate the regular section articles
   SR.reveal('section > .wrapper > article:not(.full-width)', {
-    viewFactor: 0.5
+    viewFactor: 0.25
   });
 
   // Animate the filter list in the photography section
