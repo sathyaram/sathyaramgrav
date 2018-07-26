@@ -1,0 +1,8 @@
+{% if form.message %}
+    {% set icon_map = { 'success':'check', 'error':'times', 'warning':'exclamation' } %}
+    {% set message = form.inline_errors and form.messages ? "FORM.VALIDATION_FAIL"|t : form.message %}
+    <div class="alert alert-{{ form.status }}">
+        <span class="icon"><i class="fa fa-{{ icon_map[form.status] }}"></i></span>
+        {{ message }}
+    </div>
+{% endif %}
