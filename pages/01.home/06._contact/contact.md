@@ -1,15 +1,19 @@
 ---
 title: 'Contact'
+cache_enable: false
 form:
   name: 'contact-form'
+  action: '/home#contact'
+  method: 'POST'
   fields:
     -
       type: 'text'
       name: 'name'
       label: 'Name'
       placeholder: 'Enter your name'
-      autofocus: 'on'
       autocomplete: 'off'
+      autocorrect: 'off'
+      spellcheck: 'off'
       validate:
         required: true
     -
@@ -18,6 +22,8 @@ form:
       label: 'Email'
       placeholder: 'Enter your email address'
       autocomplete: 'off'
+      autocorrect: 'off'
+      spellcheck: 'off'
       validate:
         required: true
     -
@@ -26,28 +32,25 @@ form:
       label: 'Message'
       placeholder: 'Enter your message'
       autocomplete: 'off'
+      autocorrect: 'off'
       validate:
         required: true
   buttons:
-    -
+    submit:
       type: 'submit'
       value: 'Send'
   process:
-    -
-      email:
-        to: 'lukesims52@gmail.com'
-        from: '{{ form.value.email }}'
-        reply_to: '{{ form.value.email }}'
-        subject: 'SathyaRam.com Contact Form - {{ form.value.name }}'
-        body: '{% include ''forms/emails/contact.html.twig'' %}'
-    -
-      save:
-        fileprefix: 'contact-'
-        dateformat: 'Ymd-His-u'
-        extension: 'txt'
-        body: '{% include ''forms/logs/contact.html.twig'' %}'
-    -
-      message: 'Thank you for getting in touch!'
-    -
-      display: thankyou
+    email:
+      to: 'sathyatheram@gmail.com'
+      from: '{{ form.value.email|e }}'
+      reply_to: '{{ form.value.email|e }}'
+      subject: 'SathyaRam.com Contact Form - {{ form.value.name|e }}'
+      body: '{% include ''forms/data.html.twig'' %}'
+    save:
+      fileprefix: 'contact-form--'
+      dateformat: 'Ymd-His-u'
+      extension: 'txt'
+      body: '{% include ''forms/data.txt.twig'' %}'
+    message: 'Thank you for getting in touch!'
+    reset: true
 ---

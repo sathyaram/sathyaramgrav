@@ -1,9 +1,9 @@
 title: 'Sathya Ram'
-default_lang: en
+default_lang: 'en'
 author:
   name: 'Sathya Ram'
-  email: sathyatheram@gmail.com
-  location: Netherlands
+  email: 'sathyatheram@gmail.com'
+  location: 'United States of America'
 taxonomies:
   - tag
 metadata:
@@ -13,9 +13,4 @@ summary:
   format: short
   size: 300
   delimiter: '==='
-blog:
-  route: /blog
 subtitle: 'Designer ✧ Developer ✧ Photographer'
-websites: 'website box text at the top goes here EDIT CONFIG --> SITE'
-graphics: 'graphics box text at the top goes here EDIT CONFIG --> SITE'
-photography: 'photography box text at the top goes here EDIT CONFIG --> SITE'
