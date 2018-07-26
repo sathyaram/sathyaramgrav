@@ -1,0 +1,110 @@
+<footer id="contact">
+
+    <!-- NOT ALWAYS VISIBLE -->
+
+    <div class="alert alert-success">
+        <span class="icon"><i class="fa fa-check"></i></span>
+        Thank you for getting in touch!
+    </div>
+
+    <div class="alert alert-error">
+        <div class="icon"><i class="fa fa-times"></i></div>
+        <b>Validation failed:</b> <br>Invalid input in "Email"
+    </div>
+
+    <!-- / NOT ALWAYS VISIBLE -->
+
+    <form name="contact-form" action="/home" method="POST" id="contact-form" class=" ">
+
+        <div class="form-field">
+            <div class="form-label">
+                <label class="inline">
+                    Name <span class="required">*</span>
+                </label>
+            </div>
+            <div
+              class="form-data"
+              data-grav-field="text"
+              data-grav-disabled="false"
+              data-grav-default="null">
+                <div class="form-input-wrapper">
+                    <input
+                      name="data[name]"
+                      value="luke"
+                      type="text"
+                      class=" "
+                      placeholder="Enter your name"
+                      autofocus="autofocus"
+                      autocomplete="off"
+                      required="required">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-field has-errors">
+            <div class="form-label">
+                <label class="inline">
+                    Email <span class="required">*</span>
+                </label>
+            </div>
+            <div
+              class="form-data"
+              data-grav-field="email"
+              data-grav-disabled="false"
+              data-grav-default="null">
+                <div class="form-input-wrapper">
+                    <input
+                      name="data[email]"
+                      value="luke@luke"
+                      type="email"
+                      class=" "
+                      placeholder="Enter your email address"
+                      autocomplete="off"
+                      required="required">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <div class="form-label">
+                <label class="inline">
+                    Message <span class="required">*</span>
+                </label>
+            </div>
+            <div
+              class="form-data"
+              data-grav-field="textarea"
+              data-grav-disabled="false"
+              data-grav-default="null">
+                <div class="form-textarea-wrapper">
+                    <textarea
+                      name="data[message]"
+                      class=" "
+                      placeholder="Enter your message"
+                      autocomplete="off"
+                      required="required"
+                    >hello</textarea>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="__form-name__" value="contact-form">
+
+        <div class="buttons">
+            <button class="button" type="submit">Send</button>
+        </div>
+
+        <input
+          type="hidden"
+          name="__unique_form_id__"
+          value="4F0zvOQcntKVMuLX1bGJ">
+        <input
+          type="hidden"
+          name="form-nonce"
+          value="d80710f239ca4ace3a4db8b652b6b023">
+
+    </form>
+
+    <div class="copyright">&copy; 2018 Sathya Ram</div>
+
+</footer>

@@ -1621,67 +1621,6 @@ section {
   height: auto; }
 
 /**
- * Form Styles
- * Copyright 2018 Sathya Ram
- */
-label.required::after {
-  content: '*';
-  color: #f3443f; }
-
-textarea,
-input[type='email'],
-input[type='number'],
-input[type='tel'],
-input[type='text'],
-input[type='date'] {
-  display: block;
-  width: 100%;
-  margin: 0 0 15px 0;
-  padding: 6px;
-  background: snow;
-  font-family: "Jura", sans-serif;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  outline: none;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  transition: border 0.3s ease; }
-  textarea:hover,
-  input[type='email']:hover,
-  input[type='number']:hover,
-  input[type='tel']:hover,
-  input[type='text']:hover,
-  input[type='date']:hover {
-    outline: none;
-    border-color: #bbb; }
-  textarea:focus,
-  input[type='email']:focus,
-  input[type='number']:focus,
-  input[type='tel']:focus,
-  input[type='text']:focus,
-  input[type='date']:focus {
-    outline: none;
-    border-color: #fff;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(205, 135, 69, 0.7); }
-
-textarea {
-  resize: none; }
-
-button {
-  margin-top: 15px;
-  border-radius: 3px;
-  color: #000;
-  border: 1px solid #fff;
-  text-transform: uppercase;
-  background: #fff;
-  padding: 12px 16px 8px 16px;
-  font-family: "Fredoka One", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  cursor: pointer; }
-
-/**
  * Header Styles
  * (Relevant JavaScript: "/user/themes/sathyaram/src/js/custom/header.js")
  * Copyright 2018 Sathya Ram
@@ -2492,23 +2431,52 @@ header {
   color: #fff;
   text-align: center;
   z-index: 9;
-  padding: 150px 0; }
-  #contact .wrapper {
-    font-size: 2em; }
-  #contact h2 {
+  padding: 100px 0;
+  min-height: 100vh; }
+  #contact .container {
+    display: block;
+    padding: 0 50px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 768px) {
+      #contact .container {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 992px) {
+      #contact .container {
+        width: 910px; } }
+    @media (min-width: 1280px) {
+      #contact .container {
+        width: 1200px; } }
+    @media (min-width: 768px) {
+      #contact .container {
+        padding: 0 10%; } }
+    @media (min-width: 992px) {
+      #contact .container {
+        padding: 0 15%; } }
+    @media (min-width: 1280px) {
+      #contact .container {
+        padding: 0 20%; } }
+  #contact h1 {
     display: block;
     width: 100%;
-    margin: 0;
+    margin: 0 0 50px 0;
     padding: 0;
-    font-size: 24px;
-    font-family: "Fredoka One", sans-serif; }
-  #contact .form-wrapper {
-    max-width: 640px;
-    margin: 32px auto;
-    padding: 36px;
-    border: 1px solid #ddd;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 2px; }
+    color: #889BB4;
+    font-size: 56px;
+    font-family: "Fredoka One", sans-serif;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #contact h1 {
+        font-size: 64px; } }
+    @media (min-width: 992px) {
+      #contact h1 {
+        font-size: 72px; } }
+    @media (min-width: 1280px) {
+      #contact h1 {
+        font-size: 84px; } }
   #contact .copyright {
     position: absolute;
     margin: 0;
@@ -2517,5 +2485,156 @@ header {
     right: 0;
     bottom: 0;
     text-align: center;
-    font-size: 12px;
-    font-family: "Fredoka One", sans-serif; }
+    font-size: 16px;
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.85); }
+  #contact form {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  #contact .alert {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 0 25px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    border-bottom-right-radius: 0;
+    font-family: "Jura", sans-serif;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    overflow: hidden; }
+    #contact .alert .icon {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 54px;
+      height: 54px;
+      top: 0;
+      left: 0;
+      font-size: 28px;
+      line-height: 54px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.85); }
+    #contact .alert.alert-success {
+      border-color: #1A8247;
+      background: rgba(84, 176, 124, 0.25); }
+      #contact .alert.alert-success .icon {
+        color: #1A8247; }
+    #contact .alert.alert-error {
+      border-color: #B74324;
+      background: rgba(246, 145, 118, 0.25); }
+      #contact .alert.alert-error .icon {
+        color: #B74324; }
+  #contact .form-field {
+    display: block;
+    width: 100%;
+    margin: 0 0 25px 0;
+    padding: 0;
+    text-align: left; }
+  #contact .form-label {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: "Jura", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #889BB4;
+    letter-spacing: 1px; }
+  #contact .required {
+    color: #B74324;
+    font-size: 1.6em;
+    font-weight: 400; }
+  #contact .form-input-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  #contact input,
+  #contact textarea {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid transparent;
+    outline: none;
+    font-family: "Jura", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    transition: background .3s ease, border .3s ease; }
+    #contact input::-webkit-input-placeholder,
+    #contact textarea::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.65); }
+    #contact input::-moz-placeholder,
+    #contact textarea::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.65); }
+    #contact input:-ms-input-placeholder,
+    #contact textarea:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.65); }
+    #contact input::-ms-input-placeholder,
+    #contact textarea::-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.65); }
+    #contact input::placeholder,
+    #contact textarea::placeholder {
+      color: rgba(0, 0, 0, 0.65); }
+    #contact input:focus,
+    #contact textarea:focus {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #889BB4; }
+  #contact textarea {
+    height: 200px;
+    line-height: 32px;
+    padding: 10px 15px;
+    resize: none; }
+  #contact .buttons {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    #contact .buttons button {
+      display: inline-block;
+      height: 60px;
+      margin: 0 15px;
+      padding: 0 25px;
+      background: #6981a0;
+      color: rgba(255, 255, 255, 0.85);
+      font-family: "Jura", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 56px;
+      border: 2px solid rgba(255, 255, 255, 0.35);
+      outline: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: color .3s ease, background .3s ease; }
+      #contact .buttons button:hover {
+        color: rgba(255, 255, 255, 0.95);
+        background: #5d7493; }
+      #contact .buttons button:active {
+        color: white;
+        background: #536883; }
+  #contact .has-errors .form-label {
+    color: #B74324; }
+  #contact .has-errors input,
+  #contact .has-errors textarea {
+    border-color: #B74324; }
