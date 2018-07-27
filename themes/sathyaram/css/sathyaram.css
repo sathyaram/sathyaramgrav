@@ -2376,6 +2376,39 @@ header {
         color: #947e92; }
       #photography > ul li:active, #photography > ul li.active {
         color: #ff9b4c; }
+  #photography .content {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-family: "Jura", sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #474747; }
+    @media (min-width: 768px) {
+      #photography .content {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 992px) {
+      #photography .content {
+        width: 910px; } }
+    @media (min-width: 1280px) {
+      #photography .content {
+        width: 1200px; } }
+    #photography .content > div {
+      display: none; }
+      #photography .content > div.active {
+        display: block; }
+    #photography .content p {
+      display: block;
+      margin: 0 0 25px 0; }
+      #photography .content p:last-child {
+        margin-bottom: 0; }
   #photography .grid {
     display: block;
     width: 100%;

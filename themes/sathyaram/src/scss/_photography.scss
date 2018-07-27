@@ -62,6 +62,34 @@
     }
   }
 
+  .content {
+    @include size-container;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-family: $font-body;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #474747;
+
+    > div {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+
+    p {
+      display: block;
+      margin: 0 0 25px 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .grid {
     display: block;
     width: 100%;
