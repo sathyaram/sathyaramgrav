@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   var $photography = $('#photography');
+  var $content = $photography.find('.content');
   var $grid = $photography.find('.grid');
   var $filters = $photography.find('ul').find('li');
 
@@ -29,6 +30,13 @@ $(document).ready(function() {
     // Update the classes on the filters
     $filters.removeClass('active');
     $filter.addClass('active');
+    // Update the visible section
+    $content.find('.active').fadeOut(150, function() {
+      $(this).removeClass('active');
+      $('.content').find('[data-filter="'+filter+'"]').fadeIn(150, function() {
+        $(this).addClass('active');
+      });
+    });
   });
 
   // Initialize LightGallery on the photo grid
