@@ -5,7 +5,7 @@
   margin: 0;
   padding: 50px 0;
 
-  > h1 {
+  > h2 {
     font-family: $section-title-font;
     font-size: 56px;
     margin: 0 0 50px 0;
@@ -88,7 +88,7 @@
       }
 
       &:nth-child(1) {
-        h1 {
+        h3 {
           text-shadow:
             0 0 20px #fefcc9,
             10px -10px 30px #feec85,
@@ -146,7 +146,7 @@
       margin: 20px 0;
     }
 
-    h1 {
+    h3 {
       color: white;
       font-family: $font-title;
       letter-spacing: 5px;
@@ -158,7 +158,7 @@
       padding-bottom: 20px;
     }
 
-    h2 {
+    h4 {
       font-family: $font-title;
       color: white;
       letter-spacing: 1px;

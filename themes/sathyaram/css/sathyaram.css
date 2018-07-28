@@ -2062,8 +2062,8 @@ header {
   width: 100%;
   margin: 0;
   padding: 50px 0; }
-  #web > h1,
-  #graphic > h1 {
+  #web > h2,
+  #graphic > h2 {
     font-family: "Fredoka One", sans-serif;
     font-size: 56px;
     margin: 0 0 50px 0;
@@ -2074,36 +2074,36 @@ header {
     margin-left: 0;
     margin-right: 0; }
     @media (min-width: 420px) {
-      #web > h1,
-      #graphic > h1 {
+      #web > h2,
+      #graphic > h2 {
         width: 400px;
         margin-left: auto;
         margin-right: auto; } }
     @media (min-width: 768px) {
-      #web > h1,
-      #graphic > h1 {
+      #web > h2,
+      #graphic > h2 {
         width: 700px; } }
     @media (min-width: 992px) {
-      #web > h1,
-      #graphic > h1 {
+      #web > h2,
+      #graphic > h2 {
         width: 910px; } }
     @media (min-width: 1280px) {
-      #web > h1,
-      #graphic > h1 {
+      #web > h2,
+      #graphic > h2 {
         width: 1200px; } }
     @media (min-width: 768px) {
-      #web > h1,
-      #graphic > h1 {
+      #web > h2,
+      #graphic > h2 {
         text-align: left;
         padding: 0;
         font-size: 64px; } }
     @media (min-width: 992px) {
-      #web > h1,
-      #graphic > h1 {
+      #web > h2,
+      #graphic > h2 {
         font-size: 72px; } }
     @media (min-width: 1280px) {
-      #web > h1,
-      #graphic > h1 {
+      #web > h2,
+      #graphic > h2 {
         font-size: 84px; } }
   #web .wrapper,
   #graphic .wrapper {
@@ -2186,8 +2186,8 @@ header {
       right: 0;
       bottom: 0;
       left: 0; }
-    #web article:hover:nth-child(1) h1,
-    #graphic article:hover:nth-child(1) h1 {
+    #web article:hover:nth-child(1) h3,
+    #graphic article:hover:nth-child(1) h3 {
       text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
     #web article:hover hr,
     #graphic article:hover hr {
@@ -2236,8 +2236,8 @@ header {
       border: 1px solid white;
       background: white;
       margin: 20px 0; }
-    #web article h1,
-    #graphic article h1 {
+    #web article h3,
+    #graphic article h3 {
       color: white;
       font-family: "Fredoka One", sans-serif;
       letter-spacing: 5px;
@@ -2247,8 +2247,8 @@ header {
       line-height: 120%;
       text-transform: uppercase;
       padding-bottom: 20px; }
-    #web article h2,
-    #graphic article h2 {
+    #web article h4,
+    #graphic article h4 {
       font-family: "Fredoka One", sans-serif;
       color: white;
       letter-spacing: 1px;
@@ -2323,7 +2323,7 @@ header {
     #photography {
       padding-left: 9px;
       padding-right: 9px; } }
-  #photography > h1 {
+  #photography > h2 {
     font-family: "Fredoka One", sans-serif;
     font-size: 56px;
     margin: 0 0 50px 0;
@@ -2333,28 +2333,28 @@ header {
     margin-left: 0;
     margin-right: 0; }
     @media (min-width: 420px) {
-      #photography > h1 {
+      #photography > h2 {
         width: 400px;
         margin-left: auto;
         margin-right: auto; } }
     @media (min-width: 768px) {
-      #photography > h1 {
+      #photography > h2 {
         width: 700px; } }
     @media (min-width: 992px) {
-      #photography > h1 {
+      #photography > h2 {
         width: 910px; } }
     @media (min-width: 1280px) {
-      #photography > h1 {
+      #photography > h2 {
         width: 1200px; } }
     @media (min-width: 768px) {
-      #photography > h1 {
+      #photography > h2 {
         font-size: 64px;
         padding: 0; } }
     @media (min-width: 992px) {
-      #photography > h1 {
+      #photography > h2 {
         font-size: 72px; } }
     @media (min-width: 1280px) {
-      #photography > h1 {
+      #photography > h2 {
         font-size: 84px; } }
   #photography > ul {
     width: 100%;
@@ -2512,7 +2512,7 @@ header {
     @media (min-width: 1280px) {
       #contact .container {
         padding: 0 20%; } }
-  #contact h1 {
+  #contact h2 {
     display: block;
     width: 100%;
     margin: 0 0 50px 0;
@@ -2522,13 +2522,13 @@ header {
     font-family: "Fredoka One", sans-serif;
     text-align: center; }
     @media (min-width: 768px) {
-      #contact h1 {
+      #contact h2 {
         font-size: 64px; } }
     @media (min-width: 992px) {
-      #contact h1 {
+      #contact h2 {
         font-size: 72px; } }
     @media (min-width: 1280px) {
-      #contact h1 {
+      #contact h2 {
         font-size: 84px; } }
   #contact .copyright {
     position: absolute;

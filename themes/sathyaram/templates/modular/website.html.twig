@@ -1,6 +1,6 @@
 <section id="{{ page.header.section_slug }}">
 
-    <h1>Web</h1>
+    <h2>Web</h2>
 
     <div class="wrapper">
         {% for project in page.collection.order('default') %}
@@ -8,9 +8,9 @@
                 <div style="background-image: {{ project.header.bg_style }};"></div>
                 <div>
                     {{ project.header.pre_html }}
-                    <h1>{{ project.title }}</h1>
+                    <h3>{{ project.title }}</h3>
                     {% if project.header.tagline %}
-                        <h2>{{ project.header.tagline }}</h2>
+                        <h4>{{ project.header.tagline }}</h4>
                     {% endif %}
                     {% if project.content or project.taxonomy.tag %}
                         <hr>
