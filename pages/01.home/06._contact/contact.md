@@ -3,7 +3,7 @@ title: 'Contact'
 cache_enable: false
 form:
   name: 'contact-form'
-  action: '/home#contact'
+  action: '/#contact'
   method: 'POST'
   fields:
     -
@@ -35,13 +35,22 @@ form:
       autocorrect: 'off'
       validate:
         required: true
+    -
+      type: 'captcha'
+      name: 'g-recaptcha-response'
+      label: false
+      outerclasses: 'form-field-center'
+      recaptcha_site_key: "{{ config.env.recaptcha_public_key }}"
+      recaptcha_not_validated: 'Please fill our the reCAPTCHA field!'
+      validate:
+        required: true
   buttons:
     submit:
       type: 'submit'
       value: 'Send'
   process:
     email:
-      to: 'sathyatheram@gmail.com'
+      to: '{{ config.env.contact_form_email }}'
       from: '{{ form.value.email|e }}'
       reply_to: '{{ form.value.email|e }}'
       subject: 'SathyaRam.com Contact Form - {{ form.value.name|e }}'
@@ -52,5 +61,7 @@ form:
       extension: 'txt'
       body: '{% include ''forms/data.txt.twig'' %}'
     message: 'Thank you for getting in touch!'
+    captcha:
+      recaptcha_secret: '{{ config.env.recaptcha_private_key }}'
     reset: true
 ---
