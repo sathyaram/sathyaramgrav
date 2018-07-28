@@ -8,6 +8,11 @@
   // Smallest breakpoint, full-width
   width: 100%;
   left: 0;
+  // 'mj' breakpoint
+  @media (min-width: $breakpoint-mj-min) {
+    width: $container-mj;
+    left: calc(50% - #{($container-mj / 2)});
+  }
   // 'sm' breakpoint
   @media (min-width: $breakpoint-sm-min) {
     width: $container-sm;
@@ -30,11 +35,15 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  // 'mj' breakpoint
+  @media (min-width: $breakpoint-mj-min) {
+    width: $container-mj;
+    margin-left: auto;
+    margin-right: auto;
+  }
   // 'sm' breakpoint
   @media (min-width: $breakpoint-sm-min) {
     width: $container-sm;
-    margin-left: auto;
-    margin-right: auto;
   }
   // 'md' breakpoint
   @media (min-width: $breakpoint-md-min) {

@@ -1662,7 +1662,7 @@ header {
       header .logo {
         width: 80px;
         top: 20px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 419px) {
       header .logo {
         width: 60px; } }
   header .content {
@@ -1682,7 +1682,7 @@ header {
     @media (max-width: 991px) {
       header nav {
         padding-bottom: 35px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 419px) {
       header nav {
         padding-bottom: 25px; } }
     header nav a {
@@ -1728,7 +1728,7 @@ header {
     @media (max-width: 991px) {
       header h1 {
         font-size: 80px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 419px) {
       header h1 {
         font-size: 40px; } }
   header h2 {
@@ -1747,7 +1747,7 @@ header {
     @media (max-width: 991px) {
       header h2 {
         font-size: 15.99998px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 419px) {
       header h2 {
         font-size: 13.99999px; } }
   header .space,
@@ -1837,7 +1837,7 @@ header {
       #services .card-wrapper {
         width: 250px;
         height: 300px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 419px) {
       #services .card-wrapper {
         margin: auto; } }
   #services .side {
@@ -2073,12 +2073,16 @@ header {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
+    @media (min-width: 420px) {
+      #web > h1,
+      #graphic > h1 {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto; } }
     @media (min-width: 768px) {
       #web > h1,
       #graphic > h1 {
-        width: 700px;
-        margin-left: auto;
-        margin-right: auto; } }
+        width: 700px; } }
     @media (min-width: 992px) {
       #web > h1,
       #graphic > h1 {
@@ -2112,12 +2116,16 @@ header {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
+    @media (min-width: 420px) {
+      #web .wrapper,
+      #graphic .wrapper {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto; } }
     @media (min-width: 768px) {
       #web .wrapper,
       #graphic .wrapper {
-        width: 700px;
-        margin-left: auto;
-        margin-right: auto; } }
+        width: 700px; } }
     @media (min-width: 992px) {
       #web .wrapper,
       #graphic .wrapper {
@@ -2324,11 +2332,14 @@ header {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 420px) {
       #photography > h1 {
-        width: 700px;
+        width: 400px;
         margin-left: auto;
         margin-right: auto; } }
+    @media (min-width: 768px) {
+      #photography > h1 {
+        width: 700px; } }
     @media (min-width: 992px) {
       #photography > h1 {
         width: 910px; } }
@@ -2349,11 +2360,14 @@ header {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 420px) {
       #photography > ul {
-        width: 700px;
+        width: 400px;
         margin-left: auto;
         margin-right: auto; } }
+    @media (min-width: 768px) {
+      #photography > ul {
+        width: 700px; } }
     @media (min-width: 992px) {
       #photography > ul {
         width: 910px; } }
@@ -2389,11 +2403,14 @@ header {
     line-height: 26px;
     letter-spacing: 0.5px;
     color: #474747; }
-    @media (min-width: 768px) {
+    @media (min-width: 420px) {
       #photography .content {
-        width: 700px;
+        width: 400px;
         margin-left: auto;
         margin-right: auto; } }
+    @media (min-width: 768px) {
+      #photography .content {
+        width: 700px; } }
     @media (min-width: 992px) {
       #photography .content {
         width: 910px; } }
@@ -2472,11 +2489,14 @@ header {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 420px) {
       #contact .container {
-        width: 700px;
+        width: 400px;
         margin-left: auto;
         margin-right: auto; } }
+    @media (min-width: 768px) {
+      #contact .container {
+        width: 700px; } }
     @media (min-width: 992px) {
       #contact .container {
         width: 910px; } }
