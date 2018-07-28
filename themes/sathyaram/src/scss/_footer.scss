@@ -9,7 +9,7 @@
   color: $color-white;
   text-align: center;
   z-index: 9;
-  padding: 100px 0;
+  padding: $footer-spacer-lg 0;
   min-height: 100vh;
 
   .container {
@@ -31,11 +31,11 @@
   h1 {
     display: block;
     width: 100%;
-    margin: 0 0 50px 0;
+    margin: 0 0 $footer-spacer-lg 0;
     padding: 0;
-    color: #889BB4;
+    color: $footer-title-color;
     font-size: 56px;
-    font-family: $font-title;
+    font-family: $footer-title-font;
     text-align: center;
 
     @media (min-width: $breakpoint-sm-min) {
@@ -52,16 +52,16 @@
   .copyright {
     position: absolute;
     margin: 0;
-    padding: 20px 0;
+    padding: $footer-spacer;
     left: 0;
     right: 0;
     bottom: 0;
-    text-align: center;
-    font-size: 16px;
-    font-family: $font-body;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: rgba(255, 255, 255, 0.85);
+    text-align: $footer-copy-align;
+    font-size: $footer-copy-size;
+    font-family: $footer-copy-font;
+    font-weight: $footer-copy-weight;
+    letter-spacing: $footer-copy-spacing;
+    color: $footer-copy-color;
   }
 
   form {
@@ -75,46 +75,46 @@
     display: block;
     position: relative;
     width: 100%;
-    margin: 0 0 25px 0;
-    padding: 15px;
+    margin: 0 0 $footer-spacer 0;
+    padding: $footer-spacer-sm;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.85);
-    border-radius: 12px;
+    border-radius: $footer-radius;
     border-bottom-right-radius: 0;
     font-family: $font-body;
     color: rgba(255, 255, 255, 0.85);
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.5px;
+    font-size: $footer-alert-size;
+    font-weight: $footer-alert-weight;
+    line-height: 1.35;
+    letter-spacing: $footer-alert-spacing;
     overflow: hidden;
 
     .icon {
       display: block;
       position: absolute;
       content: '';
-      width: 54px;
-      height: 54px;
+      width: ((1.35 * $footer-alert-size) + (2 * $footer-spacer-sm));
+      height: ((1.35 * $footer-alert-size) + (2 * $footer-spacer-sm));
       top: 0;
       left: 0;
       font-size: 28px;
-      line-height: 54px;
+      line-height: ((1.35 * $footer-alert-size) + (2 * $footer-spacer-sm));
       text-align: center;
       color: rgba(255, 255, 255, 0.85);
     }
 
     &.alert-success {
-      border-color: $color-success;
-      background: rgba($color-success-light, 0.25);
+      border-color: $footer-alert-success-border;
+      background: $footer-alert-success-background;
       .icon {
-        color: $color-success;
+        color: $footer-alert-success-icon;
       }
     }
     &.alert-error {
-      border-color: $color-error;
-      background: rgba($color-error-light, 0.25);
+      border-color: $footer-alert-error-border;
+      background: $footer-alert-error-background;
       .icon {
-        color: $color-error;
+        color: $footer-alert-error-icon;
       }
     }
   }
@@ -122,28 +122,53 @@
   .form-field {
     display: block;
     width: 100%;
-    margin: 0 0 25px 0;
+    margin: 0 0 $footer-spacer 0;
     padding: 0;
     text-align: left;
+
+    &.form-field-center {
+      text-align: center;
+
+      .g-recaptcha {
+        > div {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+    }
+
+    .g-recaptcha {
+      transform: scale(0.9);
+      opacity: 0.85;
+      > div {
+        > div {
+          // border: 1px dashed red;
+          > iframe {
+            border: 2px solid $footer-button-border;
+            border-radius: $footer-radius;
+          }
+        }
+      }
+    }
   }
 
   .form-label {
     display: block;
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 0 $footer-spacer-xs 0;
     padding: 0;
-    font-family: $font-body;
-    font-weight: 600;
+    font-family: $footer-label-font;
+    font-weight: $footer-label-weight;
     font-size: 20px;
     line-height: 24px;
-    color: #889BB4;
-    letter-spacing: 1px;
+    color: $footer-label-color;
+    letter-spacing: $footer-label-spacing;
   }
 
   .required {
-    color: $color-error;
+    color: $footer-label-required-color;
     font-size: 1.6em;
-    font-weight: 400;
+    font-weight: $footer-label-required-weight;
   }
 
   .form-input-wrapper {
@@ -160,35 +185,51 @@
     width: 100%;
     height: 50px;
     margin: 0;
-    padding: 0 15px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid transparent;
+    padding: 0 $footer-spacer-sm;
+    background: $footer-input-background;
+    border: 2px solid $footer-input-border;
     outline: none;
-    font-family: $font-body;
-    font-weight: 600;
-    font-size: 20px;
+    font-family: $footer-input-font;
+    font-weight: $footer-input-weight;
+    font-size: $footer-input-size;
     line-height: 50px;
-    letter-spacing: 0.5px;
-    color: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
+    letter-spacing: $footer-input-spacing;
+    color: $footer-input-color;
+    border-radius: $footer-radius;
     border-top-left-radius: 0;
     transition:
       background .3s ease,
-      border .3s ease;
+      color .3s ease,
+      border-color .3s ease;
 
     &::placeholder {
-      color: rgba(0, 0, 0, 0.65);
+      color: $footer-input-placeholder;
+      transition: color .3s ease;
+    }
+
+    &:hover {
+      background: $footer-input-hover-background;
+      color: $footer-input-hover-color;
+      border-color: $footer-input-hover-border;
+      &::placeholder {
+        color: $footer-input-hover-placeholder;
+      }
     }
 
     &:focus {
-      background: rgba(255, 255, 255, 0.1);
-      border: 2px solid #889BB4;
+      background: $footer-input-focus-background;
+      color: $footer-input-focus-color;
+      border-color: $footer-input-focus-border;
+      &::placeholder {
+        color: $footer-input-focus-placeholder;
+      }
     }
   }
+
   textarea {
     height: 200px;
-    line-height: 32px;
-    padding: 10px 15px;
+    line-height: $footer-textarea-line;
+    padding: $footer-spacer-xs $footer-spacer-sm;
     resize: none;
   }
 
@@ -202,28 +243,33 @@
     button {
       display: inline-block;
       height: 60px;
-      margin: 0 15px;
-      padding: 0 25px;
-      background: darken(#889BB4, 10%);
-      color: rgba(#fff, 0.85);
-      font-family: $font-body;
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+      margin: 0 $footer-spacer-sm;
+      padding: 0 $footer-spacer;
+      background: $footer-button-background;
+      color: $footer-button-color;
+      font-family: $footer-button-font;
+      font-size: $footer-button-size;
+      font-weight: $footer-button-weight;
+      letter-spacing: $footer-button-spacing;
       line-height: 56px;
-      border: 2px solid rgba(255, 255, 255, 0.35);
+      border: 2px solid $footer-button-border;
       outline: none;
-      border-radius: 12px;
+      border-radius: $footer-radius;
       cursor: pointer;
-      transition: color .3s ease, background .3s ease;
+      transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease;
 
       &:hover {
-        color: rgba(#fff, 0.95);
-        background: darken(#889BB4, 15%);
+        color: $footer-button-hover-color;
+        background: $footer-button-hover-background;
+        border-color: $footer-button-hover-border;
       }
       &:active {
-        color: rgba(#fff, 1);
-        background: darken(#889BB4, 20%);
+        color: $footer-button-active-color;
+        background: $footer-button-active-background;
+        border-color: $footer-button-active-border;
       }
     }
   }

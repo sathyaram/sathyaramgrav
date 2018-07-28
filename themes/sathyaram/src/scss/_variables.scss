@@ -7,17 +7,18 @@
 // Colors
 
 // General
-$color-black:    #000;
-$color-white:    #fff;
-$color-midnight: #222639;
-$color-slate:    #303030;
-$color-gray:     #f2f2f2;
-$color-drupal:   #0678be;
-$color-red:      #f3443f;
-$color-purple:   #947e92;
-$color-pink:     #f06292;
-$color-teal:     #26a69a;
-$color-blue:     #29b6f6;
+$color-black:      #000;
+$color-white:      #fff;
+$color-midnight:   #222639;
+$color-slate:      #303030;
+$color-gray:       #f2f2f2;
+$color-drupal:     #0678be;
+$color-red:        #f3443f;
+$color-purple:     #947e92;
+$color-pink:       #f06292;
+$color-teal:       #26a69a;
+$color-blue:       #29b6f6;
+$color-blue-light: #889bb4;
 
 // Social
 $color-twitter:   #4f95fd;
@@ -27,10 +28,10 @@ $color-facebook:  #405797;
 $color-youtube:   #c12e2f;
 
 // Forms
-$color-error:         #B74324;
-$color-error-light:   #F69176;
-$color-success:       #1A8247;
-$color-success-light: #54B07C;
+$color-error:         #b74324;
+$color-error-light:   #f69176;
+$color-success:       #1a8247;
+$color-success-light: #54b07c;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Typography
@@ -152,3 +153,90 @@ $photo-grid-width-xs: percentage((1 / $photo-grid-cols-xs));
 $photo-grid-width-sm: percentage((1 / $photo-grid-cols-sm));
 $photo-grid-width-md: percentage((1 / $photo-grid-cols-md));
 $photo-grid-width-lg: percentage((1 / $photo-grid-cols-lg));
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Footer/Contact
+
+// Common spacing values used in the footer
+$footer-spacer-lg: 50px;
+$footer-spacer:    25px;
+$footer-spacer-sm: 15px;
+$footer-spacer-xs: 10px;
+
+// The border radius value used in the footer - alerts, inputs, buttons
+$footer-radius: 12px;
+
+// The whole section
+$footer-bg: radial-gradient(ellipse at bottom, #1f3b60 0%, #090a0f 100%);
+
+// The section's title
+$footer-title-color:   $color-blue-light;
+$footer-title-font:    $font-title;
+
+// The copyright notice's text styles
+$footer-copy-align:   left;
+$footer-copy-size:    16px;
+$footer-copy-color:   rgba(255, 255, 255, 0.85);
+$footer-copy-font:    $font-body;
+$footer-copy-weight:  700;
+$footer-copy-spacing: 0.5px;
+
+// The form message alert's text styles
+$footer-alert-size:    18px;
+$footer-alert-weight:  600;
+$footer-alert-spacing: 0.5px;
+// The form message alert's color themes
+$footer-alert-success-border:     $color-success;
+$footer-alert-success-background: rgba($color-success-light, 0.25);
+$footer-alert-success-icon:       $color-success;
+$footer-alert-error-border:       $color-error;
+$footer-alert-error-background:   rgba($color-error-light, 0.25);
+$footer-alert-error-icon:         $color-error;
+
+// Form labels
+$footer-label-font:    $font-body;
+$footer-label-weight:  600;
+$footer-label-color:   $color-blue-light;
+$footer-label-spacing: 1px;
+// Required asterisk
+$footer-label-required-color:  $color-error;
+$footer-label-required-weight: 400;
+
+// Form inputs/textareas
+$footer-input-background:  rgba(255, 255, 255, 0.05);
+$footer-input-border:      transparent;
+$footer-input-font:        $font-body;
+$footer-input-weight:      600;
+$footer-input-size:        20px;
+$footer-input-spacing:     0.5px;
+$footer-input-color:       rgba(255, 255, 255, 0.7);
+$footer-input-placeholder: rgba(0, 0, 0, 0.65);
+// :hover
+$footer-input-hover-background:  rgba(255, 255, 255, 0.075);
+$footer-input-hover-color:       $footer-input-color;
+$footer-input-hover-border:      $footer-input-border;
+$footer-input-hover-placeholder: $footer-input-placeholder;
+// :focus
+$footer-input-focus-background:  rgba(255, 255, 255, 0.1);
+$footer-input-focus-color:       rgba(255, 255, 255, 0.9);
+$footer-input-focus-border:      $color-blue-light;
+$footer-input-focus-placeholder: $footer-input-placeholder;
+// Textarea
+$footer-textarea-line: 32px;
+
+// Submit button
+$footer-button-background: darken(#889BB4, 10%);
+$footer-button-color:      rgba(#fff, 0.85);
+$footer-button-font:       $font-body;
+$footer-button-size:       24px;
+$footer-button-weight:     700;
+$footer-button-spacing:    0.5px;
+$footer-button-border:     rgba(255, 255, 255, 0.35);
+// :hover
+$footer-button-hover-background: darken($color-blue-light, 15%);
+$footer-button-hover-color:      rgba(#fff, 0.95);
+$footer-button-hover-border:     $footer-button-border;
+// :active
+$footer-button-active-background: darken($color-blue-light, 20%);
+$footer-button-active-color:      rgba(#fff, 1);
+$footer-button-active-border:     $footer-button-border;

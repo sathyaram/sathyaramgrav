@@ -2464,7 +2464,7 @@ header {
   color: #fff;
   text-align: center;
   z-index: 9;
-  padding: 100px 0;
+  padding: 50px 0;
   min-height: 100vh; }
   #contact .container {
     display: block;
@@ -2497,7 +2497,7 @@ header {
     width: 100%;
     margin: 0 0 50px 0;
     padding: 0;
-    color: #889BB4;
+    color: #889bb4;
     font-size: 56px;
     font-family: "Fredoka One", sans-serif;
     text-align: center; }
@@ -2513,11 +2513,11 @@ header {
   #contact .copyright {
     position: absolute;
     margin: 0;
-    padding: 20px 0;
+    padding: 25px;
     left: 0;
     right: 0;
     bottom: 0;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     font-family: "Jura", sans-serif;
     font-weight: 700;
@@ -2542,37 +2542,49 @@ header {
     color: rgba(255, 255, 255, 0.85);
     font-size: 18px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.35;
     letter-spacing: 0.5px;
     overflow: hidden; }
     #contact .alert .icon {
       display: block;
       position: absolute;
       content: '';
-      width: 54px;
-      height: 54px;
+      width: 54.3px;
+      height: 54.3px;
       top: 0;
       left: 0;
       font-size: 28px;
-      line-height: 54px;
+      line-height: 54.3px;
       text-align: center;
       color: rgba(255, 255, 255, 0.85); }
     #contact .alert.alert-success {
-      border-color: #1A8247;
+      border-color: #1a8247;
       background: rgba(84, 176, 124, 0.25); }
       #contact .alert.alert-success .icon {
-        color: #1A8247; }
+        color: #1a8247; }
     #contact .alert.alert-error {
-      border-color: #B74324;
+      border-color: #b74324;
       background: rgba(246, 145, 118, 0.25); }
       #contact .alert.alert-error .icon {
-        color: #B74324; }
+        color: #b74324; }
   #contact .form-field {
     display: block;
     width: 100%;
     margin: 0 0 25px 0;
     padding: 0;
     text-align: left; }
+    #contact .form-field.form-field-center {
+      text-align: center; }
+      #contact .form-field.form-field-center .g-recaptcha > div {
+        margin-left: auto !important;
+        margin-right: auto !important; }
+    #contact .form-field .g-recaptcha {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      opacity: 0.85; }
+      #contact .form-field .g-recaptcha > div > div > iframe {
+        border: 2px solid rgba(255, 255, 255, 0.35);
+        border-radius: 12px; }
   #contact .form-label {
     display: block;
     width: 100%;
@@ -2582,10 +2594,10 @@ header {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #889BB4;
+    color: #889bb4;
     letter-spacing: 1px; }
   #contact .required {
-    color: #B74324;
+    color: #b74324;
     font-size: 1.6em;
     font-weight: 400; }
   #contact .form-input-wrapper {
@@ -2609,29 +2621,70 @@ header {
     font-size: 20px;
     line-height: 50px;
     letter-spacing: 0.5px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.7);
     border-radius: 12px;
     border-top-left-radius: 0;
-    transition: background .3s ease, border .3s ease; }
+    transition: background .3s ease, color .3s ease, border-color .3s ease; }
     #contact input::-webkit-input-placeholder,
     #contact textarea::-webkit-input-placeholder {
-      color: rgba(0, 0, 0, 0.65); }
+      color: rgba(0, 0, 0, 0.65);
+      transition: color .3s ease; }
     #contact input::-moz-placeholder,
     #contact textarea::-moz-placeholder {
-      color: rgba(0, 0, 0, 0.65); }
+      color: rgba(0, 0, 0, 0.65);
+      transition: color .3s ease; }
     #contact input:-ms-input-placeholder,
     #contact textarea:-ms-input-placeholder {
-      color: rgba(0, 0, 0, 0.65); }
+      color: rgba(0, 0, 0, 0.65);
+      transition: color .3s ease; }
     #contact input::-ms-input-placeholder,
     #contact textarea::-ms-input-placeholder {
-      color: rgba(0, 0, 0, 0.65); }
+      color: rgba(0, 0, 0, 0.65);
+      transition: color .3s ease; }
     #contact input::placeholder,
     #contact textarea::placeholder {
-      color: rgba(0, 0, 0, 0.65); }
+      color: rgba(0, 0, 0, 0.65);
+      transition: color .3s ease; }
+    #contact input:hover,
+    #contact textarea:hover {
+      background: rgba(255, 255, 255, 0.075);
+      color: rgba(255, 255, 255, 0.7);
+      border-color: transparent; }
+      #contact input:hover::-webkit-input-placeholder,
+      #contact textarea:hover::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.65); }
+      #contact input:hover::-moz-placeholder,
+      #contact textarea:hover::-moz-placeholder {
+        color: rgba(0, 0, 0, 0.65); }
+      #contact input:hover:-ms-input-placeholder,
+      #contact textarea:hover:-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.65); }
+      #contact input:hover::-ms-input-placeholder,
+      #contact textarea:hover::-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.65); }
+      #contact input:hover::placeholder,
+      #contact textarea:hover::placeholder {
+        color: rgba(0, 0, 0, 0.65); }
     #contact input:focus,
     #contact textarea:focus {
       background: rgba(255, 255, 255, 0.1);
-      border: 2px solid #889BB4; }
+      color: rgba(255, 255, 255, 0.9);
+      border-color: #889bb4; }
+      #contact input:focus::-webkit-input-placeholder,
+      #contact textarea:focus::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.65); }
+      #contact input:focus::-moz-placeholder,
+      #contact textarea:focus::-moz-placeholder {
+        color: rgba(0, 0, 0, 0.65); }
+      #contact input:focus:-ms-input-placeholder,
+      #contact textarea:focus:-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.65); }
+      #contact input:focus::-ms-input-placeholder,
+      #contact textarea:focus::-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.65); }
+      #contact input:focus::placeholder,
+      #contact textarea:focus::placeholder {
+        color: rgba(0, 0, 0, 0.65); }
   #contact textarea {
     height: 200px;
     line-height: 32px;
@@ -2659,15 +2712,17 @@ header {
       outline: none;
       border-radius: 12px;
       cursor: pointer;
-      transition: color .3s ease, background .3s ease; }
+      transition: background .3s ease, color .3s ease, border-color .3s ease; }
       #contact .buttons button:hover {
         color: rgba(255, 255, 255, 0.95);
-        background: #5d7493; }
+        background: #5d7493;
+        border-color: rgba(255, 255, 255, 0.35); }
       #contact .buttons button:active {
         color: white;
-        background: #536883; }
+        background: #536883;
+        border-color: rgba(255, 255, 255, 0.35); }
   #contact .has-errors .form-label {
-    color: #B74324; }
+    color: #b74324; }
   #contact .has-errors input,
   #contact .has-errors textarea {
-    border-color: #B74324; }
+    border-color: #b74324; }
