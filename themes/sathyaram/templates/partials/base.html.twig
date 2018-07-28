@@ -9,6 +9,13 @@
     {% include 'partials/metadata.html.twig' %}
     {% include 'partials/favicon.html.twig' %}
     <title>{{ config.site.title }}</title>
+    {# Google Analytics #}
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-68620459-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
     {# Create a block for stylesheets so it can be overriden in children #}
     {% block stylesheets %}
         {# Register stylesheets with the Asset Manager #}
