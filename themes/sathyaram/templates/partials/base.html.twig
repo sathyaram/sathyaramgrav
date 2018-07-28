@@ -19,6 +19,8 @@
     {{ assets.css() }}
     {# Output the critical-path CSS #}
     <style type="text/css">{% include 'critical/critical.min.html.twig' %}</style>
+    {# jQuery #}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     {# The overlay and loading spinner #}
@@ -46,9 +48,6 @@
     {# Create a block for scripts so it can be overriden in children #}
     {% block scripts %}
         {# Register scripts with the Asset Manager #}
-        {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {
-            'priority': 102,
-        }) %}
         {% do assets.addJs('theme://js/vendor.min.js', {
             'priority': 101,
         }) %}
