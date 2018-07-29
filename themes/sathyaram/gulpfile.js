@@ -21,12 +21,8 @@
 var gulp         = require('gulp-help')(require('gulp'));
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS     = require('gulp-clean-css');
-var colors       = require('colors');
 var concat       = require('gulp-concat');
-var gm           = require('gulp-gm');
-var imagemin     = require('gulp-imagemin');
 var log          = require('fancy-log');
-var newer        = require('gulp-newer');
 var notify       = require('gulp-notify');
 var path         = require('path');
 var rename       = require('gulp-rename');
@@ -82,12 +78,6 @@ var paths = {
       watch: './src/js/vendor/**/*.js', // A glob of files to watch for changes
       output: './js'                    // The directory to write the output file to
     }
-  },
-  // Paths related to the Images
-  images: {
-    base: './src/images',         // A base parameter to pass to gulp.src
-    input: './src/images/**/*.*', // A glob of input images to compress
-    output: './images'            // Directory to output compressed images to
   }
 };
 
@@ -112,9 +102,6 @@ var autoPrefix = { browsers: browserList, cascade: false };
 
 // The configuration for the gulp-size plugin
 var showSizes  = { pretty: true, showFiles: true, showTotal: true };
-
-// The maximum size for images (width or height)
-var maxImageSize = 2000;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Build Functionality
@@ -281,51 +268,6 @@ gulp.task(
   'Watches all of the JavaScript for changes and rebuilds',
   ['watch:js:custom', 'watch:js:vendor']
 );
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Images
-
-// Optimizes/compresses all images in the ./src/images directory
-gulp.task('optimize', 'Optimizes/compresses the images', function() {
-  return gulp
-    // Select our original, non-optimized images
-    .src(paths.images.input, { base: paths.images.base })
-    // Only process images that are new, or have been updated
-    .pipe(newer(paths.images.output))
-    // Use GraphicsMagick to resize the images if necessary
-    .pipe(gm(function(gmfile, done) {
-      // Get the filepath, relative to the theme dir
-      var filePath = path.relative(__dirname, gmfile.source);
-      // Get the file's current dimensions first
-      gmfile.size(function(err, size) {
-        var msg, newFile;
-        // Only need to resize if either dimension exceeds our limit
-        if (size.width > maxImageSize || size.height > maxImageSize) {
-          msg = 'Resized'.cyan;
-          // If its width is longer than height
-          if (size.width > size.height) newFile = gmfile.resize(maxImageSize);
-          // If its height is longer than width
-          else if (size.width < size.height) newFile = gmfile.resize(null, maxImageSize);
-          // If it's a square
-          else newFile = gmfile.resize(maxImageSize, maxImageSize);
-        }
-        // No modifications to be made
-        else {
-          msg = 'Skipped'.grey;
-          newFile = gmfile;
-        }
-        msg = '  ' + msg;
-        msg += ' - (' + size.width + 'x' + size.height + ')';
-        msg += ' ' + filePath;
-        log(msg);
-        done(null, newFile);
-      });
-    }))
-    // Compress the images using imagemin
-    .pipe(imagemin())
-    // Output the modified images
-    .pipe(gulp.dest(paths.images.output));
-});
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // General
