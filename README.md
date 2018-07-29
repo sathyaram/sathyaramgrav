@@ -10,6 +10,19 @@
 4. Clone the repository into a new `/user` folder:
     * `> git clone https://sathyatheram@bitbucket.org/sathyatheram/sathyaram.git user`
 
+### Environment Variables
+
+There is a configuration file that is specific the current environment. This is
+for definining passwords, API keys and other sensitive information that should
+not be committed to this repository.
+
+When you set up an instance of the site, you will need to create your own
+environment configuration:
+
+1. Navigate to the `/config` directory.
+2. Copy `env.example.yaml` to a new file named `env.yaml` (this file is automatically ignored by git)
+3. Update the values inside `env.yaml` with the appropriate passwords/keys.
+
 ### .htacess
 
 You need to make the following updates to the `.htaccess` file at the root of
