@@ -185,22 +185,24 @@
 .lg-sub-html {
   background-color: rgba(0, 0, 0, 0.45);
   bottom: 0;
-  color: #EEE;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: "Jura", sans-serif;
   font-size: 16px;
   left: 0;
-  padding: 10px 40px;
+  padding: 15px 50px;
   position: fixed;
   right: 0;
   text-align: center;
   z-index: 1080; }
 
-.lg-sub-html h4 {
+.lg-sub-html h4,
+.lg-sub-html h5 {
   margin: 0;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold; }
 
 .lg-sub-html p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 5px 0 0; }
 
 #lg-counter {
