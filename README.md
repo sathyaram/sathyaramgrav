@@ -264,3 +264,53 @@ Available tasks
   help      Display this help text.
   optimize  Optimizes/compresses the images
 ```
+
+## Managing Content
+
+### Photography section
+
+To manage the Photography section, navigate to `/pages/01.home/05._photography`.
+
+In this folder, the `photos.md` defines the configuration info for this section.
+
+Each of the folders contained in this folder are the sub-pages of this one. In
+this situation, each sub-page is a category for the Photos.
+
+Each of the category folders contains all images associated with that category.
+
+#### To add a category
+
+Inside the `/pages/01.home/05._photography` directory, create a new folder for
+your category. Make sure to abide by the numbering already in place.
+
+Inside your new folder, create a file called `category.md`. The contents of this
+file should look like this:
+
+```
+---
+title: 'A title for this category'
+slug: 'a-slug-for-this-category'
+description: "A description for this category."
+---
+```
+
+#### To add a photo
+
+Navigate to the folder for the category you would like to add a photo to.
+
+Place your photo in this folder. It will automatically be detected and displayed
+in the correct category on the Photography section.
+
+##### Metadata
+
+To add a title and caption to a photo, you must create a `yaml` configuration
+file alongside it in the same folder.
+
+Say for example, the image is called `example.png`. You would create a new file
+alongside the image called `example.png.meta.yaml`. The contents of this file
+should look like this:
+
+```
+title: 'Photo title'
+description: "A descripion of the photo."
+```
