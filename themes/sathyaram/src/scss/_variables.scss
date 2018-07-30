@@ -109,7 +109,7 @@ $header-skew: skewY(-5deg);
 $header-h1-font:   'aquatico', sans-serif;
 $header-h1-color:  #fff;
 $header-h1-size:   100px;
-$header-h1-shadow: 0 0 5px #fff, 0 0 20px #60c0f0;
+$header-h1-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0;
 
 // The subtitle (Designer, Developer, Photographer)
 $header-h2-font:   'aquatico', sans-serif;
@@ -123,8 +123,8 @@ $header-star-opacity:    0.85;
 $header-star-easing:     linear;
 // You can use em units for this as font-size is set to the width/height
 $header-star-shadow:
-  0 0 10em .5em rgba(#fff, .3),
-  0 0 2em 1px rgba(#60c0f0, .3);
+  0 0 10em .5em rgba(#fff, .7),
+  0 0 2em 1px rgba(#60c0f0, .9);
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Website/Graphic/Photography Sections

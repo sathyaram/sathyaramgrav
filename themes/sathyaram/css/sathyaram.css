@@ -1684,9 +1684,6 @@ header {
     @media (max-width: 991px) {
       header nav {
         padding-bottom: 35px; } }
-    @media (max-width: 419px) {
-      header nav {
-        padding-bottom: 25px; } }
     header nav a {
       display: inline-block;
       margin: 0 10px;
@@ -1711,10 +1708,9 @@ header {
     text-transform: uppercase;
     font-family: "aquatico", sans-serif;
     font-size: 100px;
-    line-height: 1.2;
     font-weight: 200;
     letter-spacing: 2px;
-    text-shadow: 0 0 5px #fff, 0 0 20px #60c0f0;
+    text-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0;
     -webkit-transform: skewY(-5deg) translateY(0px);
     transform: skewY(-5deg) translateY(0px);
     -webkit-animation-name: title-hover;
@@ -1732,7 +1728,7 @@ header {
         font-size: 80px; } }
     @media (max-width: 419px) {
       header h1 {
-        font-size: 40px; } }
+        font-size: 42px; } }
   header h2 {
     width: 100%;
     color: #fff;
@@ -1751,7 +1747,7 @@ header {
         font-size: 15.99998px; } }
     @media (max-width: 419px) {
       header h2 {
-        font-size: 13.99999px; } }
+        font-size: 10.39999px; } }
   header .space,
   header .stars {
     display: block;
@@ -1779,7 +1775,7 @@ header {
       animation-play-state: paused;
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both;
-      box-shadow: 0 0 10em 0.5em rgba(255, 255, 255, 0.3), 0 0 2em 1px rgba(96, 192, 240, 0.3);
+      box-shadow: 0 0 10em 0.5em rgba(255, 255, 255, 0.7), 0 0 2em 1px rgba(96, 192, 240, 0.9);
       opacity: 0.85; }
 
 /**
