@@ -178,7 +178,7 @@
         border-radius: 2px;
         padding: 7px;
         text-shadow: none;
-        margin: 0 2px;
+        margin: 0 2px 5px 0;
         background: white;
         color: black;
         letter-spacing: 1px;
@@ -189,6 +189,7 @@
       padding-top: 20px;
       color: white;
       display: block;
+      font-weight:bold;
       max-width: 500px;
       line-height: 130%;
       font-family: $font-body;
@@ -199,6 +200,7 @@
       display:inline-block;
       padding:10px;
       font-family:$font-title;
+      border:2px solid $white;
     }
 
   } //article
