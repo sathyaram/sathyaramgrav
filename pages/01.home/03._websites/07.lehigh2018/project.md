@@ -6,9 +6,10 @@ bg_style: 'linear-gradient(to right, rgba(255,255,255, 0.45), rgba(255,255,255, 
 pre_html: ''
 taxonomy:
   tag:
-    - Graphic
-    - Marketing
+    - Web Design
+    - HTML/CSS Theming
+    - Drupal 7
     - Branding
-    - Photography
+    - Graphic Design
 ---
-Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus.
+I got the chance to create Lehigh University's Official 2018 Theme that is set to be used across over 150 websites. It was a personal and exhilerating project that required a lot of research, redesigning, and understanding. But I was able get a flexible, scalable, lightweight, theme out that would bring Lehigh out of the theme created in 2012. 

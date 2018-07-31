@@ -194,6 +194,13 @@
       font-family: $font-body;
     }
 
+    a.website-link {
+      color:$white;
+      display:inline-block;
+      padding:10px;
+      font-family:$font-title;
+    }
+
   } //article
 
 } //#web

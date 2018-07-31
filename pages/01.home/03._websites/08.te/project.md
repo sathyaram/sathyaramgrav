@@ -1,14 +1,14 @@
 ---
-title: 'Technical Entrepreurnship'
-tagline: "Lehigh University's Official Website Theme"
+title: 'Technical Entrepreunership'
+tagline: "Program Website"
 section_classes: ''
-bg_style: 'linear-gradient(to right, rgba(255,255,255, 0.45), rgba(255,255,255, 0.45)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/teacher_student-compressor.jpg)'
+bg_style: 'linear-gradient(to right, rgba(64, 195, 241, 0.66) 0%, rgba(126, 194, 66, 0.66) 50%, rgba(252, 183, 21, 0.66) 100%), url(/user/themes/sathyaram/images/web/te.jpg)'
 pre_html: ''
 taxonomy:
   tag:
-    - Graphic
-    - Marketing
-    - Branding
-    - Photography
+    - Drupal 7
+    - HTML/CSS/jQuery
+    - Web Design
+    - Graphic Design
 ---
-Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus.
+As a student, my interest in web design and development led me to get the opportunity to create the Technical Entrepreurship program at Lehigh's website. 

@@ -2,13 +2,12 @@
 title: 'Gertrude Hawk Goodies'
 tagline: 'Rewards Microsite'
 section_classes: ''
-bg_style: 'linear-gradient(rgba(86, 21, 98, 0.45), rgba(86, 21, 98, 0.45)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/ghawk_3.jpg)'
+bg_style: 'linear-gradient(rgba(86, 21, 98, 0.66), rgba(86, 21, 98, 0.66)), url(/user/themes/sathyaram/images/web/gertrudehawkchocolate.jpg)'
 pre_html: ''
 taxonomy:
   tag:
-    - Graphic
-    - Marketing
-    - Branding
-    - Photography
+    - Wordpress
+    - HTML/CSS/jQuery
+    - Development
 ---
-Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus.
+While working at Weidenhammer, I had the opportunity to create a microsite for renowned chocolatiers Gertrude Hawk Chocolates! They wanted a clear cut and simple rewards website where chocolate-lovers can sign up to be a part of their reward program designed to reward you with free chocolate, special discounts and news about new products. 

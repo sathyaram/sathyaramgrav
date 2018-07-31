@@ -2,13 +2,12 @@
 title: 'Astral Air Parts'
 tagline: 'Aircraft Part Supplier'
 section_classes: ''
-bg_style: 'linear-gradient(rgba(0, 66, 128, 0.45), rgba(0, 0, 0, 0.45)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/hero-image_1.jpg)'
+bg_style: 'linear-gradient(to right, rgba(0, 66, 128, 0.66), rgba(0, 0, 0, 0.66)), url(/user/themes/sathyaram/images/web/astralairparts.jpg)'
 pre_html: ''
 taxonomy:
   tag:
-    - Graphic
-    - Marketing
-    - Branding
-    - Photography
+    - Wordpress
+    - HTML/CSS/jQuery
+    - Development
 ---
-Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus.
+Astral Air Products is a vendor of strong, high-quality fasteners that can be found in dozens of types of major projects across many industries. I was given designs by Weidenhammer and tasked to bring it to life exactly - this was the result! 

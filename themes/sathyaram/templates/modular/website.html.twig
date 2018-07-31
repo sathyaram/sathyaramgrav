@@ -25,6 +25,9 @@
                     {% if project.content %}
                         <p>{{ project.content }}</p>
                     {% endif %}
+                    {% if project.header.link %}
+                        <a href="{{ project.header.link }}" class="website-link" target="_blank">Visit Site</a>
+                    {% endif %}
                 </div>
             </article>
         {% endfor %}

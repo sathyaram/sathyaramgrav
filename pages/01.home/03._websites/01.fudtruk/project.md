@@ -1,14 +1,17 @@
 ---
 title: 'Fudtruk'
-tagline: 'Local Food Truck'
+tagline: 'Food Truck'
 section_classes: 'full-width'
-bg_style: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/fudtruk-uc3-compressor.png)'
+bg_style: 'url(/user/themes/sathyaram/images/web/fudtruk-cutoutoverlay.png)'
 pre_html: '<div id="fud"><span></span><span></span><span></span></div>'
 taxonomy:
   tag:
-    - Graphic
-    - Marketing
-    - Branding
+    - Drupal 7
+    - HTML/CSS/Jquery
+    - Web Design
+    - Graphic Design
+    - Video
     - Photography
+link: https://fudtruk.lehigh.edu
 ---
-Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus.
+The FüdTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make killer sandwiches, breakfast and lunch and unique dishes. I got the opportunity to completely brand them, from their logo, to the color scheme, to the vinyl wrap for the truck, and to their website. They decided for a simplier, more hard-crafted feel to their identify, as you'll see in the branding. 
