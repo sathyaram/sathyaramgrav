@@ -10,6 +10,7 @@ taxonomy:
     - HTML/CSS/jQuery
     - Web Design
     - Graphic Design
+link: http://paulknakk.com
 ---
 Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; perfect candidate for a Drupal site! 
 

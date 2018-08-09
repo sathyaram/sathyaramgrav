@@ -10,5 +10,7 @@ taxonomy:
     - HTML/CSS/jQuery
     - Web Design
     - Graphic Design
+link: https://te.lehigh.edu
+
 ---
 As a student, my interest in web design and development led me to get the opportunity to create the Technical Entrepreurship program at Lehigh's website. 

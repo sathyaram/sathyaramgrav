@@ -7,7 +7,7 @@ pre_html: '<div id="fud"><span></span><span></span><span></span></div>'
 taxonomy:
   tag:
     - Drupal 7
-    - HTML/CSS/Jquery
+    - HTML/CSS/jQuery
     - Web Design
     - Graphic Design
     - Video
