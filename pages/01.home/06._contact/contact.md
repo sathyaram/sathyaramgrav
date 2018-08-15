@@ -35,15 +35,6 @@ form:
       autocorrect: 'off'
       validate:
         required: true
-    -
-      type: 'captcha'
-      name: 'g-recaptcha-response'
-      label: false
-      outerclasses: 'form-field-center'
-      recaptcha_site_key: "{{ config.env.recaptcha_public_key }}"
-      recaptcha_not_validated: 'Please fill our the reCAPTCHA field!'
-      validate:
-        required: true
   buttons:
     submit:
       type: 'submit'

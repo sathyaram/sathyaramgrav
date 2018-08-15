@@ -1799,7 +1799,8 @@ header {
     display: inline-block;
     margin: 0 25px;
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    z-index: 1; }
     @media (max-width: 1279px) {
       #services a {
         margin: 0 10px; } }
@@ -1826,7 +1827,9 @@ header {
     transition: box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    z-index: 1; }
+    z-index: 1;
+    -webkit-perspective: 900000px;
+    perspective: 900000px; }
     @media (max-width: 1279px) {
       #services .card-wrapper {
         width: 300px;
@@ -2186,7 +2189,7 @@ header {
       left: 0; }
     #web article:hover:nth-child(1) h3,
     #graphic article:hover:nth-child(1) h3 {
-      text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
+      text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
     #web article:hover hr,
     #graphic article:hover hr {
       width: 15%;
@@ -2267,7 +2270,7 @@ header {
         border-radius: 2px;
         padding: 7px;
         text-shadow: none;
-        margin: 0 2px;
+        margin: 0 2px 5px 0;
         background: white;
         color: black;
         letter-spacing: 1px; }
@@ -2276,9 +2279,17 @@ header {
       padding-top: 20px;
       color: white;
       display: block;
+      font-weight: bold;
       max-width: 500px;
       line-height: 130%;
       font-family: "Jura", sans-serif; }
+    #web article a.website-link,
+    #graphic article a.website-link {
+      color: white;
+      display: inline-block;
+      padding: 10px;
+      font-family: "Fredoka One", sans-serif;
+      border: 2px solid white; }
 
 #fudtruk {
   width: 36px;
@@ -2642,7 +2653,7 @@ header {
     color: rgba(255, 255, 255, 0.7);
     border-radius: 12px;
     border-top-left-radius: 0;
-    transition: background .3s ease, color .3s ease, border-color .3s ease; }
+    transition: background .3s ease, color .3s ease, border-color .3s ease; }
     #contact input::-webkit-input-placeholder,
     #contact textarea::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.65);
@@ -2730,7 +2741,7 @@ header {
       outline: none;
       border-radius: 12px;
       cursor: pointer;
-      transition: background .3s ease, color .3s ease, border-color .3s ease; }
+      transition: background .3s ease, color .3s ease, border-color .3s ease; }
       #contact .buttons button:hover {
         color: rgba(255, 255, 255, 0.95);
         background: #5d7493;

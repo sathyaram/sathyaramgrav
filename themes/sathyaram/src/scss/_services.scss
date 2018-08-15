@@ -27,6 +27,7 @@
     margin: 0 25px;
     text-align: center;
     text-decoration: none;
+    z-index: 1;
 
     @media (max-width: $breakpoint-md-max) {
       margin: 0 10px;
@@ -59,6 +60,8 @@
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
     transition: box-shadow $transalt, transform $transalt;
     z-index: 1;
+    -webkit-perspective: 900000px;
+    perspective: 900000px;
 
     @media (max-width: $breakpoint-md-max) {
       width: 300px;

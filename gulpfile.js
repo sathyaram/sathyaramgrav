@@ -24,7 +24,7 @@ var paths = {
   // Paths related to the Images
   images: {
     base: './pages',         // A base parameter to pass to gulp.src
-    input: './pages/**/*.*', // A glob of input images to compress
+    input: './pages/**/*.jpg', // A glob of input images to compress
     output: './pages'        // Directory to output compressed images to
   }
 };
@@ -44,11 +44,12 @@ gulp.task('optimize', 'Optimizes/compresses the images', function() {
     // Select our original, non-optimized images
     .src(paths.images.input, { base: paths.images.base })
     // Only process images that are new, or have been updated
-    .pipe(newer(paths.images.output))
+    // .pipe(newer(paths.images.output))
     // Use GraphicsMagick to resize the images if necessary
     .pipe(gm(function(gmfile, done) {
       // Get the filepath, relative to the theme dir
       var filePath = path.relative(__dirname, gmfile.source);
+
       // Get the file's current dimensions first
       gmfile.size(function(err, size) {
         var msg, newFile;
