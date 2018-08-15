@@ -2267,7 +2267,7 @@ header {
         border-radius: 2px;
         padding: 7px;
         text-shadow: none;
-        margin: 0 2px;
+        margin: 0 2px 5px 0;
         background: white;
         color: black;
         letter-spacing: 1px; }
@@ -2276,9 +2276,21 @@ header {
       padding-top: 20px;
       color: white;
       display: block;
+      font-weight: bold;
       max-width: 500px;
       line-height: 130%;
       font-family: "Jura", sans-serif; }
+    #web article a.website-link,
+    #graphic article a.website-link {
+      color: white;
+      display: inline-block;
+      padding: 10px;
+      font-family: "Fredoka One", sans-serif;
+      border: 2px solid white; }
+      #web article a.website-link:hover,
+      #graphic article a.website-link:hover {
+        background: white;
+        color: black; }
 
 #fudtruk {
   width: 36px;
