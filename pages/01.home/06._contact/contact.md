@@ -4,6 +4,8 @@ cache_enable: false
 form:
   name: 'contact-form'
   action: '/#contact'
+  template: form-messages
+  refresh_prevention: true
   method: 'POST'
   fields:
     -
