@@ -2495,7 +2495,15 @@ header {
   text-align: center;
   z-index: 9;
   padding: 50px 0;
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: space-between;
+  align-items: space-between; }
   #contact .container {
     display: block;
     padding: 0 50px;
@@ -2525,6 +2533,17 @@ header {
     @media (min-width: 1280px) {
       #contact .container {
         padding: 0 20%; } }
+  #contact .form-result-container {
+    -ms-flex: 1;
+    flex: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  #contact #form-result {
+    width: 100%; }
   #contact h2 {
     display: block;
     width: 100%;

@@ -7,7 +7,9 @@
     </div>
 {% endif %}
 
-<div id="form-result"></div>
+<div class="form-result-container">
+	<div id="form-result" style="display: none"></div>
+</div>
 
 <script>
 $(document).ready(function(){
@@ -16,6 +18,7 @@ $(document).ready(function(){
         // prevent form submission
         e.preventDefault();
         console.log(form.attr('action'))
+        $('#contact-form').slideUp()
 
         // submit the form via Ajax
         $.ajax({
@@ -26,6 +29,7 @@ $(document).ready(function(){
             success: function(result) {
                 // Inject the result in the HTML
                 $('#form-result').html(result);
+                $('#form-result').slideDown();
             }
         });
     });

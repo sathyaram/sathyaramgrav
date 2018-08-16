@@ -11,6 +11,10 @@
   z-index: 9;
   padding: $footer-spacer-lg 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
 
   .container {
     display: block;
@@ -26,6 +30,17 @@
     @media (min-width: $breakpoint-lg-min) {
       padding: 0 20%;
     }
+  }
+
+  .form-result-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #form-result {
+    width: 100%;
   }
 
   h2 {
