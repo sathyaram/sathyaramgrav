@@ -2290,6 +2290,10 @@ header {
       padding: 10px;
       font-family: "Fredoka One", sans-serif;
       border: 2px solid white; }
+      #web article a.website-link:hover,
+      #graphic article a.website-link:hover {
+        background: white;
+        color: black; }
 
 #fudtruk {
   width: 36px;

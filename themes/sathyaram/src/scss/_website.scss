@@ -201,6 +201,11 @@
       padding:10px;
       font-family:$font-title;
       border:2px solid white;
+
+      &:hover {
+        background:white;
+        color:black;
+      }
     }
 
   } //article
