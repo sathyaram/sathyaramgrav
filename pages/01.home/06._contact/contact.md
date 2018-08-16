@@ -52,7 +52,5 @@ form:
       extension: 'txt'
       body: '{% include ''forms/data.txt.twig'' %}'
     message: 'Thank you for getting in touch!'
-    captcha:
-      recaptcha_secret: '{{ config.env.recaptcha_private_key }}'
     reset: true
 ---
