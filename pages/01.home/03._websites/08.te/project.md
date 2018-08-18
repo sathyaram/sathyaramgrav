@@ -13,4 +13,4 @@ taxonomy:
 link: https://te.lehigh.edu
 
 ---
-As a student, my interest in web design and development led me to get the opportunity to create the Technical Entrepreurship program at Lehigh's website. 
+As a student, my interest in web design and development led me to get the opportunity to create the Technical Entrepreurship program's website. It's one of my first sites!

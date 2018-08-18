@@ -11,4 +11,4 @@ taxonomy:
     - Branding
     - Graphic Design
 ---
-While at Lehigh, I had the honor of redesigning Lehigh's Engineering College website. Starting from the ground up, I created a vibrant, contemporary aesthetic with should surely catch the eye of a new budding engineer as well as push the limits for how collegiate websites should look and function. A lot of thought and time went into all of it.
+While at Lehigh, I had the honor of redesigning Lehigh's Engineering College website. Starting from the ground up, I aimed for a vibrant, contemporary aesthetic that would catch the eye of a new budding engineer as well as push the limits for how collegiate websites should look and function.

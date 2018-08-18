@@ -61,7 +61,7 @@ $breakpoint-md-max: ($breakpoint-lg-min - 1);
 // Container widths
 $container-mj:  400px;
 $container-sm:  700px;
-$container-md:  910px;
+$container-md:  980px;
 $container-lg: 1200px;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,7 +115,7 @@ $header-h1-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0;
 $header-h2-font:   'aquatico', sans-serif;
 $header-h2-color:  #fff;
 $header-h2-size:   18px;
-$header-h2-shadow: 0px 0px 28px #fff;
+$header-h2-shadow: 0px 0px 18px #fff;
 
 // Normal stars (travelling bottom to top)
 $header-star-background: #fff;
@@ -124,7 +124,7 @@ $header-star-easing:     linear;
 // You can use em units for this as font-size is set to the width/height
 $header-star-shadow:
   0 0 10em .5em rgba(#fff, .7),
-  0 0 2em 1px rgba(#60c0f0, .9);
+  0 0 2em 1px rgba(#60c0f0, .5);
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Website/Graphic/Photography Sections

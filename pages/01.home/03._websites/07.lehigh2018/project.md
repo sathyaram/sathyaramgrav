@@ -12,4 +12,4 @@ taxonomy:
     - Branding
     - Graphic Design
 ---
-I got the chance to create Lehigh University's Official 2018 Theme that is set to be used across over 150 websites. It was a personal and exhilerating project that required a lot of research, redesigning, and understanding. But I was able get a flexible, scalable, lightweight, theme out that would bring Lehigh out of the theme created in 2012. 
+I created Lehigh University's Official 2018 Theme that is set to be used across over 150 websites. It was a personal and exhilerating project that required a lot of research, reiterating, and understanding. But I was able get a flexible, scalable, lightweight, theme out that would bring Lehigh out of their old theme created in 2012. 

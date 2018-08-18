@@ -12,4 +12,4 @@ taxonomy:
     - Graphic Design
 link: https://powerhouse.lehigh.edu
 ---
-Lehigh University's premiere place for fully equipped iMac Computers, PCs with CAD/Solidworks, 3D Printers and student work spaces. They needed a website to showcase all their services and facilities!
+Lehigh University's premiere place for fully equipped iMac Computers, PCs with CAD/Solidworks, 3D Printers and student work spaces. They needed a website to showcase all their services and facilities and I made it happen.

@@ -12,5 +12,5 @@ taxonomy:
     - Graphic Design
 link: http://paulknakk.com
 ---
-Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; perfect candidate for a Drupal site! 
+Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! 
 

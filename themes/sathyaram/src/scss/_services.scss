@@ -40,7 +40,7 @@
     &.hover {
       .card-wrapper {
         cursor: pointer;
-        transform: rotateY(180deg);
+        transform: rotateY(180deg) translateZ(1px);
         box-shadow: 0px 0px 50px 10px #ececec;
       }
     }
@@ -86,13 +86,21 @@
     width: 100%;
     top: 0;
     left: 0;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+             backface-visibility: hidden;
+     -webkit-transition: 0.6s;
+             transition: 0.6s;
+     -webkit-transform-style: preserve-3d;
+             transform-style: preserve-3d;
     border-radius: 6px;
   }
 
   // The front side of the link
   .front {
     text-align: center;
+    z-index: 2;
+     -webkit-transform: rotateY(0deg);
+             transform: rotateY(0deg);
   }
 
   // The back side of the link
@@ -105,7 +113,8 @@
     color: $color-white;
     font-family: $font-body;
     font-size: 20px;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(-180deg) translateZ(1px);
+             transform: rotateY(-180deg) translateZ(1px);
 
     @media (max-width: $breakpoint-md-max) {
       font-size: 16px;

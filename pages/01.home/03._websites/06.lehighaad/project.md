@@ -14,4 +14,4 @@ taxonomy:
     - Video
     - Photography
 ---
-Having went to Lehigh and becoming good friends with my professors, I had the chance to redesign and develop their new website once I started working at Lehigh. Once again attempting to push the limits on how a collegiate site should look and operate, I went for a more modern, easily navigable layout that should make it very appealing for any art, architecture or design student.
+Having went to Lehigh and becoming good friends with my professors, I had the chance to redesign and develop their new department website. I went for a more modern, easily navigable layout that should make it very appealing for any art, architecture or design student.

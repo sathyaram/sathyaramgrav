@@ -11,4 +11,4 @@ taxonomy:
     - Development
 link: https://gertrudehawkgoodies.com
 ---
-While working at Weidenhammer, I had the opportunity to create a microsite for renowned chocolatiers Gertrude Hawk Chocolates! They wanted a clear cut and simple rewards website where chocolate-lovers can sign up to be a part of their reward program designed to reward you with free chocolate, special discounts and news about new products. 
+While working at Weidenhammer, I created a microsite for renowned chocolatiers Gertrude Hawk Chocolates! They wanted a clear cut and simple rewards website where chocolate-lovers can sign up to be a part of their reward program designed to reward you with free chocolate. 
