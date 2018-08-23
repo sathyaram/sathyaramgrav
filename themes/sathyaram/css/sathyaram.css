@@ -1703,6 +1703,7 @@ header {
         transform: scale(1.5) translateZ(0); }
   header h1 {
     width: 100%;
+    padding: 0 10px;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -2198,7 +2199,7 @@ header {
       text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
     #web article:hover hr,
     #graphic article:hover hr {
-      width: 15%;
+      width: 25%;
       box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); }
     #web article.graphic,
     #graphic article.graphic {
@@ -2274,7 +2275,7 @@ header {
       #graphic article ul li {
         display: inline-block;
         border-radius: 2px;
-        padding: 7px;
+        padding: 5px;
         text-shadow: none;
         margin: 0 2px 5px 0;
         background: white;
@@ -2295,6 +2296,7 @@ header {
         padding: 0; }
     #web article a.website-link,
     #graphic article a.website-link {
+      margin-top: 15px;
       color: white;
       display: inline-block;
       padding: 10px;
@@ -2352,6 +2354,7 @@ header {
     margin: 0 0 50px 0;
     padding: 0 10px;
     color: #947e92;
+    text-align: center;
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
@@ -2382,7 +2385,8 @@ header {
   #photography > ul {
     width: 100%;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    text-align: center; }
     @media (min-width: 420px) {
       #photography > ul {
         width: 400px;
@@ -2446,7 +2450,9 @@ header {
         display: block; }
     #photography .content p {
       display: block;
-      margin: 0 0 25px 0; }
+      margin: 0 0 25px 0;
+      text-align: center;
+      width: 700px; }
       #photography .content p:last-child {
         margin-bottom: 0; }
   #photography .grid {

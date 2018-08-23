@@ -100,7 +100,7 @@
         }
       }
       hr {
-        width: 15%;
+        width: 25%;
         box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
       }
     }
@@ -176,7 +176,7 @@
       li {
         display: inline-block;
         border-radius: 2px;
-        padding: 7px;
+        padding: 5px;
         text-shadow: none;
         margin: 0 2px 5px 0;
         background: white;
@@ -201,6 +201,7 @@
     }
 
     a.website-link {
+      margin-top:15px;
       color:white;
       display:inline-block;
       padding:10px;
