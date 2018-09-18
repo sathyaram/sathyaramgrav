@@ -18,18 +18,8 @@
 
   .container {
     display: block;
-    padding: 0 50px;
+    // padding: 0 50px;
     @include size-container;
-
-    @media (min-width: $breakpoint-sm-min) {
-      padding: 0 10%;
-    }
-    @media (min-width: $breakpoint-md-min) {
-      padding: 0 15%;
-    }
-    @media (min-width: $breakpoint-lg-min) {
-      padding: 0 20%;
-    }
   }
 
   .form-result-container {
@@ -46,21 +36,44 @@
   h2 {
     display: block;
     width: 100%;
-    margin: 0 0 $footer-spacer-lg 0;
+    margin: 0 0 $footer-spacer-sm 0;
     padding: 0;
     color: $footer-title-color;
-    font-size: 56px;
+    font-size: 18px;
     font-family: $footer-title-font;
     text-align: center;
 
     @media (min-width: $breakpoint-sm-min) {
-      font-size: 64px;
+      font-size: 24px;
     }
     @media (min-width: $breakpoint-md-min) {
-      font-size: 72px;
+      font-size: 32px;
+    }
+  }
+
+  .p-email {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: $footer-link-color;
+    font-size: 28px;
+    font-family: $footer-link-font;
+    text-align: center;
+    transition: color $trans;
+
+    @media (min-width: $breakpoint-sm-min) {
+      font-size: 36px;
+    }
+    @media (min-width: $breakpoint-md-min) {
+      font-size: 48px;
     }
     @media (min-width: $breakpoint-lg-min) {
-      font-size: 84px;
+      font-size: 64px;
+    }
+
+    &:hover {
+      color: $footer-link-hover;
     }
   }
 

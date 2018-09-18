@@ -2522,7 +2522,6 @@ header {
   align-items: space-between; }
   #contact .container {
     display: block;
-    padding: 0 50px;
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
@@ -2540,15 +2539,6 @@ header {
     @media (min-width: 1280px) {
       #contact .container {
         width: 980px; } }
-    @media (min-width: 768px) {
-      #contact .container {
-        padding: 0 10%; } }
-    @media (min-width: 992px) {
-      #contact .container {
-        padding: 0 15%; } }
-    @media (min-width: 1280px) {
-      #contact .container {
-        padding: 0 20%; } }
   #contact .form-result-container {
     -ms-flex: 1;
     flex: 1;
@@ -2563,21 +2553,39 @@ header {
   #contact h2 {
     display: block;
     width: 100%;
-    margin: 0 0 50px 0;
+    margin: 0 0 15px 0;
     padding: 0;
     color: #889bb4;
-    font-size: 56px;
-    font-family: "Fredoka One", sans-serif;
+    font-size: 18px;
+    font-family: "Jura", sans-serif;
     text-align: center; }
     @media (min-width: 768px) {
       #contact h2 {
-        font-size: 64px; } }
+        font-size: 24px; } }
     @media (min-width: 992px) {
       #contact h2 {
-        font-size: 72px; } }
+        font-size: 32px; } }
+  #contact .p-email {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #a7b5c8;
+    font-size: 28px;
+    font-family: "Fredoka One", sans-serif;
+    text-align: center;
+    transition: color 0.3s ease; }
+    @media (min-width: 768px) {
+      #contact .p-email {
+        font-size: 36px; } }
+    @media (min-width: 992px) {
+      #contact .p-email {
+        font-size: 48px; } }
     @media (min-width: 1280px) {
-      #contact h2 {
-        font-size: 84px; } }
+      #contact .p-email {
+        font-size: 64px; } }
+    #contact .p-email:hover {
+      color: #29b6f6; }
   #contact .copyright {
     position: absolute;
     margin: 0;
@@ -2585,12 +2593,12 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    text-align: left;
-    font-size: 16px;
+    text-align: center;
+    font-size: 18px;
     font-family: "Jura", sans-serif;
     font-weight: 700;
     letter-spacing: 0.5px;
-    color: rgba(255, 255, 255, 0.85); }
+    color: #889bb4; }
   #contact form {
     display: block;
     width: 100%;

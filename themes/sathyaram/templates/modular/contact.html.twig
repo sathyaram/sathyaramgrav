@@ -1,7 +1,9 @@
 <footer id="contact">
     <div class="container">
-        <h2>Contact me</h2>
-        {% include "forms/form.html.twig" %}
-        <div class="copyright">&copy; 2018 Sathya Ram</div>
+        <h2>{{ page.header.title }}</h2>
+        <a href="mailto:{{ page.header.public_email }}?subject=Let's%20work%20together!" class="p-email">
+            {{ page.header.public_email }}
+        </a>
+        <div class="copyright">{{ page.header.copyright }}</div>
     </div>
 </footer>
