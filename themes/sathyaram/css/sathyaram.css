@@ -1780,12 +1780,110 @@ header {
       opacity: 0.85; }
 
 /**
- * Services Styles
+ * About Styles
  * Copyright 2018 Sathya Ram
  */
-#services {
+#about {
   padding: 150px 0 50px 0; }
-  #services nav {
+  #about > h2 {
+    font-family: "Fredoka One", sans-serif;
+    font-size: 56px;
+    margin: 0 0 50px 0;
+    padding: 0 10px;
+    color: #947e92;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 420px) {
+      #about > h2 {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 768px) {
+      #about > h2 {
+        width: 700px; } }
+    @media (min-width: 992px) {
+      #about > h2 {
+        width: 980px; } }
+    @media (min-width: 1280px) {
+      #about > h2 {
+        width: 980px; } }
+    @media (min-width: 768px) {
+      #about > h2 {
+        text-align: center;
+        padding: 0;
+        font-size: 64px; } }
+    @media (min-width: 992px) {
+      #about > h2 {
+        font-size: 72px; } }
+    @media (min-width: 1280px) {
+      #about > h2 {
+        font-size: 96px; } }
+  #about .content {
+    display: block;
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 420px) {
+      #about .content {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 768px) {
+      #about .content {
+        width: 700px; } }
+    @media (min-width: 992px) {
+      #about .content {
+        width: 980px; } }
+    @media (min-width: 1280px) {
+      #about .content {
+        width: 980px; } }
+    @media (min-width: 992px) {
+      #about .content {
+        display: -ms-flexbox;
+        display: flex; } }
+    #about .content .left {
+      text-align: center; }
+      @media (min-width: 992px) {
+        #about .content .left {
+          -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+          -ms-flex-positive: 0;
+          flex-grow: 0;
+          -ms-flex-negative: 0;
+          flex-shrink: 0; } }
+    #about .content .right {
+      padding-top: 30px;
+      text-align: center; }
+      @media (min-width: 992px) {
+        #about .content .right {
+          padding-top: 0;
+          padding-left: 30px;
+          text-align: left; } }
+    #about .content img {
+      display: inline-block;
+      width: 30%;
+      border-radius: 50%; }
+      @media (min-width: 992px) {
+        #about .content img {
+          width: 100%; } }
+    #about .content p {
+      margin: 0 0 10px 0;
+      padding: 0;
+      font-size: 18px;
+      font-family: "Jura", sans-serif;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #222639; }
+  #about nav {
     display: block;
     width: 100%;
     margin: 0;
@@ -1794,26 +1892,26 @@ header {
     perspective: 1000px;
     text-align: center; }
     @media (max-width: 991px) {
-      #services nav {
+      #about nav {
         padding-top: 50px; } }
-  #services a {
+  #about a {
     display: inline-block;
     margin: 0 25px;
     text-align: center;
     text-decoration: none;
     z-index: 1; }
     @media (max-width: 1279px) {
-      #services a {
+      #about a {
         margin: 0 10px; } }
     @media (max-width: 991px) {
-      #services a {
+      #about a {
         margin: 0 auto; } }
-    #services a:hover .card-wrapper, #services a.hover .card-wrapper {
+    #about a:hover .card-wrapper, #about a.hover .card-wrapper {
       cursor: pointer;
       -webkit-transform: rotateY(180deg) translateZ(1px);
       transform: rotateY(180deg) translateZ(1px);
       box-shadow: 0px 0px 50px 10px #ececec; }
-  #services .card-wrapper {
+  #about .card-wrapper {
     display: block;
     position: relative;
     width: 350px;
@@ -1832,17 +1930,17 @@ header {
     -webkit-perspective: 900000px;
     perspective: 900000px; }
     @media (max-width: 1279px) {
-      #services .card-wrapper {
+      #about .card-wrapper {
         width: 300px;
         height: 350px; } }
     @media (max-width: 991px) {
-      #services .card-wrapper {
+      #about .card-wrapper {
         width: 250px;
         height: 300px; } }
     @media (max-width: 419px) {
-      #services .card-wrapper {
+      #about .card-wrapper {
         margin: auto; } }
-  #services .side {
+  #about .side {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -1860,12 +1958,12 @@ header {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     border-radius: 6px; }
-  #services .front {
+  #about .front {
     text-align: center;
     z-index: 2;
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg); }
-  #services .back {
+  #about .back {
     position: absolute;
     padding: 30px;
     top: 0;
@@ -1877,22 +1975,22 @@ header {
     -webkit-transform: rotateY(-180deg) translateZ(1px);
     transform: rotateY(-180deg) translateZ(1px); }
     @media (max-width: 1279px) {
-      #services .back {
+      #about .back {
         font-size: 16px; } }
     @media (max-width: 991px) {
-      #services .back {
+      #about .back {
         padding: 10px;
         font-size: 14px; } }
-  #services .vector {
+  #about .vector {
     position: relative; }
-    #services .vector > div {
+    #about .vector > div {
       color: white;
       font-size: 56px;
       font-family: 'aquatico';
       text-shadow: 0 0 5px #fff, 0 0 20px #60c0f0; }
-  #services .description {
+  #about .description {
     margin-top: 85px; }
-    #services .description h3 {
+    #about .description h3 {
       color: #222639;
       font-size: 24px;
       text-stroke: 2px #222639;
@@ -1901,25 +1999,25 @@ header {
       font-weight: 700;
       text-transform: uppercase; }
       @media (max-width: 1279px) {
-        #services .description h3 {
+        #about .description h3 {
           font-size: 20px; } }
       @media (max-width: 991px) {
-        #services .description h3 {
+        #about .description h3 {
           font-size: 18px; } }
-  #services .shape {
+  #about .shape {
     position: absolute;
     top: 30%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     z-index: -1; }
-  #services .web .monitor {
+  #about .web .monitor {
     width: 228px;
     height: 137px;
     background: #f2f2f2;
     border-radius: 8px;
     padding: 15px; }
-  #services .web .screen {
+  #about .web .screen {
     width: 198px;
     height: 107px;
     color: #fff;
@@ -1927,7 +2025,7 @@ header {
     line-height: 140px;
     font-size: 56px;
     background: #222639; }
-  #services .web .base {
+  #about .web .base {
     position: absolute;
     width: 40px;
     height: 20px;
@@ -1936,49 +2034,49 @@ header {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     background: #f2f2f2; }
-  #services .web .base::before,
-  #services .web .base::after,
-  #services .web .grey-shadow::before,
-  #services .web .grey-shadow::after {
+  #about .web .base::before,
+  #about .web .base::after,
+  #about .web .grey-shadow::before,
+  #about .web .grey-shadow::after {
     position: absolute;
     content: '';
     top: 0; }
-  #services .web .base:before {
+  #about .web .base:before {
     border-left: 6px solid transparent;
     border-right: 0px solid transparent;
     border-bottom: 30px solid #f2f2f2;
     left: -5px; }
-  #services .web .base:after {
+  #about .web .base:after {
     border-right: 6px solid transparent;
     border-left: 0px solid transparent;
     border-bottom: 30px solid #f2f2f2;
     right: -5px; }
-  #services .web .base > div {
+  #about .web .base > div {
     position: absolute; }
-  #services .web .foot {
+  #about .web .foot {
     background: #f2f2f2;
     z-index: 1; }
-    #services .web .foot.top {
+    #about .web .foot.top {
       width: 116px;
       height: 5px;
       bottom: -4px;
       left: 50%;
       margin-left: -58px; }
-    #services .web .foot.top::before, #services .web .foot.top::after, #services .web .foot.bottom::before {
+    #about .web .foot.top::before, #about .web .foot.top::after, #about .web .foot.bottom::before {
       position: absolute;
       content: '';
       top: 0px; }
-    #services .web .foot.top::before {
+    #about .web .foot.top::before {
       border-left: 16px solid transparent;
       border-right: 0px solid transparent;
       border-bottom: 5px solid #f2f2f2;
       left: -16px; }
-    #services .web .foot.top::after {
+    #about .web .foot.top::after {
       border-right: 16px solid transparent;
       border-left: 0px solid transparent;
       border-bottom: 5px solid #f2f2f2;
       right: -16px; }
-    #services .web .foot.bottom {
+    #about .web .foot.bottom {
       width: 70px;
       height: 10px;
       border-radius: 5px;
@@ -1987,13 +2085,13 @@ header {
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       z-index: 999; }
-  #services .graphic .box {
+  #about .graphic .box {
     width: 136px;
     height: 136px;
     border: 8px solid #f2f2f2;
     background: #222639;
     margin: 0 auto; }
-  #services .graphic .anchor {
+  #about .graphic .anchor {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -2001,47 +2099,47 @@ header {
     left: -12px;
     background: #fff;
     border: 6px solid #f2f2f2; }
-    #services .graphic .anchor:nth-child(2) {
+    #about .graphic .anchor:nth-child(2) {
       top: 50%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%); }
-    #services .graphic .anchor:nth-child(3) {
+    #about .graphic .anchor:nth-child(3) {
       top: calc(100% + 4px);
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%); }
-    #services .graphic .anchor:nth-child(4) {
+    #about .graphic .anchor:nth-child(4) {
       top: calc(100% + 4px);
       left: 50%;
       -webkit-transform: translateY(-50%) translateX(-50%);
       transform: translateY(-50%) translateX(-50%); }
-    #services .graphic .anchor:nth-child(5) {
+    #about .graphic .anchor:nth-child(5) {
       top: calc(100% + 4px);
       left: calc(100% + 4px);
       -webkit-transform: translateY(-50%) translateX(-50%);
       transform: translateY(-50%) translateX(-50%); }
-    #services .graphic .anchor:nth-child(6) {
+    #about .graphic .anchor:nth-child(6) {
       top: 50%;
       left: calc(100% + 4px);
       -webkit-transform: translateY(-50%) translateX(-50%);
       transform: translateY(-50%) translateX(-50%); }
-    #services .graphic .anchor:nth-child(7) {
+    #about .graphic .anchor:nth-child(7) {
       top: calc(0% - 4px);
       left: calc(100% + 4px);
       -webkit-transform: translateY(-50%) translateX(-50%);
       transform: translateY(-50%) translateX(-50%); }
-    #services .graphic .anchor:nth-child(8) {
+    #about .graphic .anchor:nth-child(8) {
       top: calc(0% - 4px);
       left: 50%;
       -webkit-transform: translateY(-50%) translateX(-50%);
       transform: translateY(-50%) translateX(-50%); }
-    #services .graphic .anchor:nth-child(9) {
+    #about .graphic .anchor:nth-child(9) {
       top: -50px;
       left: 50%;
       border-radius: 50px;
       background: #f2f2f2;
       -webkit-transform: translateY(-50%) translateX(-50%);
       transform: translateY(-50%) translateX(-50%); }
-      #services .graphic .anchor:nth-child(9)::after {
+      #about .graphic .anchor:nth-child(9)::after {
         position: absolute;
         content: '';
         width: 3px;
@@ -2051,7 +2149,7 @@ header {
         background: #f2f2f2;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%); }
-  #services .photography .photo {
+  #about .photography .photo {
     width: 135px;
     height: 157px;
     margin: 0 auto;
@@ -2059,7 +2157,7 @@ header {
     top: 60%;
     background: #f2f2f2;
     border-radius: 2px; }
-    #services .photography .photo .image {
+    #about .photography .photo .image {
       width: auto;
       background: #222639;
       height: 100px; }
@@ -2295,17 +2393,21 @@ header {
       #graphic article p:empty {
         padding: 0; }
     #web article a.website-link,
-    #graphic article a.website-link {
-      margin-top: 15px;
-      color: white;
+    #web article a.dribbble-link,
+    #graphic article a.website-link,
+    #graphic article a.dribbble-link {
       display: inline-block;
+      margin: 15px 0 0 0;
       padding: 10px;
+      color: #fff;
       font-family: "Fredoka One", sans-serif;
       border: 2px solid white; }
       #web article a.website-link:hover,
-      #graphic article a.website-link:hover {
-        background: white;
-        color: black; }
+      #web article a.dribbble-link:hover,
+      #graphic article a.website-link:hover,
+      #graphic article a.dribbble-link:hover {
+        background: #fff;
+        color: #000; }
 
 #fudtruk {
   width: 36px;
