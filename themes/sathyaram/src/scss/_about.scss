@@ -1,11 +1,84 @@
 /**
- * Services Styles
+ * About Styles
  * Copyright 2018 Sathya Ram
  */
 
-// The Services <section>
-#services {
+// The About <section>
+#about {
   padding: 150px 0 50px 0;
+
+  > h2 {
+    font-family: $section-title-font;
+    font-size: 56px;
+    margin: 0 0 50px 0;
+    padding: 0 10px;
+    color: #947e92;
+    text-align: center;
+    @include size-container;
+
+    @media (min-width: $breakpoint-sm-min) {
+      text-align: center;
+      padding: 0;
+      font-size: 64px;
+    }
+    @media (min-width: $breakpoint-md-min) {
+      font-size: 72px;
+    }
+    @media (min-width: $breakpoint-lg-min) {
+      font-size: 96px;
+    }
+  }
+
+  .content {
+    display: block;
+    flex-wrap: no-wrap;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0;
+    @include size-container;
+
+    @media (min-width: $breakpoint-md-min) {
+      display: flex;
+    }
+
+    .left {
+      text-align: center;
+      @media (min-width: $breakpoint-md-min) {
+        flex-basis: 30%;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+    }
+    .right {
+      padding-top: 30px;
+      text-align: center;
+      @media (min-width: $breakpoint-md-min) {
+        padding-top: 0;
+        padding-left: 30px;
+        text-align: left;
+      }
+    }
+
+    img {
+      display: inline-block;
+      width: 30%;
+      border-radius: 50%;
+      @media (min-width: $breakpoint-md-min) {
+        width: 100%;
+      }
+    }
+
+    p {
+      margin: 0 0 10px 0;
+      padding: 0;
+      font-size: 18px;
+      font-family: $font-body;
+      font-weight: 500;
+      line-height: 1.5;
+      color: $color-midnight;
+    }
+  }
 
   // The nav wraps all three links in the services section
   nav {

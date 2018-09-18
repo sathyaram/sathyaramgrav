@@ -1,8 +1,22 @@
 <section id="{{ page.header.section_slug }}">
 
+    <h2>{{ page.header.title }}</h2>
+
+    <div class="content">
+        <div class="left">
+            <img
+              src="{{ page.media[page.header.photo_file].url }}"
+              alt="{{ page.header.photo_alt }}">
+        </div>
+        <div class="right">
+            {% for paragraph in page.header.about_text %}
+                <p>{{ paragraph }}</p>
+            {% endfor %}
+        </div>
+    </div>
+
     {# Wrap the links in a nav #}
     <nav>
-
         {# Loop the services #}
         {% for service in page.header.services %}
             <span>
@@ -48,7 +62,6 @@
                 </a>
             </span>
         {% endfor %}
-
     </nav>
 
 </section>

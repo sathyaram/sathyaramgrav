@@ -13,7 +13,7 @@ $(document).ready(function() {
     var selected = null;
     // Loop the sections
     for (var offset in sections) {
-      if (offset <= scroll) {
+      if (Math.floor(offset) <= Math.ceil(scroll)) {
         selected = sections[offset];
       }
     }
@@ -32,7 +32,12 @@ $(document).ready(function() {
 
   // Sets the page's URL using the history API
   function setURL(newpath) {
-    history.pushState('', document.title, '/' + newpath);
+    // history.pushState('', document.title, '/' + newpath);
+    if (newpath === '') {
+      history.pushState('', document.title, window.location.pathname + window.location.search);
+    } else {
+      window.location.hash = newpath;
+    }
   }
 
   // Updates the page's URL based on the current section

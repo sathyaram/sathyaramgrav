@@ -28,6 +28,9 @@
                     {% if project.header.link %}
                         <a href="{{ project.header.link }}" class="website-link" target="_blank">Visit Site</a>
                     {% endif %}
+                    {% if project.header.dribbble %}
+                        <a href="{{ project.header.dribbble }}" class="dribbble-link" target="_blank"><i class="fa fa-dribbble"></i>&nbsp;&nbsp;Full Project</a>
+                    {% endif %}
                 </div>
             </article>
         {% endfor %}

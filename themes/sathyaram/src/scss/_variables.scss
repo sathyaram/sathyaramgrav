@@ -173,13 +173,18 @@ $footer-radius: 12px;
 $footer-bg: radial-gradient(ellipse at bottom, #1f3b60 0%, #090a0f 100%);
 
 // The section's title
-$footer-title-color:   $color-blue-light;
-$footer-title-font:    $font-title;
+$footer-title-color: $color-blue-light;
+$footer-title-font:  $font-body;
+
+// The email link
+$footer-link-color: lighten($color-blue-light, 10%);
+$footer-link-hover: $color-blue;
+$footer-link-font:  $font-title;
 
 // The copyright notice's text styles
-$footer-copy-align:   left;
-$footer-copy-size:    16px;
-$footer-copy-color:   rgba(255, 255, 255, 0.85);
+$footer-copy-align:   center;
+$footer-copy-size:    18px;
+$footer-copy-color:   $color-blue-light;
 $footer-copy-font:    $font-body;
 $footer-copy-weight:  700;
 $footer-copy-spacing: 0.5px;
