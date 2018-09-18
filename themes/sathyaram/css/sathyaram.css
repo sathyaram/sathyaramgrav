@@ -2459,7 +2459,24 @@ header {
     display: block;
     width: 100%;
     margin: 40px 0;
-    padding: 0; }
+    padding: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 420px) {
+      #photography .grid {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 768px) {
+      #photography .grid {
+        width: 700px; } }
+    @media (min-width: 992px) {
+      #photography .grid {
+        width: 980px; } }
+    @media (min-width: 1280px) {
+      #photography .grid {
+        width: 980px; } }
   #photography .sizer,
   #photography .item {
     display: block;
