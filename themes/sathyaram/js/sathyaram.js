@@ -141,29 +141,11 @@ $(document).ready(function() {
   var $logoOver = $('#loader img');
   var $logoHead = $('main > header .logo');
 
-  // Get the location of the header's logo
-  var newTop = $logoHead.css('top');
-  // Hide the header's logo
-  $logoHead.css('opacity', '0');
-  // Wait until the logo is done spinning
-  $logoOver.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-    // Fade out the rest of the overlay
-    $overlay.addClass('transparent');
-    // If we're at the very top of the page, animate the logo to the same
-    // position as the header's logo
-    if ($(window).scrollTop() === 0) {
-      // Move the logo to the same position as the header's logo
-      $logoOver.animate({ top: newTop }, SR.overlay.dur, 'swing', function() {
-        // Switch the logos
-        $logoHead.css('opacity', '1');
-        $overlay.fadeOut();
-      });
-    } else {
-      // Switch the logos
-      $logoHead.css('opacity', '1');
-      $overlay.fadeOut();
-    }
-  });
+  // Wait for the page to settle in
+  setTimeout(function() {
+    // Get rid of the overlay
+    $overlay.addClass('gone');
+  }, 2000);
 
 });
 
@@ -510,7 +492,7 @@ $(document).ready(function() {
     var selected = null;
     // Loop the sections
     for (var offset in sections) {
-      if (offset <= scroll) {
+      if (Math.floor(offset) <= Math.ceil(scroll)) {
         selected = sections[offset];
       }
     }
@@ -529,7 +511,12 @@ $(document).ready(function() {
 
   // Sets the page's URL using the history API
   function setURL(newpath) {
-    history.pushState('', document.title, '/' + newpath);
+    // history.pushState('', document.title, '/' + newpath);
+    if (newpath === '') {
+      history.pushState('', document.title, window.location.pathname + window.location.search);
+    } else {
+      window.location.hash = newpath;
+    }
   }
 
   // Updates the page's URL based on the current section
