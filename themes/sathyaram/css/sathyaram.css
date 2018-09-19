@@ -1822,10 +1822,6 @@ header {
         font-size: 96px; } }
   #about .content {
     display: block;
-    -ms-flex-wrap: no-wrap;
-    flex-wrap: no-wrap;
-    -ms-flex-align: center;
-    align-items: center;
     width: 100%;
     margin: 0 0 30px 0;
     padding: 0;
@@ -1846,35 +1842,15 @@ header {
     @media (min-width: 1280px) {
       #about .content {
         width: 980px; } }
-    @media (min-width: 992px) {
-      #about .content {
-        display: -ms-flexbox;
-        display: flex; } }
     #about .content .left {
       text-align: center; }
-      @media (min-width: 992px) {
-        #about .content .left {
-          -ms-flex-preferred-size: 30%;
-          flex-basis: 30%;
-          -ms-flex-positive: 0;
-          flex-grow: 0;
-          -ms-flex-negative: 0;
-          flex-shrink: 0; } }
     #about .content .right {
       padding-top: 30px;
       text-align: center; }
-      @media (min-width: 992px) {
-        #about .content .right {
-          padding-top: 0;
-          padding-left: 30px;
-          text-align: left; } }
     #about .content img {
       display: inline-block;
       width: 30%;
       border-radius: 50%; }
-      @media (min-width: 992px) {
-        #about .content img {
-          width: 100%; } }
     #about .content p {
       margin: 0 0 10px 0;
       padding: 0;
