@@ -3,15 +3,19 @@
     <h2>{{ page.header.title }}</h2>
 
     <div class="content">
-        <div class="left">
+        <div class="about-photo">
             <img
               src="{{ page.media[page.header.photo_file].url }}"
               alt="{{ page.header.photo_alt }}">
         </div>
-        <div class="right">
-            {% for paragraph in page.header.about_text %}
-                <p>{{ paragraph }}</p>
-            {% endfor %}
+        <div class="about-title">{{ page.header.about_title }}</div>
+        <div class="about-text">
+            
+            <div class="about-description">
+                {% for paragraph in page.header.about_description %}
+                    <p>{{ paragraph }}</p>
+                {% endfor %}
+            </div>
         </div>
     </div>
 

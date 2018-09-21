@@ -12,5 +12,8 @@ icons:
     -
         icon: 'fa-codepen'
         link: 'https://codepen.io/sathyaram'
+    -
+        icon: 'fa-github'
+        link: 'https://github.com/sathyaram'
 ---
 

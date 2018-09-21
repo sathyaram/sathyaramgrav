@@ -1,29 +1,29 @@
 ---
 title: 'About'
 section_slug: 'about'
-photo_file: 'me.jpeg'
+photo_file: 'RAM_7900.jpg'
 photo_alt: 'Me'
-about_text:
-  - 'Hi, my name is Sathya. Pork chop picanha shoulder strip steak swine cupim tail pork belly bacon pastrami shank ham hock. Tri-tip beef ribs picanha, buffalo pork belly short loin beef ball tip turducken. Filet mignon short loin strip steak rump alcatra, meatloaf spare ribs drumstick tail. Brisket shoulder turkey pancetta venison filet mignon. Beef ribs chuck porchetta, pork belly salami biltong pig strip steak.'
-  - 'Pancetta kielbasa doner, fatback picanha tenderloin pork tri-tip. Turducken short loin corned beef kevin buffalo leberkas salami meatball ball tip tail tri-tip tongue t-bone pork loin turkey. Venison alcatra tenderloin, tri-tip bresaola ribeye cupim. Cupim short loin meatball, jerky ham hock salami porchetta pork loin picanha.'
+about_title: I'm Sathya Ram,<br/>a Web Designer & Frontend<br/>Developer in D.C.
+about_description: 
+  - 'I am an enthusiastic triple threat: Designer, Developer, Photographer with a critical, caring and open-minded eye for pixel perfection. My charisma and drive allow me to craft exciting graphics and crisp code while pushing the confides of creativity.'
 services:
   -
     href: '#web'
     class: 'web'
     letter: 'W'
     title: 'Websites'
-    back: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    back: 'I’m an end-to-end developer who specializes in Drupal websites. I’ve developed responsive/adaptive custom Wordpress themes with HTML5, CSS3, SASS, PHP and jQuery. I’m currently in the intensive General Assembly coding boot camp learning Javascript, React.js and Python. I create crisp code with a critical eye for detail. My skills are only surpassed by my passion.'
   -
     href: '#graphic'
     class: 'graphic'
     letter: 'G'
     title: 'Graphics'
-    back: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    back: 'I’m a graphic designer who pushes the confines of creativity as I strive for pixel perfection. I care strongly about user experiences and make sure users are at the forefront of my mind every step of the way. If you’re looking for a cookie-cutter designer -look elsewhere. I aim to make designs that are fresh and advance the industry.'
   -
     href: '#photography'
     class: 'photography'
     letter: 'P'
     title: 'Photos'
-    back: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    back: 'I’m experienced in a wide range of photography. My portfolio ranges for portraits to food to landscapes to space. My photos can be found on a variety of websites I’ve helped revitalize, such as Lehigh University’s website and Fudtruck. Having photography skills has taken my website and graphic designs to a new level.'
 ---
 

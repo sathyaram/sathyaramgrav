@@ -1824,32 +1824,24 @@ header {
     display: block;
     width: 100%;
     margin: 0 0 30px 0;
-    padding: 0;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0; }
-    @media (min-width: 420px) {
-      #about .content {
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto; } }
-    @media (min-width: 768px) {
-      #about .content {
-        width: 700px; } }
-    @media (min-width: 992px) {
-      #about .content {
-        width: 980px; } }
-    @media (min-width: 1280px) {
-      #about .content {
-        width: 980px; } }
-    #about .content .left {
-      text-align: center; }
-    #about .content .right {
-      padding-top: 30px;
-      text-align: center; }
+    padding: 0 20px;
+    text-align: center; }
+    #about .content .about-title {
+      font-family: "Fredoka One", sans-serif;
+      font-size: 42px;
+      margin-top: -5%;
+      color: #222639; }
+      @media (max-width: 768px) {
+        #about .content .about-title {
+          font-size: 28px; } }
+    #about .content .about-text {
+      max-width: 500px;
+      margin: 0 auto; }
+      #about .content .about-text .about-description {
+        padding-top: 30px; }
     #about .content img {
       display: inline-block;
-      width: 30%;
+      width: 40%;
       border-radius: 50%; }
     #about .content p {
       margin: 0 0 10px 0;
@@ -1863,7 +1855,7 @@ header {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 50px 0 0;
     -webkit-perspective: 1000px;
     perspective: 1000px;
     text-align: center; }
@@ -1887,6 +1879,9 @@ header {
       -webkit-transform: rotateY(180deg) translateZ(1px);
       transform: rotateY(180deg) translateZ(1px);
       box-shadow: 0px 0px 50px 10px #ececec; }
+      #about a:hover .card-wrapper .back, #about a.hover .card-wrapper .back {
+        background: #fff;
+        color: #222639; }
   #about .card-wrapper {
     display: block;
     position: relative;
@@ -1948,6 +1943,8 @@ header {
     color: #fff;
     font-family: "Jura", sans-serif;
     font-size: 20px;
+    line-height: 120%;
+    transition: background 600ms ease;
     -webkit-transform: rotateY(-180deg) translateZ(1px);
     transform: rotateY(-180deg) translateZ(1px); }
     @media (max-width: 1279px) {
