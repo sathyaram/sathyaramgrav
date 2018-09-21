@@ -5,7 +5,7 @@
 
 #contact {
   position: relative;
-  background: radial-gradient(ellipse at bottom, #1f3b60 0%, #090a0f 100%);
+  background:$header-grad;
   color: $color-white;
   text-align: center;
   z-index: 9;

@@ -10,7 +10,7 @@
     font-size: 56px;
     margin: 0 0 50px 0;
     padding: 0 10px;
-    color: #947e92;
+    color: $color-blue-light;
     text-align: center;
     @include size-container;
 
@@ -32,6 +32,10 @@
     flex-flow: row wrap;
     justify-content: space-between;
     @include size-container;
+
+    @media (max-width: $breakpoint-sm-min) {
+      width:100%;
+    }
   }
 
   article {

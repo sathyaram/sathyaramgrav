@@ -10,10 +10,11 @@
 $color-black:      #000;
 $color-white:      #fff;
 $color-midnight:   #222639;
+$color-twilight:   #001f6d;
 $color-slate:      #303030;
 $color-gray:       #f2f2f2;
 $color-drupal:     #0678be;
-$color-red:        #f3443f;
+$color-red:        #f3443f; 
 $color-purple:     #947e92;
 $color-pink:       #f06292;
 $color-teal:       #26a69a;
@@ -91,7 +92,7 @@ $transfix: translateZ(0);
 $header-bg-color:      #000;
 $header-image:         none;
 $header-image-opacity: 0;
-$header-grad:          radial-gradient(ellipse at bottom, #051c56 0%, black 100%);
+$header-grad:          radial-gradient(ellipse at bottom, $color-twilight 0%, $color-black 100%);
 $header-grad-opacity:  1;
 // - REMOVED (Ref)
 // $header-image:         url('../images/header.jpg');
@@ -135,7 +136,7 @@ $section-title-font: $font-title;
 // Photography Section
 
 $photo-filter-color:        #333;
-$photo-filter-color-hover:  #947e92;
+$photo-filter-color-hover:  $color-blue-light;
 $photo-filter-color-active: #ff9b4c;
 
 // Grid gutter at each breakpoint

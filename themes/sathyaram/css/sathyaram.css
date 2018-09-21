@@ -1648,7 +1648,7 @@ header {
     background-position: center center; }
   header::after {
     opacity: 1;
-    background: radial-gradient(ellipse at bottom, #051c56 0%, black 100%);
+    background: radial-gradient(ellipse at bottom, #001f6d 0%, #000 100%);
     background-position: top center; }
   header .logo {
     position: absolute;
@@ -1784,13 +1784,13 @@ header {
  * Copyright 2018 Sathya Ram
  */
 #about {
-  padding: 150px 0 50px 0; }
+  padding: 100px 0 50px 0; }
   #about > h2 {
     font-family: "Fredoka One", sans-serif;
     font-size: 56px;
     margin: 0 0 50px 0;
     padding: 0 10px;
-    color: #947e92;
+    color: #889bb4;
     text-align: center;
     width: 100%;
     margin-left: 0;
@@ -1828,12 +1828,13 @@ header {
     text-align: center; }
     #about .content .about-title {
       font-family: "Fredoka One", sans-serif;
-      font-size: 42px;
-      margin-top: -5%;
+      font-size: 46px;
+      margin-top: -4%;
       color: #222639; }
       @media (max-width: 768px) {
         #about .content .about-title {
-          font-size: 28px; } }
+          font-size: 28px;
+          margin-top: -6%; } }
     #about .content .about-text {
       max-width: 500px;
       margin: 0 auto; }
@@ -1841,8 +1842,8 @@ header {
         padding-top: 30px; }
     #about .content img {
       display: inline-block;
-      width: 90%;
-      max-width: 450px;
+      width: 80%;
+      max-width: 420px;
       border-radius: 50%; }
     #about .content p {
       margin: 0 0 10px 0;
@@ -2148,7 +2149,7 @@ header {
     font-size: 56px;
     margin: 0 0 50px 0;
     padding: 0 10px;
-    color: #947e92;
+    color: #889bb4;
     text-align: center;
     width: 100%;
     margin-left: 0;
@@ -2214,6 +2215,10 @@ header {
       #web .wrapper,
       #graphic .wrapper {
         width: 980px; } }
+    @media (max-width: 768px) {
+      #web .wrapper,
+      #graphic .wrapper {
+        width: 100%; } }
   #web article,
   #graphic article {
     transition: all 300ms ease;
@@ -2429,7 +2434,7 @@ header {
     font-size: 56px;
     margin: 0 0 50px 0;
     padding: 0 10px;
-    color: #947e92;
+    color: #889bb4;
     text-align: center;
     width: 100%;
     margin-left: 0;
@@ -2490,7 +2495,7 @@ header {
       color: #333;
       transition: color .125s ease; }
       #photography > ul li:hover {
-        color: #947e92; }
+        color: #889bb4; }
       #photography > ul li:active, #photography > ul li.active {
         color: #ff9b4c; }
   #photography .content {
@@ -2536,6 +2541,9 @@ header {
     @media (min-width: 1280px) {
       #photography .grid {
         width: 980px; } }
+    @media (max-width: 768px) {
+      #photography .grid {
+        width: 100%; } }
   #photography .sizer,
   #photography .item {
     display: block;
@@ -2582,7 +2590,7 @@ header {
  */
 #contact {
   position: relative;
-  background: radial-gradient(ellipse at bottom, #1f3b60 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #001f6d 0%, #000 100%);
   color: #fff;
   text-align: center;
   z-index: 9;
