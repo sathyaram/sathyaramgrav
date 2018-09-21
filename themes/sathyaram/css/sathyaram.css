@@ -1841,7 +1841,8 @@ header {
         padding-top: 30px; }
     #about .content img {
       display: inline-block;
-      width: 40%;
+      width: 90%;
+      max-width: 450px;
       border-radius: 50%; }
     #about .content p {
       margin: 0 0 10px 0;
@@ -2267,7 +2268,7 @@ header {
       left: 0; }
     #web article:hover:nth-child(1) h3,
     #graphic article:hover:nth-child(1) h3 {
-      text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
+      text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34; }
     #web article:hover hr,
     #graphic article:hover hr {
       width: 25%;
@@ -2382,10 +2383,10 @@ header {
         background: #fff;
         color: #000; }
 
-#fudtruk {
+#fud {
   width: 36px;
   height: 50px; }
-  #fudtruk span {
+  #fud span {
     display: block;
     background: #fff;
     width: 100%;
@@ -2396,13 +2397,13 @@ header {
     margin: 5px 0;
     transition: all 300ms ease;
     border-radius: 50px; }
-    #fudtruk span:first-child {
+    #fud span:first-child {
       -webkit-animation: topbun 6s infinite ease-in-out;
       animation: topbun 6s infinite ease-in-out; }
-    #fudtruk span:nth-child(2) {
+    #fud span:nth-child(2) {
       -webkit-animation: meat 6s infinite ease-in-out;
       animation: meat 6s infinite ease-in-out; }
-    #fudtruk span:last-child {
+    #fud span:last-child {
       -webkit-animation: bottombun 6s infinite ease-in-out;
       animation: bottombun 6s infinite ease-in-out; }
 
@@ -2493,10 +2494,8 @@ header {
       #photography > ul li:active, #photography > ul li.active {
         color: #ff9b4c; }
   #photography .content {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 25px;
+    max-width: 400px;
+    margin: 25px auto 0;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 16px;
@@ -2505,20 +2504,6 @@ header {
     line-height: 26px;
     letter-spacing: 0.5px;
     color: #474747; }
-    @media (min-width: 420px) {
-      #photography .content {
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto; } }
-    @media (min-width: 768px) {
-      #photography .content {
-        width: 700px; } }
-    @media (min-width: 992px) {
-      #photography .content {
-        width: 980px; } }
-    @media (min-width: 1280px) {
-      #photography .content {
-        width: 980px; } }
     #photography .content > div {
       display: none; }
       #photography .content > div.active {
@@ -2526,8 +2511,7 @@ header {
     #photography .content p {
       display: block;
       margin: 0 0 25px 0;
-      text-align: center;
-      width: 700px; }
+      text-align: center; }
       #photography .content p:last-child {
         margin-bottom: 0; }
   #photography .grid {
@@ -2570,7 +2554,7 @@ header {
     @media (min-width: 1280px) {
       #photography .sizer,
       #photography .item {
-        width: 25%; } }
+        width: 33.33333%; } }
   #photography .item {
     padding: 3px;
     cursor: pointer; }

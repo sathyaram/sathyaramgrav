@@ -11,6 +11,7 @@ taxonomy:
     - Web Design
     - Graphic Design
 link: http://paulknakk.com
+dribbble: https://dribbble.com/shots/5192878-Paul-Knakk-Country-Musician-Website
 ---
 Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! 
 

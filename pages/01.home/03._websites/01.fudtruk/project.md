@@ -13,6 +13,5 @@ taxonomy:
     - Video
     - Photography
 link: https://fudtruk.lehigh.edu
-dribbble: https://dribbble.com
 ---
 The FüdTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make killer sandwiches, breakfast and lunch and unique dishes. I had the opportunity to completely brand them, from their logo, to the color scheme, to the vinyl wrap for the truck, and to their website.

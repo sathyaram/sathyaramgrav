@@ -11,6 +11,7 @@ taxonomy:
     - Web Design
     - Graphic Design
 link: https://te.lehigh.edu
+dribbble: https://dribbble.com/shots/5124149-Technical-Entrepreneurship-Website
 
 ---
 As a student, my interest in web design and development led me to get the opportunity to create the Technical Entrepreurship program's website. It's one of my first sites!

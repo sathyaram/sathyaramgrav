@@ -1,6 +1,6 @@
 ---
-title: 'Want to get in touch?'
+title: 'Lets talk about the realness'
 cache_enable: false
-public_email: 'hello@sathyaram.com'
+public_email: 'sathyatheram@gmail.com'
 copyright: '© 2018 Sathya Ram'
 ---

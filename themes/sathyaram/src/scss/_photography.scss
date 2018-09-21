@@ -65,8 +65,8 @@
   }
 
   .content {
-    @include size-container;
-    margin-top: 25px;
+    max-width:400px;
+    margin: 25px auto 0;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 16px;
@@ -87,7 +87,6 @@
       display: block;
       margin: 0 0 25px 0;
       text-align:center;
-      width: $container-sm;
 
       &:last-child {
         margin-bottom: 0;
@@ -119,7 +118,7 @@
       width: #{$photo-grid-width-md};
     }
     @media (min-width: $breakpoint-lg-min) {
-      width: #{$photo-grid-width-lg};
+      width: #{$photo-grid-width-md};
     }
   }
 

@@ -1,5 +1,5 @@
 ---
 title: 'Featured'
 slug: 'featured'
-description: "Photos that encompass my work"
+description: "My featured photos."
 ---

@@ -52,8 +52,6 @@
       max-width:500px;
       margin: 0 auto;
 
-      
-
       .about-description {
         padding-top: 30px;
       }
@@ -62,7 +60,8 @@
 
     img {
       display: inline-block;
-      width: 40%;
+      width: 90%;
+      max-width: 450px;
       border-radius: 50%;
     }
 
