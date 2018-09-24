@@ -1,7 +1,7 @@
 ---
 title: 'About'
 section_slug: 'about'
-photo_file: 'RAM_7900.jpg'
+photo_file: 'me.jpg'
 photo_alt: 'Me'
 about_title: I'm Sathya Ram,<br/>a Web Designer & Frontend<br/>Developer in D.C.
 about_description: 
