@@ -2,7 +2,7 @@
 title: 'Lehigh 2018 Theme'
 tagline: "Lehigh University's Official Website Theme"
 section_classes: 'full-width'
-bg_style: 'linear-gradient(to right, rgba(255,255,255, 0.45), rgba(255,255,255, 0.45)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/481345/teacher_student-compressor.jpg)'
+bg_style: 'linear-gradient(to right, rgba(255,255,255, 0.45), rgba(255,255,255, 0.45)), url(/user/themes/sathyaram/images/web/LehighUC.jpg)'
 pre_html: ''
 taxonomy:
   tag:

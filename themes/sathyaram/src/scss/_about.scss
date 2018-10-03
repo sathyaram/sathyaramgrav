@@ -40,7 +40,8 @@
     .about-title {
       font-family: $section-title-font;
       font-size: 46px;
-      margin-top: -4%;
+      max-width:800px;
+      margin: -3% auto 0;
       color:$color-midnight;
 
       @media (max-width: $breakpoint-sm-min) {
