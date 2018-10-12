@@ -2650,6 +2650,23 @@ header {
     @media (min-width: 992px) {
       #contact h2 {
         font-size: 32px; } }
+  #contact .footer-links {
+    padding-top: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 25px;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #contact .footer-links a {
+      font-family: "Fredoka One", sans-serif;
+      color: #a7b5c8;
+      font-size: 18px;
+      display: inline-block;
+      padding: 0 10px; }
+      #contact .footer-links a:hover {
+        color: #29b6f6; }
   #contact .p-email {
     display: block;
     width: 100%;

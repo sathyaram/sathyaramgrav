@@ -10,5 +10,6 @@ taxonomy:
     - HTML/CSS Theming
     - Branding
     - Graphic Design
+dribbble: 'https://dribbble.com/shots/5384304-Lehigh-Engineering-Website'
 ---
 While at Lehigh, I had the honor of redesigning Lehigh's Engineering College website. Starting from the ground up, I aimed for a vibrant, contemporary aesthetic that would catch the eye of a new budding engineer as well as push the limits for how collegiate websites should look and function.

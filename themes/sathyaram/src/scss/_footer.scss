@@ -51,6 +51,25 @@
     }
   }
 
+  .footer-links {
+    padding-top:40px;
+    display: flex;
+    font-size:25px;
+    align-items: center;
+    justify-content: center;
+    a {
+      font-family: $footer-link-font;
+      color: $footer-link-color;
+      font-size:18px;
+      display: inline-block;
+      padding: 0 10px;
+
+      &:hover {
+        color: $footer-link-hover;
+      }
+    }
+  }
+
   .p-email {
     display: block;
     width: 100%;
