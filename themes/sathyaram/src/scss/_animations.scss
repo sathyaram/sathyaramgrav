@@ -17,8 +17,8 @@
 
 // Title hovering effect
 @keyframes title-hover {
-  0%   { transform: $header-skew translateY(0px); }
-  100% { transform: $header-skew translateY(-12px); }
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(-12px); }
 }
 
 // The stars travelling from bottom to top
