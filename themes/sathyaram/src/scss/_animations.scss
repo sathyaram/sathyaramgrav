@@ -54,8 +54,12 @@
 }
 
 @keyframes scrolling {
-  0% {transform:translateY(-80%);}
-  80% {transform:translateY(0);}
+  0% {transform:translateY(0);}
+  20% {transform:translateY(-70%);}
+  40% {transform:translateY(-10%);}
+  60% {transform:translateY(-60%);}
+  70% {transform:translateY(-30%);}
+  100% {transform:translateY(0);}
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -2079,8 +2079,8 @@ header {
     overflow: hidden; }
     #about .web .screen .code {
       padding: 20px;
-      -webkit-animation: 6s scrolling 2s forwards ease infinite;
-      animation: 6s scrolling 2s forwards ease infinite; }
+      -webkit-animation: 8s scrolling 2s forwards ease infinite;
+      animation: 8s scrolling 2s forwards ease infinite; }
       #about .web .screen .code .bar {
         width: 100%;
         height: 9px;
