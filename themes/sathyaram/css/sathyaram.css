@@ -1627,6 +1627,25 @@ section {
  * (Relevant JavaScript: "/user/themes/sathyaram/src/js/custom/header.js")
  * Copyright 2018 Sathya Ram
  */
+.logo {
+  position: fixed;
+  width: 100px;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 12;
+  opacity: 0;
+  transition: all 300ms ease;
+  -webkit-animation: 1s appear 3s ease forwards;
+  animation: 1s appear 3s ease forwards; }
+  .logo img {
+    width: 100%; }
+  @media (max-width: 991px) {
+    .logo {
+      width: 80px;
+      top: 10px; } }
+
 header {
   position: relative;
   overflow: hidden;
@@ -1650,23 +1669,10 @@ header {
     opacity: 1;
     background: radial-gradient(ellipse at bottom, #001f6d 0%, #000 100%);
     background-position: top center; }
-  header .logo {
-    position: absolute;
-    width: 100px;
-    top: 30px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: 12; }
-    header .logo img {
-      width: 100%; }
-    @media (max-width: 991px) {
-      header .logo {
-        width: 80px;
-        top: 20px; } }
-    @media (max-width: 419px) {
-      header .logo {
-        width: 60px; } }
+  @media (max-width: 991px) {
+    header {
+      margin: 0 !important;
+      width: 100vw; } }
   header .content {
     display: -ms-flexbox;
     display: flex;
@@ -1711,7 +1717,7 @@ header {
     font-size: 100px;
     font-weight: 200;
     letter-spacing: 2px;
-    text-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0;
+    text-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0, 0 0 30px #60c0f0;
     -webkit-transform: skewY(-5deg) translateY(0px);
     transform: skewY(-5deg) translateY(0px);
     -webkit-animation-name: title-hover;
@@ -1760,6 +1766,24 @@ header {
     overflow: hidden; }
   header .space {
     z-index: 10; }
+    header .space:before {
+      content: "";
+      position: absolute;
+      height: 0;
+      bottom: 0;
+      right: 0;
+      border-style: solid;
+      border-width: 0 0 50px 50vw;
+      border-color: transparent transparent white transparent; }
+    header .space:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: 0;
+      border-style: solid;
+      border-width: 50px 0 0 50vw;
+      border-color: transparent transparent transparent white; }
   header .stars {
     z-index: 11; }
     header .stars div {
@@ -1784,7 +1808,7 @@ header {
  * Copyright 2018 Sathya Ram
  */
 #about {
-  padding: 100px 0 50px 0; }
+  padding: 50px 0; }
   #about > h2 {
     font-family: "Fredoka One", sans-serif;
     font-size: 56px;
@@ -1945,7 +1969,7 @@ header {
     background: #222639;
     color: #fff;
     font-family: "Jura", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 120%;
     transition: background 600ms ease;
     -webkit-transform: rotateY(-180deg) translateZ(1px);
@@ -2229,7 +2253,7 @@ header {
     margin: 0;
     padding: 10px;
     box-sizing: border-box;
-    min-height: 500px;
+    min-height: 400px;
     position: relative;
     overflow: hidden;
     display: -ms-flexbox;
@@ -2248,7 +2272,7 @@ header {
       bottom: 10px;
       left: 10px;
       background-repeat: no-repeat;
-      background-position: center bottom;
+      background-position: center top;
       background-size: cover;
       -webkit-transform: translateZ(0) scale(1);
       transform: translateZ(0) scale(1);
@@ -2296,7 +2320,7 @@ header {
     #web article.full-width,
     #graphic article.full-width {
       text-align: center;
-      min-height: 640px;
+      min-height: 500px;
       -ms-flex: 1 100%;
       flex: 1 100%;
       -ms-flex-align: center;
@@ -2310,7 +2334,7 @@ header {
         -ms-flex-pack: center;
         justify-content: center;
         text-align: center;
-        min-height: 640px;
+        min-height: 450px;
         -ms-flex: 1 100%;
         flex: 1 100%;
         -ms-flex-align: center;

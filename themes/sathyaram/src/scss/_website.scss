@@ -45,7 +45,7 @@
     margin: 0;
     padding: 10px;
     box-sizing: border-box;
-    min-height: 500px;
+    min-height: 400px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -61,7 +61,7 @@
       bottom: 10px;
       left: 10px;
       background-repeat: no-repeat;
-      background-position: center bottom;
+      background-position: center top;
       background-size: cover;
       transform: translateZ(0) scale(1);
       z-index: -1;
@@ -124,7 +124,7 @@
     // Full-width variant
     &.full-width {
       text-align: center;
-      min-height: 640px;
+      min-height: 500px;
       flex: 1 100%;
       align-items: center;
       > :last-child {
@@ -132,7 +132,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        min-height: 640px;
+        min-height: 450px;
         flex: 1 100%;
         align-items: center;
       }

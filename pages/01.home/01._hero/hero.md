@@ -10,6 +10,9 @@ icons:
         icon: 'fa-dribbble'
         link: 'https://dribbble.com/sathyaram'
     -
+        icon: 'fa-flickr'
+        link: 'https://flickr.com/sathyaramphotography'
+    -
         icon: 'fa-codepen'
         link: 'https://codepen.io/sathyaram'
     -
