@@ -32,6 +32,9 @@
                         {% if project.header.dribbble %}
                             <a href="{{ project.header.dribbble }}" class="dribbble-link" target="_blank"><i class="fa fa-dribbble"></i>&nbsp;&nbsp;Full Project</a>
                         {% endif %}
+                        {% if project.header.github %}
+                            <a href="{{ project.header.github }}" class="github-link" target="_blank"><i class="fa fa-github"></i>&nbsp;&nbsp;Repo</a>
+                        {% endif %}
                     </div>
                 </div>
             </article>

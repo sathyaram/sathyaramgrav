@@ -1,0 +1,17 @@
+---
+title: 'Fridgify'
+tagline: "Online Refridgerator Tool"
+section_classes: ''
+bg_style: 'linear-gradient(to bottom, rgba(255,255,255, 0.1), rgba(134,149,160,1)), url(/user/themes/sathyaram/images/web/fridgify.png)'
+pre_html: ''
+taxonomy:
+  tag:
+    - React.js
+    - Express/Node
+    - Mongoose/MongoDB
+    - Web Design
+    - v1.0
+link: 'https://frigify.surge.sh'
+github: 'https://github.com/sathyaram/fridgify'
+---
+Welcome to Fridgify, an online refrigerator where you can inventory what's in your actual fridge.

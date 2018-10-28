@@ -50,10 +50,12 @@
     width: 100%;
     margin: 0 0 $footer-spacer-sm 0;
     padding: 0;
-    color: $footer-title-color;
+    color: white;
     font-size: 18px;
     font-family: $footer-title-font;
     text-align: center;
+    text-shadow: 0 0 18px #fff;
+    opacity:0.8;
 
     @media (min-width: $breakpoint-sm-min) {
       font-size: 24px;
@@ -69,15 +71,17 @@
     font-size:25px;
     align-items: center;
     justify-content: center;
+    opacity:0.9;
     a {
       font-family: $footer-link-font;
-      color: $footer-link-color;
+      color: white;
       font-size:18px;
       display: inline-block;
       padding: 0 10px;
+      text-shadow: 0 0 18px #fff;
 
       &:hover {
-        color: $footer-link-hover;
+        color: #d3f2ff;
       }
     }
   }
@@ -87,11 +91,12 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    color: $footer-link-color;
+    color: white;
     font-size: 28px;
     font-family: $footer-link-font;
     text-align: center;
     transition: color $trans;
+    text-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0, 0 0 30px #60c0f0;
 
     @media (min-width: $breakpoint-sm-min) {
       font-size: 36px;
@@ -104,7 +109,7 @@
     }
 
     &:hover {
-      color: $footer-link-hover;
+      color: #d3f2ff;
     }
   }
 

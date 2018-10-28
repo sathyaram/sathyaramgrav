@@ -2,7 +2,7 @@
 title: 'Lehigh Engineering'
 tagline: 'P.C. Rossin College of Engineering'
 section_classes: ''
-bg_style: 'linear-gradient(to bottom, rgba(27, 117, 186, 0.1), rgba(54, 178, 226, 1)), url(/user/themes/sathyaram/images/web/engbg.jpg)'
+bg_style: 'linear-gradient(to bottom, rgba(27, 117, 186, 0.1), rgba(4, 133, 208, 1)), url(/user/themes/sathyaram/images/web/engbg.jpg)'
 pre_html: ''
 taxonomy:
   tag:

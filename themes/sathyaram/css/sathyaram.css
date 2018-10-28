@@ -2516,8 +2516,10 @@ header {
         padding: 0; }
     #web article a.website-link,
     #web article a.dribbble-link,
+    #web article a.github-link,
     #graphic article a.website-link,
-    #graphic article a.dribbble-link {
+    #graphic article a.dribbble-link,
+    #graphic article a.github-link {
       display: inline-block;
       margin: 15px 0 0 0;
       padding: 10px;
@@ -2536,8 +2538,10 @@ header {
       box-shadow: 0 0 3px 0 white; }
       #web article a.website-link:before,
       #web article a.dribbble-link:before,
+      #web article a.github-link:before,
       #graphic article a.website-link:before,
-      #graphic article a.dribbble-link:before {
+      #graphic article a.dribbble-link:before,
+      #graphic article a.github-link:before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -2559,23 +2563,35 @@ header {
       #web article a.dribbble-link:hover,
       #web article a.dribbble-link:focus,
       #web article a.dribbble-link:active,
+      #web article a.github-link:hover,
+      #web article a.github-link:focus,
+      #web article a.github-link:active,
       #graphic article a.website-link:hover,
       #graphic article a.website-link:focus,
       #graphic article a.website-link:active,
       #graphic article a.dribbble-link:hover,
       #graphic article a.dribbble-link:focus,
-      #graphic article a.dribbble-link:active {
+      #graphic article a.dribbble-link:active,
+      #graphic article a.github-link:hover,
+      #graphic article a.github-link:focus,
+      #graphic article a.github-link:active {
         color: black; }
       #web article a.website-link:hover:before, #web article a.website-link:focus:before, #web article a.website-link:active:before,
       #web article a.dribbble-link:hover:before,
       #web article a.dribbble-link:focus:before,
       #web article a.dribbble-link:active:before,
+      #web article a.github-link:hover:before,
+      #web article a.github-link:focus:before,
+      #web article a.github-link:active:before,
       #graphic article a.website-link:hover:before,
       #graphic article a.website-link:focus:before,
       #graphic article a.website-link:active:before,
       #graphic article a.dribbble-link:hover:before,
       #graphic article a.dribbble-link:focus:before,
-      #graphic article a.dribbble-link:active:before {
+      #graphic article a.dribbble-link:active:before,
+      #graphic article a.github-link:hover:before,
+      #graphic article a.github-link:focus:before,
+      #graphic article a.github-link:active:before {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
         transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
@@ -2843,10 +2859,12 @@ header {
     width: 100%;
     margin: 0 0 15px 0;
     padding: 0;
-    color: #889bb4;
+    color: white;
     font-size: 18px;
     font-family: "Jura", sans-serif;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 0 0 18px #fff;
+    opacity: 0.8; }
     @media (min-width: 768px) {
       #contact h2 {
         font-size: 24px; } }
@@ -2861,25 +2879,28 @@ header {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    opacity: 0.9; }
     #contact .footer-links a {
       font-family: "Fredoka One", sans-serif;
-      color: #a7b5c8;
+      color: white;
       font-size: 18px;
       display: inline-block;
-      padding: 0 10px; }
+      padding: 0 10px;
+      text-shadow: 0 0 18px #fff; }
       #contact .footer-links a:hover {
-        color: #29b6f6; }
+        color: #d3f2ff; }
   #contact .p-email {
     display: block;
     width: 100%;
     margin: 0;
     padding: 0;
-    color: #a7b5c8;
+    color: white;
     font-size: 28px;
     font-family: "Fredoka One", sans-serif;
     text-align: center;
-    transition: color 0.3s ease; }
+    transition: color 0.3s ease;
+    text-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0, 0 0 30px #60c0f0; }
     @media (min-width: 768px) {
       #contact .p-email {
         font-size: 36px; } }
@@ -2890,7 +2911,7 @@ header {
       #contact .p-email {
         font-size: 64px; } }
     #contact .p-email:hover {
-      color: #29b6f6; }
+      color: #d3f2ff; }
   #contact .copyright {
     position: absolute;
     margin: 0;
