@@ -11,7 +11,7 @@ taxonomy:
     - Mongoose/MongoDB
     - Web Design
     - v1.0
-link: 'https://frigify.surge.sh'
+link: 'https://fridgify.surge.sh'
 github: 'https://github.com/sathyaram/fridgify'
 ---
 This is Fridgify, an online refrigerator where you can inventory what's in your actual fridge. With Fridgify, you'll have a visual fridge interface to add the name, quantity, expiration date of anything in your fridge, and categorize them by food group and if they're in the freezer or not.
