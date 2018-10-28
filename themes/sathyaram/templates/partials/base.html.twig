@@ -19,7 +19,7 @@
     {# Create a block for stylesheets so it can be overriden in children #}
     {% block stylesheets %}
         {# Register stylesheets with the Asset Manager #}
-        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 101) %}
+        {% do assets.addCss('https://use.fontawesome.com/releases/v5.4.2/css/all.css', 101) %}
         {% do assets.addCss('theme://css/sathyaram.min.css', 100) %}
     {% endblock %}
     {# Render the HTML for the stylesheets #}
