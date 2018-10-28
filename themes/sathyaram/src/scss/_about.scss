@@ -190,6 +190,7 @@
     font-family: $font-body;
     font-size: 18px;
     line-height:120%;
+    z-index:12;
     transition: background 600ms ease;
     -webkit-transform: rotateY(-180deg) translateZ(1px);
              transform: rotateY(-180deg) translateZ(1px);
@@ -211,13 +212,26 @@
       color: white;
       font-size: 56px;
       font-family: 'aquatico';
-      text-shadow: 0 0 5px #fff, 0 0 20px #60c0f0;
+      text-shadow: 0 0 5px #fff, 0 0 20px #60c0f0, 0 0 30px #60c0f0;
+    }
+
+    .monitor .letters {
+        margin-top:0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        top: 58%;
+        opacity: 0.5;
+    }
+    .box .letters {
+      margin-top: 12px;
+    
     }
   }
 
   // The title text for the link
   .description {
-    margin-top: 85px;
+    margin-top: 115px;
 
     h3 {
       color: $color-midnight;
@@ -268,6 +282,90 @@
       line-height: 140px;
       font-size: 56px;
       background: $color-midnight;
+      overflow:hidden;
+
+      .code {
+        padding:20px;
+        animation: 6s scrolling 2s forwards ease infinite;
+
+        .bar {
+          width:100%;
+          height:9px;
+          border-radius:15px;
+          background-color:#1e95f7;
+          margin-top:9px;
+
+          &:nth-child(1) {
+            width:20%;
+          }
+          &:nth-child(2) {
+            width:40%;
+            background-color:#1e95f7;
+          }
+          &:nth-child(3) {
+            width:50%;
+            background-color:white;
+          }
+          &:nth-child(4) {
+            width:70%;
+            background-color:rgb(40, 185, 252);
+          }
+
+          &:nth-child(5) {
+            background-color:white;
+          }
+
+          &:nth-child(6) {
+            background-color:white;
+          }
+
+          &:nth-child(7) {
+            width:60%;
+            background-color:white;
+          }
+
+          &:nth-child(8) {
+            width:40%;
+            background-color:white;
+          }
+          &:nth-child(9) {
+            width:30%;
+            background-color:white;
+          }
+          &:nth-child(10) {
+            width:40%;
+            background-color:rgb(40, 185, 252);
+          }
+          &:nth-child(11) {
+            width:65%;
+            background-color:rgb(40, 185, 252);
+          }
+          &:nth-child(12) {
+            width:95%;
+            background-color:rgb(218, 238, 248);
+          }
+
+          &:nth-child(12) {
+            width:95%;
+            background-color:rgb(218, 238, 248);
+          }
+
+          &:nth-child(13) {
+            width:35%;
+            background-color:rgb(218, 238, 248);
+          }
+
+          &:nth-child(14) {
+            width:25%;
+            background-color:rgb(218, 238, 248);
+          }
+
+          &:last-child {
+            width:60%;
+            background-color:rgb(20, 180, 255);
+          }
+        }
+      }
     }
 
     .base {
@@ -364,6 +462,8 @@
       border: 8px solid $color-gray;
       background: $color-midnight;
       margin: 0 auto;
+      padding:30px 20px;
+      animation: 6s zoom 3s forwards ease infinite;
     }
 
     .anchor {
@@ -446,10 +546,16 @@
         width: auto;
         background: $color-midnight;
         height: 100px;
+        animation: 4s flash 3s forwards infinite;
+        padding:30px 20px;
         // width: 114px;
         // height: 100px;
         // transition: all 200s ease;
         // animation: flash 3s ease 1s infinite;
+      }
+
+      .letters {
+        animation: 4s disappear 3s reverse forwards ease infinite;
       }
     }
   }

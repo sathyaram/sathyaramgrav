@@ -28,16 +28,37 @@
                     <div class="card-wrapper">
                         <div class="front side">
                             <div class="vector">
-                                <div>{{ service.letter }}</div>
+                                
                                 {% if service.class == 'web' %}
                                     <div class="monitor shape">
-                                        <div class="screen"></div>
+                                    <div class="letters">{{ service.letter }}</div>
+                                        <div class="screen">
+                                        
+                                            <div class="code">
+                                                <div class="bar long"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar long"></div>
+                                                <div class="bar long"></div>
+                                                <div class="bar long"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar long"></div>
+                                                <div class="bar long"></div>
+                                                <div class="bar long"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar long"></div>
+                                                <div class="bar long"></div>
+                                            </div>
+                                        </div>
                                         <div class="base">
                                             <div class="foot bottom"></div>
                                         </div>
                                     </div>
                                 {% elseif service.class == 'graphic' %}
                                     <div class="box shape">
+                                    <div class="letters">{{ service.letter }}</div>
                                         <div class="anchor"></div>
                                         <div class="anchor"></div>
                                         <div class="anchor"></div>
@@ -51,6 +72,7 @@
                                 {% elseif service.class == 'photography' %}
                                     <div class="photo shape">
                                         <div class="image">
+                                        <div class="letters">{{ service.letter }}</div>
                                         </div>
                                     </div>
                                 {% endif %}

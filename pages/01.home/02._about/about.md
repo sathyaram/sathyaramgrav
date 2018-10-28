@@ -14,7 +14,7 @@ services:
     title: 'Websites'
     back: "I’m a web developer who specializes in Drupal websites and have worked in Wordpress and Grav. I’ve developed responsive applications, websites and themes with HTML5, CSS3, SASS, Javascript, PHP, and Express. I’m currently in the intensive General Assembly coding bootcamp learning React.js, Python, Django and much more. I aim for crisp code with a critical eye for detail."
   -
-    href: ''
+    href: 'javascript:;'
     class: 'graphic'
     letter: 'G'
     title: 'Graphics'
