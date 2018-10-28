@@ -2,7 +2,7 @@
 title: 'Astral Air Parts'
 tagline: 'Aircraft Part Supplier'
 section_classes: ''
-bg_style: 'linear-gradient(to right, rgba(0, 66, 128, 0.66), rgba(0, 0, 0, 0.66)), url(/user/themes/sathyaram/images/web/astralairparts.jpg)'
+bg_style: 'linear-gradient(to top, rgba(0, 66, 128, 1) 30%, rgba(0, 0, 0, 0.1)), url(/user/themes/sathyaram/images/web/astralairparts.jpg)'
 pre_html: ''
 taxonomy:
   tag:

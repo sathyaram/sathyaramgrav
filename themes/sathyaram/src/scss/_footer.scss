@@ -16,6 +16,18 @@
   justify-content: center;
   align-items: space-between;
 
+  &:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    top: 0;
+    right: 0;
+    z-index: -9;
+    border-style: solid;
+    border-width: 50px 50vw 0 50vw;
+    border-color: #fff transparent transparent transparent;
+}
+
   .container {
     display: block;
     // padding: 0 50px;

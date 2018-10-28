@@ -2,7 +2,7 @@
 title: 'Fusion Studios'
 tagline: "Student Design Agency"
 section_classes: ''
-bg_style: 'linear-gradient(to right, rgba(214,88,21, 0.8), rgba(214,88,21, 0.8)), url(/user/themes/sathyaram/images/web/fusion.jpg)'
+bg_style: 'linear-gradient(to bottom, rgba(214,88,21, 0.3), rgba(214,88,21, 1)), url(/user/themes/sathyaram/images/web/fusion.jpg)'
 pre_html: ''
 taxonomy:
   tag:

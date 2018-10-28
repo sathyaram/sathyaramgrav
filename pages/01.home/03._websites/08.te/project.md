@@ -1,8 +1,8 @@
 ---
-title: 'Technical Entrepreunership'
+title: 'Technical Entrepreneurship'
 tagline: "Program Website"
 section_classes: ''
-bg_style: 'linear-gradient(to right, rgba(64, 195, 241, 0.66) 0%, rgba(126, 194, 66, 0.66) 50%, rgba(252, 183, 21, 0.66) 100%), url(/user/themes/sathyaram/images/web/te.jpg)'
+bg_style: 'linear-gradient(to top, rgba(64, 195, 241, 0.8) 5%, rgba(126, 194, 66, 0.8) 15%, rgba(252, 183, 21, 0.8) 30%, rgba(0,0,0,0) 100%), url(/user/themes/sathyaram/images/web/te.jpg)'
 pre_html: ''
 taxonomy:
   tag:

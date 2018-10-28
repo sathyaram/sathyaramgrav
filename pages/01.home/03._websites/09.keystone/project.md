@@ -2,7 +2,7 @@
 title: 'Keystone Munitions'
 tagline: "Premium Ammunition"
 section_classes: ''
-bg_style: 'linear-gradient(to right, rgba(10,10,10, 0), rgba(0,0,0, 0.66)), url(/user/themes/sathyaram/images/web/keystoneammunition.png)'
+bg_style: 'linear-gradient(to bottom, rgba(10,10,10, 0.1), rgba(0,0,0, 1)), url(/user/themes/sathyaram/images/web/keystoneammunition.png)'
 pre_html: ''
 taxonomy:
   tag:

@@ -2,7 +2,7 @@
 title: 'Powerhouse'
 tagline: "Lehigh's Tech Hub"
 section_classes: ''
-bg_style: 'linear-gradient(to right, rgba(80,80,80, 0.66), rgba(110,110,110, 0.66)), url(/user/themes/sathyaram/images/web/powerhouse.jpg)'
+bg_style: 'linear-gradient(to bottom, rgba(80,80,80, 0.1), rgba(110,110,110, 1)), url(/user/themes/sathyaram/images/web/powerhouse.jpg)'
 pre_html: ''
 taxonomy:
   tag:

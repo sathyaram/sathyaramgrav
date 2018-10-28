@@ -2,7 +2,7 @@
 title: 'Gertrude Hawk Goodies'
 tagline: 'Rewards Microsite'
 section_classes: ''
-bg_style: 'linear-gradient(rgba(86, 21, 98, 0.66), rgba(86, 21, 98, 0.66)), url(/user/themes/sathyaram/images/web/gertrudehawkchocolate.jpg)'
+bg_style: 'linear-gradient(to top, rgba(86, 21, 98, 1), rgba(86, 21, 98, 0.1)), url(/user/themes/sathyaram/images/web/gertrudehawkchocolate.jpg)'
 pre_html: ''
 taxonomy:
   tag:

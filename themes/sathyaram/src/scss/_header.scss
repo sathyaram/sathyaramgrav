@@ -79,6 +79,8 @@ header {
   // The social icons
   nav {
     padding-bottom: 45px;
+    display:flex;
+    flex-direction:row;
 
     // sm breakpoint
     @media (max-width: $breakpoint-sm-max) {
@@ -88,20 +90,47 @@ header {
     a {
       display: inline-block;
       margin: 0 10px;
-      padding: 5px;
+      padding: 5px 6px;
       border-radius: 50%;
+      width:36px;
+      height:36px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
       transform: scale(1) $transfix;
-      transition: color $trans, transform $trans;
+      transition: all 150ms ease;
       color: $header-icon-color;
+      text-shadow:0 0 7px white;
 
       .fa {
         font-size: $header-icon-size;
       }
 
       &:hover {
-        color: $header-icon-color-hover;
-        transform: scale(1.5) $transfix;
+        transform: scale(1.3) $transfix;
+
+        &:first-child {
+          background: radial-gradient(circle at 33% 100%,#fed373 4%,#f15245 30%,#d92e7f 62%,#9b36b7 85%,#515ecf);
+        }
+
+        &:nth-child(2) {
+          background:#e83e80;
+        }
+
+        &:nth-child(3) {
+          background: linear-gradient(to right, rgba(0,99,220,1) 0%,rgba(0,99,220,1) 50%,rgba(255,0,132,1) 51%,rgba(255,0,132,1) 100%);
+        }
+
+        &:nth-child(4) {
+          background: rgb(24, 24, 24);
+        }
+
+        &:last-child {
+          background:#552775;
+        }
       }
+
+
     }
   }
 

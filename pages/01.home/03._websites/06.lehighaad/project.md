@@ -2,7 +2,7 @@
 title: 'Arts, Architecture & Design'
 tagline: "Lehigh University's AAD Department"
 section_classes: ''
-bg_style: 'linear-gradient(to right, rgba(239, 164, 55, 0.45), #efa437), url(/user/themes/sathyaram/images/web/aad.jpg)'
+bg_style: 'linear-gradient(to bottom, rgba(239, 164, 55, 0.1), #efa437), url(/user/themes/sathyaram/images/web/aad.jpg)'
 pre_html: ''
 taxonomy:
   tag:

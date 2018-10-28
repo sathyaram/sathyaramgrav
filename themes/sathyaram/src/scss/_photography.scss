@@ -81,6 +81,9 @@
       &.active {
         display: block;
       }
+      a {
+        color:$color-blue;
+      }
     }
 
     p {
